@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T13:43:41.443Z",
+  "buildTime": "2026-06-20T13:48:02.441Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -170,6 +170,34 @@
       "id": "AquaManga"
     },
     {
+      "name": "Arc-Relight",
+      "description": "Arc-Relight - MangAdventure source (arc-relight.com). Converted from keiyoushi.",
+      "version": "1.4.15.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangAdventure",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#EF6C00"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ArcRelight"
+    },
+    {
       "name": "Arena Scans",
       "description": "Arena Scans - MangaThemesia source (arenascan.com). Converted from keiyoushi.",
       "version": "1.4.32.1",
@@ -313,6 +341,34 @@
         }
       ],
       "id": "AsmodeusScans"
+    },
+    {
+      "name": "Assorted Scans",
+      "description": "Assorted Scans - MangAdventure source (assortedscans.com). Converted from keiyoushi.",
+      "version": "1.4.17.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangAdventure",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#EF6C00"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "AssortedScans"
     },
     {
       "name": "Athrea Scans",
