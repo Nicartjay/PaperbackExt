@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T23:52:36.669Z",
+  "buildTime": "2026-06-20T23:57:00.670Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -3565,6 +3565,33 @@
         }
       ],
       "id": "MangaPandaOnl"
+    },
+    {
+      "name": "MangaPill",
+      "description": "MangaPill - custom source (mangapill.com). Converted from keiyoushi.",
+      "version": "1.4.9.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaPill"
     },
     {
       "name": "Manga Read",
