@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T12:56:00.787Z",
+  "buildTime": "2026-06-20T13:04:01.511Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -689,6 +689,39 @@
         }
       ],
       "id": "DecadenceScans"
+    },
+    {
+      "name": "Diva Scans",
+      "description": "Diva Scans - Iken source (divatoon.com). Converted from keiyoushi.",
+      "version": "1.4.23.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DivaScans"
     },
     {
       "name": "DragonTea",
@@ -1560,6 +1593,34 @@
       "id": "HentaiXYuri"
     },
     {
+      "name": "Hijala Scans",
+      "description": "Hijala Scans - Iken source (en-hijala.com). Converted from keiyoushi.",
+      "version": "1.4.23.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HijalaScans"
+    },
+    {
       "name": "Hiperdex",
       "description": "Hiperdex - Madara source (hiperdex.com). Converted from keiyoushi.",
       "version": "1.4.80.1",
@@ -1591,6 +1652,34 @@
         }
       ],
       "id": "Hiperdex"
+    },
+    {
+      "name": "Hive Scans",
+      "description": "Hive Scans - Iken source (hivetoons.org). Converted from keiyoushi.",
+      "version": "1.4.65.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HiveScans"
     },
     {
       "name": "I'm An Evil God",
@@ -1751,6 +1840,62 @@
         }
       ],
       "id": "KaizenScan"
+    },
+    {
+      "name": "Kayn Scans",
+      "description": "Kayn Scans - Iken source (kaynscan.org). Converted from keiyoushi.",
+      "version": "1.4.26.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KaynScans"
+    },
+    {
+      "name": "Ken Scans",
+      "description": "Ken Scans - Iken source (kencomics.com). Converted from keiyoushi.",
+      "version": "1.4.33.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KenScans"
     },
     {
       "name": "Kewn Scans",
@@ -2148,6 +2293,34 @@
         }
       ],
       "id": "MadaraScans"
+    },
+    {
+      "name": "Magus Manga",
+      "description": "Magus Manga - Iken source (magustoon.org). Converted from keiyoushi.",
+      "version": "1.4.69.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MagusManga"
     },
     {
       "name": "Mahouirexnohentaikarte",
@@ -3898,6 +4071,34 @@
       "id": "NyraScans"
     },
     {
+      "name": "Nyx Scans",
+      "description": "Nyx Scans - Iken source (nyxscans.com). Converted from keiyoushi.",
+      "version": "1.4.26.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NyxScans"
+    },
+    {
       "name": "OctopusManga",
       "description": "OctopusManga - Madara source (octopusmanga.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -3962,6 +4163,34 @@
         }
       ],
       "id": "Orchisasia"
+    },
+    {
+      "name": "Orion Scans",
+      "description": "Orion Scans - Iken source (orion-scans.com). Converted from keiyoushi.",
+      "version": "1.4.23.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "OrionScans"
     },
     {
       "name": "Paradise Scans",
@@ -4638,6 +4867,34 @@
       "id": "ReadTokyoGhoulReTokyoGhoulMangaOnline"
     },
     {
+      "name": "Renascans",
+      "description": "Renascans - Iken source (renascans.net). Converted from keiyoushi.",
+      "version": "1.4.23.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Renascans"
+    },
+    {
       "name": "Reset Scans",
       "description": "Reset Scans - Madara source (reset-scans.org). Converted from keiyoushi.",
       "version": "1.4.65.1",
@@ -4903,6 +5160,34 @@
         }
       ],
       "id": "S2Manga"
+    },
+    {
+      "name": "Sana Scans",
+      "description": "Sana Scans - Iken source (sanascans.com). Converted from keiyoushi.",
+      "version": "1.4.23.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SanaScans"
     },
     {
       "name": "Scythe Scans",
@@ -5485,6 +5770,34 @@
         }
       ],
       "id": "Utoon"
+    },
+    {
+      "name": "Vanilla Scans",
+      "description": "Vanilla Scans - Iken source (vanillascans.org). Converted from keiyoushi.",
+      "version": "1.4.23.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Iken",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "VanillaScans"
     },
     {
       "name": "Violet Scans",
