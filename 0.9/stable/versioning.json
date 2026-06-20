@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T16:07:57.256Z",
+  "buildTime": "2026-06-20T16:10:44.978Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -3067,7 +3067,7 @@
     {
       "name": "MangaFox.fun",
       "description": "MangaFox.fun - MangaHub source (mangafox.fun). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3254,7 +3254,7 @@
     {
       "name": "MangaHere.onl",
       "description": "MangaHere.onl - MangaHub source (mangahere.onl). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3287,7 +3287,7 @@
     {
       "name": "MangaHub",
       "description": "MangaHub - MangaHub source (mangahub.io). Converted from keiyoushi.",
-      "version": "1.4.45.3",
+      "version": "1.4.45.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3409,7 +3409,7 @@
     {
       "name": "MangaNel",
       "description": "MangaNel - MangaHub source (manganel.me). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3475,7 +3475,7 @@
     {
       "name": "MangaOnline.fun",
       "description": "MangaOnline.fun - MangaHub source (mangaonline.fun). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3541,7 +3541,7 @@
     {
       "name": "MangaPanda.onl",
       "description": "MangaPanda.onl - MangaHub source (mangapanda.onl). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -3668,7 +3668,7 @@
     {
       "name": "MangaReader.site",
       "description": "MangaReader.site - MangaHub source (mangareader.site). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -3729,7 +3729,7 @@
     {
       "name": "MangaToday",
       "description": "MangaToday - MangaHub source (mangatoday.fun). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3955,7 +3955,7 @@
     {
       "name": "Mangakakalot.fun",
       "description": "Mangakakalot.fun - MangaHub source (mangakakalot.fun). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5345,7 +5345,7 @@
     {
       "name": "OneManga.info",
       "description": "OneManga.info - MangaHub source (onemanga.info). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6731,7 +6731,7 @@
     {
       "name": "1Manga.co",
       "description": "1Manga.co - MangaHub source (1manga.co). Converted from keiyoushi.",
-      "version": "1.4.35.3",
+      "version": "1.4.35.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
