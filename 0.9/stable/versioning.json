@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T12:25:14.400Z",
+  "buildTime": "2026-06-20T12:38:40.825Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -170,6 +170,67 @@
       "id": "AquaManga"
     },
     {
+      "name": "Arena Scans",
+      "description": "Arena Scans - MangaThemesia source (arenascan.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ArenaScans"
+    },
+    {
+      "name": "Armageddon",
+      "description": "Armageddon - MangaThemesia source (www.silentquill.net). Converted from keiyoushi.",
+      "version": "1.4.34.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Armageddon"
+    },
+    {
       "name": "Arya Scans",
       "description": "Arya Scans - Madara source (brainrotcomics.com). Converted from keiyoushi.",
       "version": "1.4.52.1",
@@ -196,6 +257,39 @@
         }
       ],
       "id": "AryaScans"
+    },
+    {
+      "name": "Athrea Scans",
+      "description": "Athrea Scans - MangaThemesia source (athreascans.com). Converted from keiyoushi.",
+      "version": "1.4.33.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "AthreaScans"
     },
     {
       "name": "Battle In 5 Seconds After Meeting",
@@ -348,6 +442,100 @@
       "id": "CoffeeManga"
     },
     {
+      "name": "Comic Asura",
+      "description": "Comic Asura - MangaThemesia source (comicasura.net). Converted from keiyoushi.",
+      "version": "1.4.34.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ComicAsura"
+    },
+    {
+      "name": "Comics Land",
+      "description": "Comics Land - MangaThemesia source (comicsland.org). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ComicsLand"
+    },
+    {
+      "name": "Crow Scans",
+      "description": "Crow Scans - MangaThemesia source (crowscans.xyz). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "CrowScans"
+    },
+    {
       "name": "Cucumber Manga",
       "description": "Cucumber Manga - Madara source (cucumbermanga.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -379,6 +567,39 @@
         }
       ],
       "id": "CucumberManga"
+    },
+    {
+      "name": "CulturedWorks",
+      "description": "CulturedWorks - MangaThemesia source (culturedworks.com). Converted from keiyoushi.",
+      "version": "1.4.33.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "CulturedWorks"
     },
     {
       "name": "Decadence Scans",
@@ -440,6 +661,62 @@
         }
       ],
       "id": "DragonTea"
+    },
+    {
+      "name": "Drake Scans",
+      "description": "Drake Scans - MangaThemesia source (drakecomic.org). Converted from keiyoushi.",
+      "version": "1.4.48.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DrakeScans"
+    },
+    {
+      "name": "Elf Toon",
+      "description": "Elf Toon - MangaThemesia source (elftoon.com). Converted from keiyoushi.",
+      "version": "1.4.34.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ElfToon"
     },
     {
       "name": "EpicManga",
@@ -506,6 +783,67 @@
         }
       ],
       "id": "Ero18x"
+    },
+    {
+      "name": "Eva Scans",
+      "description": "Eva Scans - MangaThemesia source (evascans.org). Converted from keiyoushi.",
+      "version": "1.4.34.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "EvaScans"
+    },
+    {
+      "name": "Fable Scans",
+      "description": "Fable Scans - MangaThemesia source (fablescans.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "FableScans"
     },
     {
       "name": "Firescans",
@@ -686,6 +1024,39 @@
       "id": "GalaxyDegenScans"
     },
     {
+      "name": "Galaxy Manga",
+      "description": "Galaxy Manga - MangaThemesia source (galaxymanga.io). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "GalaxyManga"
+    },
+    {
       "name": "GingeRTooN",
       "description": "GingeRTooN - Madara source (gingertoon.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -785,6 +1156,34 @@
       "id": "HM2D"
     },
     {
+      "name": "Hades Scans",
+      "description": "Hades Scans - MangaThemesia source (hadesscans.com). Converted from keiyoushi.",
+      "version": "1.4.33.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HadesScans"
+    },
+    {
       "name": "Hentai4Free",
       "description": "Hentai4Free - Madara source (hentai4free.net). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -816,6 +1215,39 @@
         }
       ],
       "id": "Hentai4Free"
+    },
+    {
+      "name": "HentaiDex",
+      "description": "HentaiDex - MangaThemesia source (dexhentai.com). Converted from keiyoushi.",
+      "version": "1.4.34.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HentaiDex"
     },
     {
       "name": "HentaiRead",
@@ -1115,6 +1547,39 @@
       "id": "KSGroupScans"
     },
     {
+      "name": "King of Shojo",
+      "description": "King of Shojo - MangaThemesia source (kingofshojo.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KingOfShojo"
+    },
+    {
       "name": "Kissmanga.in",
       "description": "Kissmanga.in - Madara source (kissmanga.in). Converted from keiyoushi.",
       "version": "1.4.55.1",
@@ -1242,6 +1707,34 @@
       "id": "LHTranslation"
     },
     {
+      "name": "Lagoon Scans",
+      "description": "Lagoon Scans - MangaThemesia source (lagoonscans.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "LagoonScans"
+    },
+    {
       "name": "LikeManga",
       "description": "LikeManga - custom source (likemanga.ink). Converted from keiyoushi.",
       "version": "1.4.8.1",
@@ -1360,6 +1853,34 @@
         }
       ],
       "id": "MadaraDex"
+    },
+    {
+      "name": "Madara Scans",
+      "description": "Madara Scans - MangaThemesia source (madarascans.com). Converted from keiyoushi.",
+      "version": "1.4.34.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MadaraScans"
     },
     {
       "name": "Mahouirexnohentaikarte",
@@ -1931,6 +2452,67 @@
       "id": "MangaReadOrg"
     },
     {
+      "name": "MangaTX",
+      "description": "MangaTX - MangaThemesia source (mangatx.cc). Converted from keiyoushi.",
+      "version": "1.4.33.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaTX"
+    },
+    {
+      "name": "Manga Trend",
+      "description": "Manga Trend - MangaThemesia source (mangatrend.org). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaTrend"
+    },
+    {
       "name": "MangaYY",
       "description": "MangaYY - Madara source (mangayy.org). Converted from keiyoushi.",
       "version": "1.4.52.1",
@@ -2297,6 +2879,39 @@
       "id": "Manhuanext"
     },
     {
+      "name": "Manhuascan.us",
+      "description": "Manhuascan.us - MangaThemesia source (manhuascan.us). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ManhuascanUs"
+    },
+    {
       "name": "Manhwa18.org",
       "description": "Manhwa18.org - Madara source (manhwa18.org). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -2617,6 +3232,39 @@
       "id": "Manhwajoy"
     },
     {
+      "name": "Manhwalover",
+      "description": "Manhwalover - MangaThemesia source (www.manhwalover.org). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Manhwalover"
+    },
+    {
       "name": "Manhwatop",
       "description": "Manhwatop - Madara source (manhwatop.com). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -2648,6 +3296,39 @@
         }
       ],
       "id": "Manhwatop"
+    },
+    {
+      "name": "Manhwax",
+      "description": "Manhwax - MangaThemesia source (manhwax.top). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Manhwax"
     },
     {
       "name": "Milftoon",
@@ -2683,6 +3364,67 @@
       "id": "Milftoon"
     },
     {
+      "name": "NexComic",
+      "description": "NexComic - MangaThemesia source (nexcomic.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NexComic"
+    },
+    {
+      "name": "Nika Toons",
+      "description": "Nika Toons - MangaThemesia source (nikatoons.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NikaToons"
+    },
+    {
       "name": "NovelCrow",
       "description": "NovelCrow - Madara source (novelcrow.com). Converted from keiyoushi.",
       "version": "1.4.52.1",
@@ -2714,6 +3456,34 @@
         }
       ],
       "id": "NovelCrow"
+    },
+    {
+      "name": "Noxen Scans",
+      "description": "Noxen Scans - MangaThemesia source (noxenscan.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NoxenScans"
     },
     {
       "name": "OctopusManga",
@@ -2909,6 +3679,123 @@
       "id": "RDScans"
     },
     {
+      "name": "Rackus",
+      "description": "Rackus - MangaThemesia source (rackusreads.com). Converted from keiyoushi.",
+      "version": "1.4.39.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Rackus"
+    },
+    {
+      "name": "Rage Scans",
+      "description": "Rage Scans - MangaThemesia source (ragescans.com). Converted from keiyoushi.",
+      "version": "1.4.33.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RageScans"
+    },
+    {
+      "name": "Raven Scans",
+      "description": "Raven Scans - MangaThemesia source (ravenscans.org). Converted from keiyoushi.",
+      "version": "1.4.34.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RavenScans"
+    },
+    {
+      "name": "Razure",
+      "description": "Razure - MangaThemesia source (razure.org). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Razure"
+    },
+    {
       "name": "Reset Scans",
       "description": "Reset Scans - Madara source (reset-scans.org). Converted from keiyoushi.",
       "version": "1.4.65.1",
@@ -2935,6 +3822,123 @@
         }
       ],
       "id": "ResetScans"
+    },
+    {
+      "name": "Rest Scans",
+      "description": "Rest Scans - MangaThemesia source (restscans.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RestScans"
+    },
+    {
+      "name": "Rizz Comic",
+      "description": "Rizz Comic - MangaThemesia source (rizzfables.com). Converted from keiyoushi.",
+      "version": "1.4.45.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RizzComic"
+    },
+    {
+      "name": "Rizz Comic (unoriginal)",
+      "description": "Rizz Comic (unoriginal) - MangaThemesia source (rizzcomic.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RizzComicUnoriginal"
+    },
+    {
+      "name": "RokariComics",
+      "description": "RokariComics - MangaThemesia source (rokaricomics.com). Converted from keiyoushi.",
+      "version": "1.4.34.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RokariComics"
     },
     {
       "name": "Rose Squad Scans",
@@ -3003,6 +4007,34 @@
       "id": "S2Manga"
     },
     {
+      "name": "Scythe Scans",
+      "description": "Scythe Scans - MangaThemesia source (scythescans.com). Converted from keiyoushi.",
+      "version": "1.4.39.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ScytheScans"
+    },
+    {
       "name": "Setsu Scans",
       "description": "Setsu Scans - Madara source (setsuscans.com). Converted from keiyoushi.",
       "version": "1.4.54.1",
@@ -3062,6 +4094,39 @@
         }
       ],
       "id": "ShibaManga"
+    },
+    {
+      "name": "Sky Manga",
+      "description": "Sky Manga - MangaThemesia source (skymanga.work). Converted from keiyoushi.",
+      "version": "1.4.33.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SkyManga"
     },
     {
       "name": "Sleepy Translations",
@@ -3151,6 +4216,34 @@
         }
       ],
       "id": "Src24HNovel"
+    },
+    {
+      "name": "TCB Scans (Unoriginal)",
+      "description": "TCB Scans (Unoriginal) - MangaThemesia source (tcbscanonepiecechapters.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "TCBScansUnoriginal"
     },
     {
       "name": "Toon18",
@@ -3440,6 +4533,34 @@
       "id": "Utoon"
     },
     {
+      "name": "Violet Scans",
+      "description": "Violet Scans - MangaThemesia source (violetscans.org). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "VioletScans"
+    },
+    {
       "name": "VyvyManga.org",
       "description": "VyvyManga.org - Madara source (vyvymanga.org). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -3570,6 +4691,34 @@
         }
       ],
       "id": "WhaleManga"
+    },
+    {
+      "name": "WitchScans",
+      "description": "WitchScans - MangaThemesia source (witchscans.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaThemesia",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#1565C0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "WitchScans"
     },
     {
       "name": "WoopRead",
