@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T13:20:31.944Z",
+  "buildTime": "2026-06-20T13:35:26.772Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -376,6 +376,39 @@
       "id": "BattleIn5SecondsAfterMeeting"
     },
     {
+      "name": "BeeHentai",
+      "description": "BeeHentai - MadTheme source (beehentai.com). Converted from keiyoushi.",
+      "version": "1.4.24.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MadTheme",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "BeeHentai"
+    },
+    {
       "name": "Borat Scans",
       "description": "Borat Scans - Madara source (boratscans.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -656,6 +689,39 @@
         }
       ],
       "id": "CulturedWorks"
+    },
+    {
+      "name": "Danke fürs Lesen",
+      "description": "Danke fürs Lesen - Guya source (danke.moe). Converted from keiyoushi.",
+      "version": "1.4.7.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Guya",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#5D4037"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DankeFRsLesen"
     },
     {
       "name": "Decadence Scans",
@@ -1301,6 +1367,34 @@
       "id": "GrimScans"
     },
     {
+      "name": "Guya",
+      "description": "Guya - Guya source (guya.cubari.moe). Converted from keiyoushi.",
+      "version": "1.4.25.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Guya",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#5D4037"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Guya"
+    },
+    {
       "name": "HM2D",
       "description": "HM2D - Madara source (doujindistrict.com). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -1334,6 +1428,39 @@
       "id": "HM2D"
     },
     {
+      "name": "Hachirumi",
+      "description": "Hachirumi - Guya source (hachirumi.com). Converted from keiyoushi.",
+      "version": "1.4.7.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Guya",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#5D4037"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Hachirumi"
+    },
+    {
       "name": "Hades Scans",
       "description": "Hades Scans - MangaThemesia source (hadesscans.com). Converted from keiyoushi.",
       "version": "1.4.33.1",
@@ -1360,6 +1487,39 @@
         }
       ],
       "id": "HadesScans"
+    },
+    {
+      "name": "Hentai3z.CC",
+      "description": "Hentai3z.CC - Manga18 source (hentai3z.cc). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Manga18",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#880E4F"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Hentai3zCC"
     },
     {
       "name": "Hentai4Free",
@@ -1840,6 +2000,39 @@
         }
       ],
       "id": "KaizenScan"
+    },
+    {
+      "name": "KaliScan",
+      "description": "KaliScan - MadTheme source (kaliscan.com). Converted from keiyoushi.",
+      "version": "1.4.25.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MadTheme",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KaliScan"
     },
     {
       "name": "Kayn Scans",
@@ -2354,6 +2547,39 @@
         }
       ],
       "id": "Mahouirexnohentaikarte"
+    },
+    {
+      "name": "Manga18.Club",
+      "description": "Manga18.Club - Manga18 source (manga18.club). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Manga18",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#880E4F"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Manga18Club"
     },
     {
       "name": "Manga18Free",
@@ -3240,6 +3466,39 @@
       "id": "MangaYY"
     },
     {
+      "name": "Mangabat",
+      "description": "Mangabat - MangaBox source (www.mangabats.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaBox",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#37474F"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Mangabat"
+    },
+    {
       "name": "Mangaforfree.com",
       "description": "Mangaforfree.com - Madara source (mangaforfree.com). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -3306,6 +3565,39 @@
       "id": "Mangafree"
     },
     {
+      "name": "Mangakakalot",
+      "description": "Mangakakalot - MangaBox source (www.mangakakalot.gg). Converted from keiyoushi.",
+      "version": "1.4.21.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaBox",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#37474F"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Mangakakalot"
+    },
+    {
       "name": "Mangakakalot.fun",
       "description": "Mangakakalot.fun - MangaHub source (mangakakalot.fun). Converted from keiyoushi.",
       "version": "1.4.35.1",
@@ -3337,6 +3629,39 @@
         }
       ],
       "id": "MangakakalotFun"
+    },
+    {
+      "name": "Manganato",
+      "description": "Manganato - MangaBox source (www.natomanga.com). Converted from keiyoushi.",
+      "version": "1.4.18.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaBox",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#37474F"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Manganato"
     },
     {
       "name": "Mangasushi",
@@ -5716,6 +6041,39 @@
       "id": "Spmanhwa"
     },
     {
+      "name": "18 Porn Comic",
+      "description": "18 Porn Comic - Manga18 source (18porncomic.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Manga18",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#880E4F"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Src18PornComic"
+    },
+    {
       "name": "1Manga.co",
       "description": "1Manga.co - MangaHub source (1manga.co). Converted from keiyoushi.",
       "version": "1.4.35.1",
@@ -5904,6 +6262,39 @@
       "id": "ToonGod"
     },
     {
+      "name": "TooniTube",
+      "description": "TooniTube - MadTheme source (toonitube.com). Converted from keiyoushi.",
+      "version": "1.4.24.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MadTheme",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "TooniTube"
+    },
+    {
       "name": "Toonily",
       "description": "Toonily - Madara source (toonily.com). Converted from keiyoushi.",
       "version": "1.4.65.1",
@@ -5935,6 +6326,39 @@
         }
       ],
       "id": "Toonily"
+    },
+    {
+      "name": "Toonily.me",
+      "description": "Toonily.me - MadTheme source (toonily.me). Converted from keiyoushi.",
+      "version": "1.4.24.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MadTheme",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#AD1457"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ToonilyMe"
     },
     {
       "name": "Toonizy",
