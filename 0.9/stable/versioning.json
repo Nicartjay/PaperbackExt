@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T13:52:45.031Z",
+  "buildTime": "2026-06-20T14:01:13.921Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -834,6 +834,34 @@
         }
       ],
       "id": "DankeFRsLesen"
+    },
+    {
+      "name": "Death Toll Scans",
+      "description": "Death Toll Scans - FoolSlide source (reader.deathtollscans.net). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "FoolSlide",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#5C6BC0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DeathTollScans"
     },
     {
       "name": "Decadence Scans",
@@ -3830,6 +3858,34 @@
         }
       ],
       "id": "Mangasushi"
+    },
+    {
+      "name": "Mangatellers",
+      "description": "Mangatellers - FoolSlide source (reader.mangatellers.gr). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "FoolSlide",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#5C6BC0"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Mangatellers"
     },
     {
       "name": "ManhuaFast",
