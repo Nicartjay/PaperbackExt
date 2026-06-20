@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T12:38:40.825Z",
+  "buildTime": "2026-06-20T12:46:22.319Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -231,6 +231,34 @@
       "id": "Armageddon"
     },
     {
+      "name": "Art Lapsa",
+      "description": "Art Lapsa - Keyoapp source (artlapsa.com). Converted from keiyoushi.",
+      "version": "1.4.25.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ArtLapsa"
+    },
+    {
       "name": "Arya Scans",
       "description": "Arya Scans - Madara source (brainrotcomics.com). Converted from keiyoushi.",
       "version": "1.4.52.1",
@@ -257,6 +285,34 @@
         }
       ],
       "id": "AryaScans"
+    },
+    {
+      "name": "Asmodeus Scans",
+      "description": "Asmodeus Scans - Keyoapp source (asmotoon.com). Converted from keiyoushi.",
+      "version": "1.4.22.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "AsmodeusScans"
     },
     {
       "name": "Athrea Scans",
@@ -752,6 +808,39 @@
       "id": "EpicManga"
     },
     {
+      "name": "Eris Scans",
+      "description": "Eris Scans - Keyoapp source (erisscans.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ErisScans"
+    },
+    {
       "name": "Ero18x",
       "description": "Ero18x - Madara source (ero18x.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -1057,6 +1146,34 @@
       "id": "GalaxyManga"
     },
     {
+      "name": "Genz Toons",
+      "description": "Genz Toons - Keyoapp source (genztoons.org). Converted from keiyoushi.",
+      "version": "1.4.53.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "GenzToons"
+    },
+    {
       "name": "GingeRTooN",
       "description": "GingeRTooN - Madara source (gingertoon.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -1121,6 +1238,34 @@
         }
       ],
       "id": "GourmetScans"
+    },
+    {
+      "name": "Grim Scans",
+      "description": "Grim Scans - Keyoapp source (grimscans.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "GrimScans"
     },
     {
       "name": "HM2D",
@@ -1547,6 +1692,67 @@
       "id": "KSGroupScans"
     },
     {
+      "name": "Kaizen Scan",
+      "description": "Kaizen Scan - Keyoapp source (kaizenscan.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KaizenScan"
+    },
+    {
+      "name": "Kewn Scans",
+      "description": "Kewn Scans - Keyoapp source (kewnscans.org). Converted from keiyoushi.",
+      "version": "1.4.21.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KewnScans"
+    },
+    {
       "name": "King of Shojo",
       "description": "King of Shojo - MangaThemesia source (kingofshojo.com). Converted from keiyoushi.",
       "version": "1.4.32.1",
@@ -1820,6 +2026,39 @@
         }
       ],
       "id": "LinkManga"
+    },
+    {
+      "name": "Luna Toons",
+      "description": "Luna Toons - Keyoapp source (lunatoons.org). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "LunaToons"
     },
     {
       "name": "MadaraDex",
@@ -3331,6 +3570,34 @@
       "id": "Manhwax"
     },
     {
+      "name": "MeiToon",
+      "description": "MeiToon - Keyoapp source (meitoon.org). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MeiToon"
+    },
+    {
       "name": "Milftoon",
       "description": "Milftoon - Madara source (milftoon.xxx). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -3362,6 +3629,62 @@
         }
       ],
       "id": "Milftoon"
+    },
+    {
+      "name": "Mist Scans",
+      "description": "Mist Scans - Keyoapp source (mistscans.com). Converted from keiyoushi.",
+      "version": "1.4.21.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MistScans"
+    },
+    {
+      "name": "Necro Scans",
+      "description": "Necro Scans - Keyoapp source (necroscans.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NecroScans"
     },
     {
       "name": "NexComic",
@@ -3486,6 +3809,67 @@
       "id": "NoxenScans"
     },
     {
+      "name": "Nyanu Kafe",
+      "description": "Nyanu Kafe - Keyoapp source (nyanukafe.com). Converted from keiyoushi.",
+      "version": "1.4.21.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NyanuKafe"
+    },
+    {
+      "name": "Nyra Scans",
+      "description": "Nyra Scans - Keyoapp source (nyrascans.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NyraScans"
+    },
+    {
       "name": "OctopusManga",
       "description": "OctopusManga - Madara source (octopusmanga.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -3550,6 +3934,39 @@
         }
       ],
       "id": "Orchisasia"
+    },
+    {
+      "name": "Paradise Scans",
+      "description": "Paradise Scans - Keyoapp source (paradisescans.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ParadiseScans"
     },
     {
       "name": "Paritehaber",
@@ -3857,6 +4274,34 @@
       "id": "RestScans"
     },
     {
+      "name": "RitharScans",
+      "description": "RitharScans - Keyoapp source (ritharscans.com). Converted from keiyoushi.",
+      "version": "1.4.23.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RitharScans"
+    },
+    {
       "name": "Rizz Comic",
       "description": "Rizz Comic - MangaThemesia source (rizzfables.com). Converted from keiyoushi.",
       "version": "1.4.45.1",
@@ -3972,6 +4417,34 @@
         }
       ],
       "id": "RoseSquadScans"
+    },
+    {
+      "name": "Ryumanga",
+      "description": "Ryumanga - Keyoapp source (ryumanga.org). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Ryumanga"
     },
     {
       "name": "S2Manga",
@@ -4094,6 +4567,34 @@
         }
       ],
       "id": "ShibaManga"
+    },
+    {
+      "name": "Siren Scans",
+      "description": "Siren Scans - Keyoapp source (sirenscans.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SirenScans"
     },
     {
       "name": "Sky Manga",
@@ -4244,6 +4745,34 @@
         }
       ],
       "id": "TCBScansUnoriginal"
+    },
+    {
+      "name": "TimelessToons",
+      "description": "TimelessToons - Keyoapp source (timelesstoons.org). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "TimelessToons"
     },
     {
       "name": "Toon18",
@@ -4747,6 +5276,34 @@
         }
       ],
       "id": "WoopRead"
+    },
+    {
+      "name": "Writer Scans",
+      "description": "Writer Scans - Keyoapp source (writerscans.com). Converted from keiyoushi.",
+      "version": "1.4.20.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Keyoapp",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#6A1B9A"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "WriterScans"
     },
     {
       "name": "WuxiaWorld",
