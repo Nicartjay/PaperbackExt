@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T13:04:01.511Z",
+  "buildTime": "2026-06-20T13:20:31.944Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -2577,6 +2577,39 @@
       "id": "MangaDistrict"
     },
     {
+      "name": "MangaFox.fun",
+      "description": "MangaFox.fun - MangaHub source (mangafox.fun). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaFoxFun"
+    },
+    {
       "name": "MangaGG",
       "description": "MangaGG - Madara source (mangagg.com). Converted from keiyoushi.",
       "version": "1.4.54.1",
@@ -2704,6 +2737,72 @@
       "id": "MangaHentai"
     },
     {
+      "name": "MangaHere.onl",
+      "description": "MangaHere.onl - MangaHub source (mangahere.onl). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaHereOnl"
+    },
+    {
+      "name": "MangaHub",
+      "description": "MangaHub - MangaHub source (mangahub.io). Converted from keiyoushi.",
+      "version": "1.4.45.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaHub"
+    },
+    {
       "name": "MangaKa",
       "description": "MangaKa - Madara source (mangaka.cc). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -2793,6 +2892,72 @@
       "id": "MangaManiacs"
     },
     {
+      "name": "MangaNel",
+      "description": "MangaNel - MangaHub source (manganel.me). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaNel"
+    },
+    {
+      "name": "MangaOnline.fun",
+      "description": "MangaOnline.fun - MangaHub source (mangaonline.fun). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaOnlineFun"
+    },
+    {
       "name": "MangaOwl.io (unoriginal)",
       "description": "MangaOwl.io (unoriginal) - Madara source (mangaowl.io). Converted from keiyoushi.",
       "version": "1.4.52.1",
@@ -2824,6 +2989,34 @@
         }
       ],
       "id": "MangaOwlIoUnoriginal"
+    },
+    {
+      "name": "MangaPanda.onl",
+      "description": "MangaPanda.onl - MangaHub source (mangapanda.onl). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaPandaOnl"
     },
     {
       "name": "Manga Read",
@@ -2892,6 +3085,34 @@
       "id": "MangaReadOrg"
     },
     {
+      "name": "MangaReader.site",
+      "description": "MangaReader.site - MangaHub source (mangareader.site). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaReaderSite"
+    },
+    {
       "name": "MangaTX",
       "description": "MangaTX - MangaThemesia source (mangatx.cc). Converted from keiyoushi.",
       "version": "1.4.33.1",
@@ -2923,6 +3144,39 @@
         }
       ],
       "id": "MangaTX"
+    },
+    {
+      "name": "MangaToday",
+      "description": "MangaToday - MangaHub source (mangatoday.fun). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaToday"
     },
     {
       "name": "Manga Trend",
@@ -3050,6 +3304,39 @@
         }
       ],
       "id": "Mangafree"
+    },
+    {
+      "name": "Mangakakalot.fun",
+      "description": "Mangakakalot.fun - MangaHub source (mangakakalot.fun). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangakakalotFun"
     },
     {
       "name": "Mangasushi",
@@ -4130,6 +4417,39 @@
         }
       ],
       "id": "OctopusManga"
+    },
+    {
+      "name": "OneManga.info",
+      "description": "OneManga.info - MangaHub source (onemanga.info). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "OneMangaInfo"
     },
     {
       "name": "Orchisasia",
@@ -5394,6 +5714,39 @@
         }
       ],
       "id": "Spmanhwa"
+    },
+    {
+      "name": "1Manga.co",
+      "description": "1Manga.co - MangaHub source (1manga.co). Converted from keiyoushi.",
+      "version": "1.4.35.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "MangaHub",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00695C"
+        },
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Src1MangaCo"
     },
     {
       "name": "24HNovel",
