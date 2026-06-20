@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T14:07:22.958Z",
+  "buildTime": "2026-06-20T14:14:28.948Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -984,6 +984,34 @@
         }
       ],
       "id": "DrakeScans"
+    },
+    {
+      "name": "EZmanga",
+      "description": "EZmanga - EZManhwa source (ezmanga.org). Converted from keiyoushi.",
+      "version": "1.4.62.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "EZManhwa",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00838F"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "EZmanga"
     },
     {
       "name": "Elf Toon",
@@ -5230,6 +5258,34 @@
         }
       ],
       "id": "Petrotechsociety"
+    },
+    {
+      "name": "Qi Scans",
+      "description": "Qi Scans - EZManhwa source (qimanga.com). Converted from keiyoushi.",
+      "version": "1.4.26.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "EZManhwa",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#00838F"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "QiScans"
     },
     {
       "name": "RD Scans",
