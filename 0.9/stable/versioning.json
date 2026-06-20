@@ -1,12 +1,12 @@
 {
-  "buildTime": "2026-06-20T10:31:24.872Z",
+  "buildTime": "2026-06-20T10:42:24.699Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
   },
   "repository": {
     "name": "paperbackext",
-    "description": "Paperback v0.9 extensions"
+    "description": "Paperback v0.9 manga/manhua/comic extensions converted from keiyoushi"
   },
   "sources": [
     {
