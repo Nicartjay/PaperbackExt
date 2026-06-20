@@ -1,0 +1,34 @@
+{
+  "buildTime": "2026-06-20T09:49:54.985Z",
+  "builtWith": {
+    "toolchain": "1.0.0-alpha.91",
+    "types": "1.0.0-alpha.91"
+  },
+  "repository": {
+    "name": "paperbackext",
+    "description": "Paperback v0.9 extensions"
+  },
+  "sources": [
+    {
+      "name": "ManhuaFast",
+      "description": "Extension that pulls manga/manhua from manhuafast.com (Madara, Cloudflare protected).",
+      "version": "1.0.0-alpha.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ManhuaFast"
+    }
+  ]
+}
