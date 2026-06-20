@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-20T10:22:24.497Z",
+  "buildTime": "2026-06-20T10:31:24.872Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -827,6 +827,27 @@
         }
       ],
       "id": "LHTranslation"
+    },
+    {
+      "name": "LikeManga",
+      "description": "LikeManga - custom source (likemanga.ink). Converted from keiyoushi.",
+      "version": "1.4.8",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "LikeManga"
     },
     {
       "name": "Lily Manga",
