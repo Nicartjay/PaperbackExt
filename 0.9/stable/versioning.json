@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T02:47:09.591Z",
+  "buildTime": "2026-06-21T04:34:37.829Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -3131,6 +3131,27 @@
         }
       ],
       "id": "MangaBolt"
+    },
+    {
+      "name": "MangaCloud",
+      "description": "MangaCloud - custom source (mangacloud.org). Converted from keiyoushi.",
+      "version": "1.4.7.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaCloud"
     },
     {
       "name": "Manga Dass",
