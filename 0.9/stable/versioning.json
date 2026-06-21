@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T01:27:50.333Z",
+  "buildTime": "2026-06-21T01:37:45.103Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -397,6 +397,28 @@
         }
       ],
       "id": "AssortedScans"
+    },
+    {
+      "name": "Asura Scans",
+      "description": "Asura Scans - custom source (asurascans.com). Converted from keiyoushi.",
+      "version": "1.4.62.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "AsuraScans"
     },
     {
       "name": "Athrea Scans",
