@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T02:16:17.234Z",
+  "buildTime": "2026-06-21T02:21:07.867Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -3088,6 +3088,27 @@
         }
       ],
       "id": "MangaBlaze"
+    },
+    {
+      "name": "MangaBolt",
+      "description": "MangaBolt - custom source (mangabolt.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaBolt"
     },
     {
       "name": "Manga Dass",
