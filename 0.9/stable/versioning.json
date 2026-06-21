@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T02:27:46.477Z",
+  "buildTime": "2026-06-21T02:36:47.859Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -5698,6 +5698,33 @@
         }
       ],
       "id": "OneMangaInfo"
+    },
+    {
+      "name": "Oppai Stream",
+      "description": "Oppai Stream - custom source (read.oppai.stream). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "OppaiStream"
     },
     {
       "name": "Orchisasia",
