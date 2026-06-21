@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T05:22:20.984Z",
+  "buildTime": "2026-06-21T05:26:59.481Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -341,6 +341,33 @@
         }
       ],
       "id": "AryaScans"
+    },
+    {
+      "name": "AsiaToon",
+      "description": "AsiaToon - custom source (asiatoon.net). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "AsiaToon"
     },
     {
       "name": "Asmodeus Scans",
