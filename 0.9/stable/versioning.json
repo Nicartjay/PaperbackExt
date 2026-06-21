@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T06:06:05.820Z",
+  "buildTime": "2026-06-21T07:17:09.214Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -6043,6 +6043,27 @@
         }
       ],
       "id": "OneMangaInfo"
+    },
+    {
+      "name": "One Punch Man Online",
+      "description": "One Punch Man Online - custom source (w11.1punchman.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "OnePunchMangaOnline"
     },
     {
       "name": "Oppai Stream",
