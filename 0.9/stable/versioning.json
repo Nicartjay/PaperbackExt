@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T05:48:43.671Z",
+  "buildTime": "2026-06-21T05:52:19.505Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -7585,6 +7585,27 @@
         }
       ],
       "id": "StoneScape"
+    },
+    {
+      "name": "Swords Comic",
+      "description": "Swords Comic - custom source (swordscomic.com). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SwordsComic"
     },
     {
       "name": "TCB Scans",
