@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T04:53:08.972Z",
+  "buildTime": "2026-06-21T04:59:19.231Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -2203,6 +2203,27 @@
         }
       ],
       "id": "HiveScans"
+    },
+    {
+      "name": "Honkai Impact 3rd",
+      "description": "Honkai Impact 3rd - custom source (manga.honkaiimpact3.com). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HonkaiImpact"
     },
     {
       "name": "HotComics",
