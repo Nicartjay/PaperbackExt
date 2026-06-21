@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T14:46:23.605Z",
+  "buildTime": "2026-06-21T14:52:45.486Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -12,7 +12,7 @@
     {
       "name": "AP Comics",
       "description": "AP Comics - Madara source (apcomics.org). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -115,7 +115,7 @@
     {
       "name": "AllPornComic",
       "description": "AllPornComic - Madara source (allporncomic.com). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -148,7 +148,7 @@
     {
       "name": "AllPornComic.io",
       "description": "AllPornComic.io - Madara source (allporncomic.io). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -181,7 +181,7 @@
     {
       "name": "Anisa Scans",
       "description": "Anisa Scans - Madara source (anisascans.in). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -214,7 +214,7 @@
     {
       "name": "Aqua Manga",
       "description": "Aqua Manga - Madara source (aquareader.org). Converted from keiyoushi.",
-      "version": "1.4.62.1",
+      "version": "1.4.62.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -359,7 +359,7 @@
     {
       "name": "Arya Scans",
       "description": "Arya Scans - Madara source (brainrotcomics.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -650,7 +650,7 @@
     {
       "name": "Battle In 5 Seconds After Meeting",
       "description": "Battle In 5 Seconds After Meeting - Madara source (www.deatte5.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -765,7 +765,7 @@
     {
       "name": "Borat Scans",
       "description": "Borat Scans - Madara source (boratscans.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -814,7 +814,7 @@
     {
       "name": "Bun Manga",
       "description": "Bun Manga - Madara source (bunmanga.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -938,7 +938,7 @@
     {
       "name": "Cocomic",
       "description": "Cocomic - Madara source (cocomic.co). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -971,7 +971,7 @@
     {
       "name": "Coffee Manga",
       "description": "Coffee Manga - Madara source (coffeemanga.ink). Converted from keiyoushi.",
-      "version": "1.4.56.1",
+      "version": "1.4.56.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1215,7 +1215,7 @@
     {
       "name": "Comix",
       "description": "Comix - HTML scraper source (comix.to). Converted from keiyoushi.",
-      "version": "1.4.31.1",
+      "version": "1.4.31.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1242,7 +1242,7 @@
     {
       "name": "Coolmic",
       "description": "Coolmic - JSON API manga source (coolmic.me). Converted from keiyoushi.",
-      "version": "1.4.1.1",
+      "version": "1.4.1.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1297,7 +1297,7 @@
     {
       "name": "Cucumber Manga",
       "description": "Cucumber Manga - Madara source (cucumbermanga.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1535,7 +1535,7 @@
     {
       "name": "Decadence Scans",
       "description": "Decadence Scans - Madara source (reader.decadencescans.com). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1697,7 +1697,7 @@
     {
       "name": "DragonTea",
       "description": "DragonTea - Madara source (dragontea.ink). Converted from keiyoushi.",
-      "version": "1.4.56.1",
+      "version": "1.4.56.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -1905,7 +1905,7 @@
     {
       "name": "emaqi",
       "description": "emaqi - GraphQL API source (emaqi.com). Converted from keiyoushi.",
-      "version": "1.4.1.1",
+      "version": "1.4.1.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1932,7 +1932,7 @@
     {
       "name": "EpicManga",
       "description": "EpicManga - Madara source (epicmanga.co). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1998,7 +1998,7 @@
     {
       "name": "Ero18x",
       "description": "Ero18x - Madara source (ero18x.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -2173,7 +2173,7 @@
     {
       "name": "Firescans",
       "description": "Firescans - Madara source (firescans.xyz). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -2222,7 +2222,7 @@
     {
       "name": "FlameScans.lol",
       "description": "FlameScans.lol - Madara source (flamescans.lol). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -2250,7 +2250,7 @@
     {
       "name": "Frieren Online",
       "description": "Frieren Online - Madara source (www.frieren.online). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -2278,7 +2278,7 @@
     {
       "name": "GEDE Comix",
       "description": "GEDE Comix - Madara source (gedecomix.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -2311,7 +2311,7 @@
     {
       "name": "GakaMangas",
       "description": "GakaMangas - Madara source (gakamangas.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -2339,7 +2339,7 @@
     {
       "name": "GalaxyDegenScans",
       "description": "GalaxyDegenScans - Madara source (gdscans.com). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -2460,7 +2460,7 @@
     {
       "name": "GingeRTooN",
       "description": "GingeRTooN - Madara source (gingertoon.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -2562,7 +2562,7 @@
     {
       "name": "Gourmet Scans",
       "description": "Gourmet Scans - Madara source (gourmetsupremacy.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -2714,7 +2714,7 @@
     {
       "name": "HM2D",
       "description": "HM2D - Madara source (doujindistrict.com). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -2841,7 +2841,7 @@
     {
       "name": "Hentai4Free",
       "description": "Hentai4Free - Madara source (hentai4free.net). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3015,7 +3015,7 @@
     {
       "name": "HentaiRead",
       "description": "HentaiRead - Madara source (hentairead.com). Converted from keiyoushi.",
-      "version": "1.4.61.1",
+      "version": "1.4.61.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3075,7 +3075,7 @@
     {
       "name": "HentaiSco",
       "description": "HentaiSco - Madara source (hentaisco.cc). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3108,7 +3108,7 @@
     {
       "name": "HentaiXComic",
       "description": "HentaiXComic - Madara source (hentaixcomic.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3141,7 +3141,7 @@
     {
       "name": "HentaiXDickgirl",
       "description": "HentaiXDickgirl - Madara source (hentaixdickgirl.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3174,7 +3174,7 @@
     {
       "name": "HentaiXYuri",
       "description": "HentaiXYuri - Madara source (hentaixyuri.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3289,7 +3289,7 @@
     {
       "name": "Hiperdex",
       "description": "Hiperdex - Madara source (hiperdex.com). Converted from keiyoushi.",
-      "version": "1.4.80.1",
+      "version": "1.4.80.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3534,7 +3534,7 @@
     {
       "name": "IsekaiScan.top (unoriginal)",
       "description": "IsekaiScan.top (unoriginal) - Madara source (isekaiscan.top). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3588,7 +3588,7 @@
     {
       "name": "Jinmangas",
       "description": "Jinmangas - Madara source (jinmangas.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3621,7 +3621,7 @@
     {
       "name": "K Manga",
       "description": "K Manga - JSON API source (kmanga.kodansha.com). Converted from keiyoushi.",
-      "version": "1.4.5.1",
+      "version": "1.4.5.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -3642,7 +3642,7 @@
     {
       "name": "KSGroupScans",
       "description": "KSGroupScans - Madara source (ksgroupscans.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3954,7 +3954,7 @@
     {
       "name": "Kissmanga.in",
       "description": "Kissmanga.in - Madara source (kissmanga.in). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4014,7 +4014,7 @@
     {
       "name": "KokoMangas",
       "description": "KokoMangas - Madara source (kokomangas.com). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4047,7 +4047,7 @@
     {
       "name": "Kun Manga Online",
       "description": "Kun Manga Online - Madara source (www.kunmanga.online). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4107,7 +4107,7 @@
     {
       "name": "LHTranslation",
       "description": "LHTranslation - Madara source (lhtranslation.net). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4205,7 +4205,7 @@
     {
       "name": "Lily Manga",
       "description": "Lily Manga - Madara source (lilymanga.net). Converted from keiyoushi.",
-      "version": "1.4.58.1",
+      "version": "1.4.58.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4238,7 +4238,7 @@
     {
       "name": "LinkManga",
       "description": "LinkManga - Madara source (linkmanga.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4422,7 +4422,7 @@
     {
       "name": "MadaraDex",
       "description": "MadaraDex - Madara source (madaradex.org). Converted from keiyoushi.",
-      "version": "1.4.54.1",
+      "version": "1.4.54.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4532,7 +4532,7 @@
     {
       "name": "Mahouirexnohentaikarte",
       "description": "Mahouirexnohentaikarte - Madara source (mahouirexnohentaikarte.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4598,7 +4598,7 @@
     {
       "name": "Manga18Free",
       "description": "Manga18Free - Madara source (manga18free.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4631,7 +4631,7 @@
     {
       "name": "Manga18fx",
       "description": "Manga18fx - Madara source (manga18fx.com). Converted from keiyoushi.",
-      "version": "1.4.56.1",
+      "version": "1.4.56.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4664,7 +4664,7 @@
     {
       "name": "Manga 18x",
       "description": "Manga 18x - Madara source (manga18x.net). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4724,7 +4724,7 @@
     {
       "name": "MangaBlaze",
       "description": "MangaBlaze - Madara source (mangablaze.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4848,7 +4848,7 @@
     {
       "name": "Manga Dass",
       "description": "Manga Dass - Madara source (mangadass.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4902,7 +4902,7 @@
     {
       "name": "MangaDia",
       "description": "MangaDia - Madara source (mangadia.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4930,7 +4930,7 @@
     {
       "name": "Manga District",
       "description": "Manga District - Madara source (mangadistrict.com). Converted from keiyoushi.",
-      "version": "1.4.67.1",
+      "version": "1.4.67.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4991,7 +4991,7 @@
     {
       "name": "Manga Drama",
       "description": "Manga Drama - Madara source (mangadrama.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5106,7 +5106,7 @@
     {
       "name": "MangaGG",
       "description": "MangaGG - Madara source (mangagg.com). Converted from keiyoushi.",
-      "version": "1.4.54.1",
+      "version": "1.4.54.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5194,7 +5194,7 @@
     {
       "name": "MangaGo.fun",
       "description": "MangaGo.fun - Madara source (www.mangago.fun). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -5222,7 +5222,7 @@
     {
       "name": "MangaHe",
       "description": "MangaHe - Madara source (mangahe.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5255,7 +5255,7 @@
     {
       "name": "Manga Hentai",
       "description": "Manga Hentai - Madara source (mangahentai.me). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5408,7 +5408,7 @@
     {
       "name": "MangaKa",
       "description": "MangaKa - Madara source (mangaka.cc). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -5463,7 +5463,7 @@
     {
       "name": "Manga Kiss",
       "description": "Manga Kiss - Madara source (mangakiss.org). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -5491,7 +5491,7 @@
     {
       "name": "MangaManiacs",
       "description": "MangaManiacs - Madara source (mangamaniacs.org). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5645,7 +5645,7 @@
     {
       "name": "MangaOwl.io (unoriginal)",
       "description": "MangaOwl.io (unoriginal) - Madara source (mangaowl.io). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5733,7 +5733,7 @@
     {
       "name": "Manga Read",
       "description": "Manga Read - Madara source (mangaread.co). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5766,7 +5766,7 @@
     {
       "name": "MangaRead.org",
       "description": "MangaRead.org - Madara source (www.mangaread.org). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5954,7 +5954,7 @@
     {
       "name": "MangaYY",
       "description": "MangaYY - Madara source (mangayy.org). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6041,7 +6041,7 @@
     {
       "name": "Mangaforfree.com",
       "description": "Mangaforfree.com - Madara source (mangaforfree.com). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6074,7 +6074,7 @@
     {
       "name": "Mangafree",
       "description": "Mangafree - Madara source (mangafree.info). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6227,7 +6227,7 @@
     {
       "name": "Mangasushi",
       "description": "Mangasushi - Madara source (mangasushi.org). Converted from keiyoushi.",
-      "version": "1.4.54.1",
+      "version": "1.4.54.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6310,7 +6310,7 @@
     {
       "name": "ManhuaFast",
       "description": "ManhuaFast - Madara source (manhuafast.com). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6343,7 +6343,7 @@
     {
       "name": "ManhuaFast.net (unoriginal)",
       "description": "ManhuaFast.net (unoriginal) - Madara source (manhuafast.net). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6371,7 +6371,7 @@
     {
       "name": "ManhuaHot",
       "description": "ManhuaHot - Madara source (manhuahot.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6399,7 +6399,7 @@
     {
       "name": "Manhua Plus",
       "description": "Manhua Plus - Madara source (manhuaplus.com). Converted from keiyoushi.",
-      "version": "1.4.58.1",
+      "version": "1.4.58.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6476,7 +6476,7 @@
     {
       "name": "ManhuaTop",
       "description": "ManhuaTop - Madara source (manhuatop.org). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6509,7 +6509,7 @@
     {
       "name": "ManhuaUS",
       "description": "ManhuaUS - Madara source (manhuaus.com). Converted from keiyoushi.",
-      "version": "1.4.56.1",
+      "version": "1.4.56.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6537,7 +6537,7 @@
     {
       "name": "Manhua Zonghe",
       "description": "Manhua Zonghe - Madara source (www.manhuazonghe.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6570,7 +6570,7 @@
     {
       "name": "Manhuanext",
       "description": "Manhuanext - Madara source (manhuanext.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6658,7 +6658,7 @@
     {
       "name": "Manhwa18.org",
       "description": "Manhwa18.org - Madara source (manhwa18.org). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6691,7 +6691,7 @@
     {
       "name": "Manhwa68",
       "description": "Manhwa68 - Madara source (manhwa68.com). Converted from keiyoushi.",
-      "version": "1.4.54.1",
+      "version": "1.4.54.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6751,7 +6751,7 @@
     {
       "name": "Manhwa Comics",
       "description": "Manhwa Comics - Madara source (manhwacomics.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6784,7 +6784,7 @@
     {
       "name": "ManhwaDen",
       "description": "ManhwaDen - Madara source (www.manhwaden.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6817,7 +6817,7 @@
     {
       "name": "ManhwaGet",
       "description": "ManhwaGet - Madara source (manhwaget.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6878,7 +6878,7 @@
     {
       "name": "ManhwaManhua",
       "description": "ManhwaManhua - Madara source (manhwamanhua.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6911,7 +6911,7 @@
     {
       "name": "ManhwaNex",
       "description": "ManhwaNex - Madara source (manhwanex.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6966,7 +6966,7 @@
     {
       "name": "Manhwa Reads",
       "description": "Manhwa Reads - Madara source (manhwareads.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6999,7 +6999,7 @@
     {
       "name": "Manhwa Toon",
       "description": "Manhwa Toon - Madara source (www.manhwatoon.me). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -7119,7 +7119,7 @@
     {
       "name": "Manhwajoy",
       "description": "Manhwajoy - Madara source (manhwajoy.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -7212,7 +7212,7 @@
     {
       "name": "Manhwatop",
       "description": "Manhwatop - Madara source (manhwatop.com). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -7381,7 +7381,7 @@
     {
       "name": "Milftoon",
       "description": "Milftoon - Madara source (milftoon.xxx). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -7863,7 +7863,7 @@
     {
       "name": "NovelCrow",
       "description": "NovelCrow - Madara source (novelcrow.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8034,7 +8034,7 @@
     {
       "name": "OctopusManga",
       "description": "OctopusManga - Madara source (octopusmanga.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8154,7 +8154,7 @@
     {
       "name": "Omoi",
       "description": "Omoi - JSON API manga source (www.omoi.com). Converted from keiyoushi.",
-      "version": "1.4.2.1",
+      "version": "1.4.2.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8310,7 +8310,7 @@
     {
       "name": "Orchisasia",
       "description": "Orchisasia - Madara source (www.orchisasia.org). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8404,7 +8404,7 @@
     {
       "name": "Paritehaber",
       "description": "Paritehaber - Madara source (www.paritehaber.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8458,7 +8458,7 @@
     {
       "name": "Paw Manga",
       "description": "Paw Manga - Madara source (pawmanga.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8491,7 +8491,7 @@
     {
       "name": "Petrotechsociety",
       "description": "Petrotechsociety - Madara source (www.petrotechsociety.org). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8524,7 +8524,7 @@
     {
       "name": "Philia Scans",
       "description": "Philia Scans - JSON API source (philiascans.org). Converted from keiyoushi.",
-      "version": "1.4.58.1",
+      "version": "1.4.58.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -8621,7 +8621,7 @@
     {
       "name": "RD Scans",
       "description": "RD Scans - Madara source (rdscans.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9352,7 +9352,7 @@
     {
       "name": "Reset Scans",
       "description": "Reset Scans - Madara source (reset-scans.org). Converted from keiyoushi.",
-      "version": "1.4.65.1",
+      "version": "1.4.65.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9594,7 +9594,7 @@
     {
       "name": "Rose Squad Scans",
       "description": "Rose Squad Scans - Madara source (rosesquadscans.aishiteru.org). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -9655,7 +9655,7 @@
     {
       "name": "S2Manga",
       "description": "S2Manga - Madara source (s2read.com). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -9882,7 +9882,7 @@
     {
       "name": "Setsu Scans",
       "description": "Setsu Scans - Madara source (setsuscans.com). Converted from keiyoushi.",
-      "version": "1.4.54.1",
+      "version": "1.4.54.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9910,7 +9910,7 @@
     {
       "name": "Shiba Manga",
       "description": "Shiba Manga - Madara source (shibamanga.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10004,7 +10004,7 @@
     {
       "name": "Sleepy Translations",
       "description": "Sleepy Translations - Madara source (sleepytranslations.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10053,7 +10053,7 @@
     {
       "name": "Spmanhwa",
       "description": "Spmanhwa - Madara source (spmanhwa.online). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10174,7 +10174,7 @@
     {
       "name": "24HNovel",
       "description": "24HNovel - Madara source (24hnovel.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10261,7 +10261,7 @@
     {
       "name": "Sunshine Butterfly Scans",
       "description": "Sunshine Butterfly Scans - JSON-API manga source (wings.sbs). Converted from keiyoushi.",
-      "version": "1.4.39.1",
+      "version": "1.4.39.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10569,7 +10569,7 @@
     {
       "name": "Toon18",
       "description": "Toon18 - Madara source (toon18.to). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10602,7 +10602,7 @@
     {
       "name": "ToonGod",
       "description": "ToonGod - Madara source (www.toongod.org). Converted from keiyoushi.",
-      "version": "1.4.56.1",
+      "version": "1.4.56.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10668,7 +10668,7 @@
     {
       "name": "Toonily",
       "description": "Toonily - Madara source (toonily.com). Converted from keiyoushi.",
-      "version": "1.4.65.1",
+      "version": "1.4.65.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10734,7 +10734,7 @@
     {
       "name": "Toonizy",
       "description": "Toonizy - Madara source (toonizy.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10767,7 +10767,7 @@
     {
       "name": "Top Manhua",
       "description": "Top Manhua - Madara source (mangatop.org). Converted from keiyoushi.",
-      "version": "1.4.58.1",
+      "version": "1.4.58.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10800,7 +10800,7 @@
     {
       "name": "TopManhua.fan",
       "description": "TopManhua.fan - Madara source (www.topmanhua.fan). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10833,7 +10833,7 @@
     {
       "name": "TopManhua.net",
       "description": "TopManhua.net - Madara source (topmanhua.net). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10866,7 +10866,7 @@
     {
       "name": "TritiniaScans",
       "description": "TritiniaScans - Madara source (tritinia.org). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10894,7 +10894,7 @@
     {
       "name": "Utoon",
       "description": "Utoon - Madara source (utoon.net). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10922,7 +10922,7 @@
     {
       "name": "VIZ",
       "description": "VIZ - official manga reader source (viz.com). Converted from keiyoushi.",
-      "version": "1.4.25.1",
+      "version": "1.4.25.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11110,7 +11110,7 @@
     {
       "name": "VyvyManga.org",
       "description": "VyvyManga.org - Madara source (vyvymanga.org). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11227,7 +11227,7 @@
     {
       "name": "WebtoonScan",
       "description": "WebtoonScan - Madara source (webtoonscan.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11260,7 +11260,7 @@
     {
       "name": "WebtoonXYZ",
       "description": "WebtoonXYZ - Madara source (www.webtoon.xyz). Converted from keiyoushi.",
-      "version": "1.4.55.1",
+      "version": "1.4.55.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11320,7 +11320,7 @@
     {
       "name": "Whale Manga",
       "description": "Whale Manga - Madara source (whalemanga.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11381,7 +11381,7 @@
     {
       "name": "WoopRead",
       "description": "WoopRead - Madara source (woopread.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11437,7 +11437,7 @@
     {
       "name": "WuxiaWorld",
       "description": "WuxiaWorld - Madara source (wuxiaworld.site). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11561,7 +11561,7 @@
     {
       "name": "YakshaComics",
       "description": "YakshaComics - Madara source (yakshacomics.com). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11616,7 +11616,7 @@
     {
       "name": "YaoiScan",
       "description": "YaoiScan - Madara source (yaoiscan.com). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11676,7 +11676,7 @@
     {
       "name": "Yaoihub",
       "description": "Yaoihub - Madara source (yaoihub.net). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11730,7 +11730,7 @@
     {
       "name": "Zazamanga",
       "description": "Zazamanga - Madara source (zazamanga.com). Converted from keiyoushi.",
-      "version": "1.4.52.1",
+      "version": "1.4.52.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11763,7 +11763,7 @@
     {
       "name": "ZinChanManga",
       "description": "ZinChanManga - Madara source (zinchangmanga.net). Converted from keiyoushi.",
-      "version": "1.4.54.1",
+      "version": "1.4.54.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11796,7 +11796,7 @@
     {
       "name": "ZinChanManga.com",
       "description": "ZinChanManga.com - Madara source (zinchangmanga.net). Converted from keiyoushi.",
-      "version": "1.4.54.1",
+      "version": "1.4.54.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11829,7 +11829,7 @@
     {
       "name": "Zinmanga",
       "description": "Zinmanga - Madara source (mangazin.org). Converted from keiyoushi.",
-      "version": "1.4.54.1",
+      "version": "1.4.54.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11862,7 +11862,7 @@
     {
       "name": "Zinmanga.net",
       "description": "Zinmanga.net - Madara source (zinmanga.net). Converted from keiyoushi.",
-      "version": "1.4.51.1",
+      "version": "1.4.51.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
