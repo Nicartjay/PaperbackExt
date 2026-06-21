@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T05:44:38.871Z",
+  "buildTime": "2026-06-21T05:48:43.671Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -41,6 +41,27 @@
         }
       ],
       "id": "APComics"
+    },
+    {
+      "name": "Alandal",
+      "description": "Alandal - custom source (alandal.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Alandal"
     },
     {
       "name": "AllManga",
