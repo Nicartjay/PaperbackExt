@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T12:30:14.886Z",
+  "buildTime": "2026-06-21T13:51:27.813Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -41,6 +41,27 @@
         }
       ],
       "id": "APComics"
+    },
+    {
+      "name": "Akai Comic",
+      "description": "Akai Comic - JSON API source (akaicomic.org). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "AkaiComic"
     },
     {
       "name": "Alandal",
@@ -502,6 +523,54 @@
       "id": "AthreaScans"
     },
     {
+      "name": "Atsumaru",
+      "description": "Atsumaru - JSON API manga source (atsu.moe). Converted from keiyoushi.",
+      "version": "1.4.19.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Atsumaru"
+    },
+    {
+      "name": "aurora",
+      "description": "Aurora - webcomic source (comicaurora.com). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Aurora"
+    },
+    {
       "name": "Bakkin",
       "description": "Bakkin - Bakkin source (bakkin.moe/reader). Converted from keiyoushi.",
       "version": "1.4.7.1",
@@ -607,6 +676,33 @@
       "id": "BattleIn5SecondsAfterMeeting"
     },
     {
+      "name": "Bbato",
+      "description": "Bbato - HTML scraper source (bbato.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Bbato"
+    },
+    {
       "name": "BeeHentai",
       "description": "BeeHentai - MadTheme source (beehentai.com). Converted from keiyoushi.",
       "version": "1.4.24.1",
@@ -640,6 +736,33 @@
       "id": "BeeHentai"
     },
     {
+      "name": "BookWalker",
+      "description": "BookWalker - official digital manga store (bookwalker.com). Converted from keiyoushi.",
+      "version": "1.4.7.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "BookWalker"
+    },
+    {
       "name": "Borat Scans",
       "description": "Borat Scans - Madara source (boratscans.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -666,6 +789,27 @@
         }
       ],
       "id": "BoratScans"
+    },
+    {
+      "name": "Broccoli Soup",
+      "description": "Broccoli Soup - webcomic source (politeandgood.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "BroccoliSoup"
     },
     {
       "name": "Bun Manga",
@@ -696,6 +840,60 @@
       "id": "BunManga"
     },
     {
+      "name": "buttsmithy",
+      "description": "Buttsmithy - HTML scraper source (incase.buttsmithy.com). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Buttsmithy"
+    },
+    {
+      "name": "CManhua",
+      "description": "CManhua - HTML scraper source (cmanhua.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "CManhua"
+    },
+    {
       "name": "Clone Manga",
       "description": "Clone Manga - custom source (manga.clone-army.org). Converted from keiyoushi.",
       "version": "1.4.3.1",
@@ -715,6 +913,27 @@
         }
       ],
       "id": "CloneManga"
+    },
+    {
+      "name": "Clown Corps",
+      "description": "Clown Corps - webcomic source (clowncorps.net). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ClownCorps"
     },
     {
       "name": "Cocomic",
@@ -783,6 +1002,27 @@
       "id": "CoffeeManga"
     },
     {
+      "name": "Collected Curios",
+      "description": "Collected Curios - webcomic source (collectedcurios.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "CollectedCurios"
+    },
+    {
       "name": "Comic Asura",
       "description": "Comic Asura - MangaThemesia source (comicasura.net). Converted from keiyoushi.",
       "version": "1.4.34.1",
@@ -816,6 +1056,54 @@
       "id": "ComicAsura"
     },
     {
+      "name": "Comic CX",
+      "description": "Comic CX - JSON API source (comic.cx). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ComicCX"
+    },
+    {
+      "name": "ComicHubFree",
+      "description": "ComicHubFree - HTML scraper source (comichubfree.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ComicHubFree"
+    },
+    {
       "name": "ComicK Fanmade",
       "description": "ComicK Fanmade - custom source (comickfan.com). Converted from keiyoushi.",
       "version": "1.4.2.1",
@@ -841,6 +1129,33 @@
         }
       ],
       "id": "ComicKFan"
+    },
+    {
+      "name": "ComicLand",
+      "description": "ComicLand - JSON API source (comicland.org). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ComicLand"
     },
     {
       "name": "Comics Land",
@@ -896,6 +1211,60 @@
         }
       ],
       "id": "Comivex"
+    },
+    {
+      "name": "Comix",
+      "description": "Comix - HTML scraper source (comix.to). Converted from keiyoushi.",
+      "version": "1.4.31.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Comix"
+    },
+    {
+      "name": "Coolmic",
+      "description": "Coolmic - JSON API manga source (coolmic.me). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Coolmic"
     },
     {
       "name": "Crow Scans",
@@ -992,6 +1361,54 @@
       "id": "CulturedWorks"
     },
     {
+      "name": "Cutie Comics",
+      "description": "Cutie Comics - HTML scraper source (cutiecomics.com). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "CutieComics"
+    },
+    {
+      "name": "Cyanide & Happiness",
+      "description": "Cyanide & Happiness - webcomic source (explosm.net). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "CyanideHappiness"
+    },
+    {
       "name": "Danke fürs Lesen",
       "description": "Danke fürs Lesen - Guya source (danke.moe). Converted from keiyoushi.",
       "version": "1.4.7.1",
@@ -1023,6 +1440,69 @@
         }
       ],
       "id": "DankeFRsLesen"
+    },
+    {
+      "name": "Dark Legacy Comics",
+      "description": "Dark Legacy Comics - webcomic source (darklegacycomics.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DarkLegacyComics"
+    },
+    {
+      "name": "Dark Science",
+      "description": "Dark Science - webcomic source (dresdencodak.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DarkScience"
+    },
+    {
+      "name": "Darths & Droids",
+      "description": "Darths & Droids - webcomic source (www.darthsanddroids.net). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DarthsDroids"
     },
     {
       "name": "Death Toll Scans",
@@ -1107,6 +1587,27 @@
       "id": "DflowScans"
     },
     {
+      "name": "Digital Comic Museum",
+      "description": "Digital Comic Museum - HTML scraper source (digitalcomicmuseum.com). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DigitalComicMuseum"
+    },
+    {
       "name": "Diva Scans",
       "description": "Diva Scans - Iken source (divatoon.com). Converted from keiyoushi.",
       "version": "1.4.23.1",
@@ -1138,6 +1639,60 @@
         }
       ],
       "id": "DivaScans"
+    },
+    {
+      "name": "Doujin.io - J18",
+      "description": "Doujin.io - J18 - JSON API source (doujin.io). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "DoujinIoJ18"
+    },
+    {
+      "name": "Doujins",
+      "description": "Doujins - doujin/hentai gallery source (doujins.com). Converted from keiyoushi.",
+      "version": "1.4.6.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Doujins"
     },
     {
       "name": "DragonTea",
@@ -1196,6 +1751,33 @@
       "id": "DrakeScans"
     },
     {
+      "name": "Dynasty",
+      "description": "Dynasty - JSON-API manga source (dynasty-scans.com). Converted from keiyoushi.",
+      "version": "1.4.30.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Dynasty"
+    },
+    {
       "name": "EZmanga",
       "description": "EZmanga - EZManhwa source (ezmanga.org). Converted from keiyoushi.",
       "version": "1.4.62.1",
@@ -1224,6 +1806,75 @@
       "id": "EZmanga"
     },
     {
+      "name": "Eggporncomics",
+      "description": "Eggporncomics - adult comics scraper (eggporncomics.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Eggporncomics"
+    },
+    {
+      "name": "El Goonish Shive",
+      "description": "El Goonish Shive - webcomic source (egscomics.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ElGoonishShive"
+    },
+    {
+      "name": "Elan School",
+      "description": "Elan School - webcomic source (elan.school). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ElanSchool"
+    },
+    {
       "name": "Elf Toon",
       "description": "Elf Toon - MangaThemesia source (elftoon.com). Converted from keiyoushi.",
       "version": "1.4.34.1",
@@ -1250,6 +1901,33 @@
         }
       ],
       "id": "ElfToon"
+    },
+    {
+      "name": "emaqi",
+      "description": "emaqi - GraphQL API source (emaqi.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Emaqi"
     },
     {
       "name": "EpicManga",
@@ -1412,6 +2090,27 @@
       "id": "EvaScans"
     },
     {
+      "name": "Existential Comics",
+      "description": "Existential Comics - webcomic source (existentialcomics.com). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ExistentialComics"
+    },
+    {
       "name": "Fable Scans",
       "description": "Fable Scans - MangaThemesia source (fablescans.com). Converted from keiyoushi.",
       "version": "1.4.32.1",
@@ -1443,6 +2142,33 @@
         }
       ],
       "id": "FableScans"
+    },
+    {
+      "name": "Fairy Scans",
+      "description": "Fairy Scans - WordPress manga scraper (fairyscans.com). Converted from keiyoushi.",
+      "version": "1.4.33.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "FairyScans"
     },
     {
       "name": "Firescans",
@@ -1677,6 +2403,33 @@
       "id": "GalaxyManga"
     },
     {
+      "name": "Gensura",
+      "description": "Gensura - HTML scraper source (gensura.net). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Gensura"
+    },
+    {
       "name": "Genz Toons",
       "description": "Genz Toons - Keyoapp source (genztoons.org). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -1738,6 +2491,75 @@
       "id": "GingeRTooN"
     },
     {
+      "name": "GirlsTop",
+      "description": "GirlsTop - HTML scraper source (en.girlstop.info). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "GirlsTop"
+    },
+    {
+      "name": "Goda",
+      "description": "Goda - HTML scraper source (manhuascans.org). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Goda"
+    },
+    {
+      "name": "Gone with the Blastwave",
+      "description": "Gone with the Blastwave - webcomic source (blastwave-comic.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "GoneWithTheBlastwave"
+    },
+    {
       "name": "Gourmet Scans",
       "description": "Gourmet Scans - Madara source (gourmetsupremacy.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -1771,6 +2593,27 @@
       "id": "GourmetScans"
     },
     {
+      "name": "Greed Scans",
+      "description": "Greed Scans - JSON API source (gojoscans.com). Converted from keiyoushi.",
+      "version": "1.4.32.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "GreedScans"
+    },
+    {
       "name": "Grim Scans",
       "description": "Grim Scans - Keyoapp source (grimscans.com). Converted from keiyoushi.",
       "version": "1.4.20.1",
@@ -1797,6 +2640,48 @@
         }
       ],
       "id": "GrimScans"
+    },
+    {
+      "name": "Grrl Power Comic",
+      "description": "Grrl Power Comic - webcomic source (grrlpowercomic.com). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "GrrlPowerComic"
+    },
+    {
+      "name": "Gunnerkrigg Court",
+      "description": "Gunnerkrigg Court - webcomic source (www.gunnerkrigg.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "GunnerkriggCourt"
     },
     {
       "name": "Guya",
@@ -2020,6 +2905,114 @@
       "id": "HentaiDex"
     },
     {
+      "name": "HentaiHere",
+      "description": "HentaiHere - HTML scraper source (hentaihere.com). Converted from keiyoushi.",
+      "version": "1.4.7.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HentaiHere"
+    },
+    {
+      "name": "HentaiKisu",
+      "description": "HentaiKisu - HTML/JSON scraper source (hentaikisu.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HentaiKisu"
+    },
+    {
+      "name": "HentaiKun",
+      "description": "HentaiKun - HTML scraper source (hentaikun.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HentaiKun"
+    },
+    {
+      "name": "HentaiNexus",
+      "description": "HentaiNexus - HTML scraper source (hentainexus.com). Converted from keiyoushi.",
+      "version": "1.4.17.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HentaiNexus"
+    },
+    {
       "name": "HentaiRead",
       "description": "HentaiRead - Madara source (hentairead.com). Converted from keiyoushi.",
       "version": "1.4.61.1",
@@ -2051,6 +3044,33 @@
         }
       ],
       "id": "HentaiRead"
+    },
+    {
+      "name": "HentaiRead.io",
+      "description": "HentaiRead.io - HTML scraper source (hentairead.io). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HentaiReadIo"
     },
     {
       "name": "HentaiSco",
@@ -2185,6 +3205,33 @@
       "id": "HentaiXYuri"
     },
     {
+      "name": "Hentara",
+      "description": "Hentara - JSON API manga source (hentara.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Hentara"
+    },
+    {
       "name": "HeyToon",
       "description": "HeyToon - custom source (heytoon.net). Converted from keiyoushi.",
       "version": "1.4.1.1",
@@ -2301,6 +3348,27 @@
       "id": "HiveScans"
     },
     {
+      "name": "Hiveworks Comics",
+      "description": "Hiveworks Comics - webcomic aggregator source (hiveworkscomics.com). Converted from keiyoushi.",
+      "version": "1.4.12.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HiveworksComics"
+    },
+    {
       "name": "Honkai Impact 3rd",
       "description": "Honkai Impact 3rd - custom source (manga.honkaiimpact3.com). Converted from keiyoushi.",
       "version": "1.4.4.1",
@@ -2355,6 +3423,33 @@
       "id": "HotComics"
     },
     {
+      "name": "Hyakuro Translations",
+      "description": "Hyakuro Translations - JSON API source (hyakuro.net). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "HyakuroTranslations"
+    },
+    {
       "name": "I'm An Evil God",
       "description": "I'm An Evil God - MangaCatalog source (imanevilgod.com). Converted from keiyoushi.",
       "version": "1.4.7.1",
@@ -2381,6 +3476,60 @@
         }
       ],
       "id": "IMAnEvilGod"
+    },
+    {
+      "name": "I Roved Out",
+      "description": "I Roved Out - single webcomic source (irovedout.com). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "IRovedOut"
+    },
+    {
+      "name": "InfinityScans",
+      "description": "InfinityScans - JSON-API manga source (infinityscans.org). Converted from keiyoushi.",
+      "version": "1.4.10.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "InfinityScans"
     },
     {
       "name": "IsekaiScan.top (unoriginal)",
@@ -2416,6 +3565,27 @@
       "id": "IsekaiScanTopUnoriginal"
     },
     {
+      "name": "J-Novel",
+      "description": "J-Novel - manga source (j-novel.club). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "JNovel"
+    },
+    {
       "name": "Jinmangas",
       "description": "Jinmangas - Madara source (jinmangas.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -2447,6 +3617,27 @@
         }
       ],
       "id": "Jinmangas"
+    },
+    {
+      "name": "K Manga",
+      "description": "K Manga - JSON API source (kmanga.kodansha.com). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KManga"
     },
     {
       "name": "KSGroupScans",
@@ -2603,6 +3794,27 @@
       "id": "KaynScans"
     },
     {
+      "name": "keenspot",
+      "description": "keenspot - TwoKinds webcomic source (twokinds.keenspot.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Keenspot"
+    },
+    {
       "name": "Ken Scans",
       "description": "Ken Scans - Iken source (kencomics.com). Converted from keiyoushi.",
       "version": "1.4.33.1",
@@ -2657,6 +3869,54 @@
         }
       ],
       "id": "KewnScans"
+    },
+    {
+      "name": "Kill Six Billion Demons",
+      "description": "Kill Six Billion Demons - webcomic source (killsixbilliondemons.com). Converted from keiyoushi.",
+      "version": "1.4.6.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KillSixBillionDemons"
+    },
+    {
+      "name": "KingComiX",
+      "description": "KingComiX - HTML scraper source (kingcomix.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KingComiX"
     },
     {
       "name": "King of Shojo",
@@ -2725,6 +3985,33 @@
       "id": "KissmangaIn"
     },
     {
+      "name": "Kodansha",
+      "description": "Kodansha - JSON API source (kodansha.us). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Kodansha"
+    },
+    {
       "name": "KokoMangas",
       "description": "KokoMangas - Madara source (kokomangas.com). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -2791,6 +4078,33 @@
       "id": "KunMangaOnline"
     },
     {
+      "name": "KuraManga",
+      "description": "KuraManga - HTML/JSON scraper source (kuramanga.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "KuraManga"
+    },
+    {
       "name": "LHTranslation",
       "description": "LHTranslation - Madara source (lhtranslation.net). Converted from keiyoushi.",
       "version": "1.4.52.1",
@@ -2845,6 +4159,27 @@
         }
       ],
       "id": "LagoonScans"
+    },
+    {
+      "name": "Leslie&Victims",
+      "description": "Leslie&Victims - JSON API source (leslie-victims.pages.dev). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "LeslieVictims"
     },
     {
       "name": "LikeManga",
@@ -2934,6 +4269,27 @@
       "id": "LinkManga"
     },
     {
+      "name": "Loading Artist",
+      "description": "Loading Artist - webcomic source (loadingartist.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "LoadingArtist"
+    },
+    {
       "name": "Lua Scans",
       "description": "Lua Scans - HeanCms source (luacomic.org). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -2960,6 +4316,27 @@
         }
       ],
       "id": "LuaScans"
+    },
+    {
+      "name": "Luminare Translations",
+      "description": "Luminare Translations - JSON API source (luminaretranslations.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "LuminareTranslations"
     },
     {
       "name": "Luna Toons",
@@ -2993,6 +4370,54 @@
         }
       ],
       "id": "LunaToons"
+    },
+    {
+      "name": "LustToon",
+      "description": "LustToon - HTML/JSON-API source (lustoon.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "LustToon"
+    },
+    {
+      "name": "MLBB Lore",
+      "description": "MLBB Lore - JSON API source (play.mobilelegends.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MLBBLore"
     },
     {
       "name": "MadaraDex",
@@ -3054,6 +4479,27 @@
         }
       ],
       "id": "MadaraScans"
+    },
+    {
+      "name": "Madokami",
+      "description": "Madokami - HTML scraper source (manga.madokami.al). Converted from keiyoushi.",
+      "version": "1.4.13.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Madokami"
     },
     {
       "name": "Magus Manga",
@@ -3249,6 +4695,33 @@
       "id": "Manga18x"
     },
     {
+      "name": "Manga-Bay",
+      "description": "Manga-Bay - HTML scraper source (read.manga-bay.org). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaBay"
+    },
+    {
       "name": "MangaBlaze",
       "description": "MangaBlaze - Madara source (mangablaze.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -3344,6 +4817,33 @@
         }
       ],
       "id": "MangaCloud"
+    },
+    {
+      "name": "MangaDE",
+      "description": "MangaDE - JSON API source (mangade.io). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaDE"
     },
     {
       "name": "Manga Dass",
@@ -3487,6 +4987,61 @@
         }
       ],
       "id": "MangaDotNet"
+    },
+    {
+      "name": "Manga Drama",
+      "description": "Manga Drama - Madara source (mangadrama.com). Converted from keiyoushi.",
+      "version": "1.4.51.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [
+        {
+          "label": "Madara",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#2E7D32"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaDrama"
+    },
+    {
+      "name": "MangaFox",
+      "description": "MangaFox - HTML scraper source (fanfox.net). Converted from keiyoushi.",
+      "version": "1.4.9.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaFox"
     },
     {
       "name": "MangaFox.fun",
@@ -3822,6 +5377,33 @@
         }
       ],
       "id": "MangaHub"
+    },
+    {
+      "name": "MangaK",
+      "description": "MangaK - JSON API + Next.js scraper source (mangak.io). Converted from keiyoushi.",
+      "version": "1.4.30.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MangaK"
     },
     {
       "name": "MangaKa",
@@ -4436,6 +6018,27 @@
       "id": "Mangabat"
     },
     {
+      "name": "Mangack",
+      "description": "Mangack - WordPress (WP REST + HTML) source (mangack.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Mangack"
+    },
+    {
       "name": "Mangaforfree.com",
       "description": "Mangaforfree.com - Madara source (mangaforfree.com). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -4568,6 +6171,27 @@
       "id": "MangakakalotFun"
     },
     {
+      "name": "Mangamo",
+      "description": "Mangamo - Firebase/Firestore JSON API source (mangamo.com). Converted from keiyoushi.",
+      "version": "1.4.7.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Mangamo"
+    },
+    {
       "name": "Manganato",
       "description": "Manganato - MangaBox source (www.natomanga.com). Converted from keiyoushi.",
       "version": "1.4.18.1",
@@ -4655,6 +6279,33 @@
         }
       ],
       "id": "Mangatellers"
+    },
+    {
+      "name": "Mangatown",
+      "description": "Mangatown - HTML scraper source (www.mangatown.com). Converted from keiyoushi.",
+      "version": "1.4.10.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Mangatown"
     },
     {
       "name": "ManhuaFast",
@@ -4800,6 +6451,27 @@
         }
       ],
       "id": "ManhuaPlusUnoriginal"
+    },
+    {
+      "name": "Manhua Rush",
+      "description": "Manhua Rush - webcomic source (manhuarush.vercel.app). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ManhuaRush"
     },
     {
       "name": "ManhuaTop",
@@ -5050,6 +6722,33 @@
       "id": "Manhwa68"
     },
     {
+      "name": "ManhwaBuddy",
+      "description": "ManhwaBuddy - HTML scraper source (manhwabuddy.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ManhwaBuddy"
+    },
+    {
       "name": "Manhwa Comics",
       "description": "Manhwa Comics - Madara source (manhwacomics.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -5238,6 +6937,33 @@
       "id": "ManhwaNex"
     },
     {
+      "name": "ManhwaRead",
+      "description": "ManhwaRead - HTML scraper source (manhwaread.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ManhwaRead"
+    },
+    {
       "name": "Manhwa Reads",
       "description": "Manhwa Reads - Madara source (manhwareads.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -5304,6 +7030,33 @@
       "id": "ManhwaToon"
     },
     {
+      "name": "Manhwa XXL",
+      "description": "Manhwa XXL - HTML scraper source (hentaitnt.net). Converted from keiyoushi.",
+      "version": "1.4.6.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ManhwaXXL"
+    },
+    {
       "name": "ManhwaZ",
       "description": "ManhwaZ - ManhwaZ source (manhwaz.com). Converted from keiyoushi.",
       "version": "1.4.42.1",
@@ -5335,6 +7088,33 @@
         }
       ],
       "id": "ManhwaZ"
+    },
+    {
+      "name": "ManhwaZone",
+      "description": "ManhwaZone - HTML scraper source (manhwazone.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ManhwaZone"
     },
     {
       "name": "Manhwajoy",
@@ -5496,6 +7276,54 @@
       "id": "Manhwax"
     },
     {
+      "name": "Megatokyo",
+      "description": "Megatokyo - webcomic source (megatokyo.com). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Megatokyo"
+    },
+    {
+      "name": "Mehgazone",
+      "description": "Mehgazone - WordPress REST API webcomic source (mehgazone.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Mehgazone"
+    },
+    {
       "name": "MeiToon",
       "description": "MeiToon - Keyoapp source (meitoon.org). Converted from keiyoushi.",
       "version": "1.4.20.1",
@@ -5522,6 +7350,33 @@
         }
       ],
       "id": "MeiToon"
+    },
+    {
+      "name": "Mgread.io",
+      "description": "Mgread.io - HTML scraper source (mgread.io). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MgreadIo"
     },
     {
       "name": "Milftoon",
@@ -5641,6 +7496,33 @@
       "id": "MonochromeScans"
     },
     {
+      "name": "Multporn",
+      "description": "Multporn - HTML scraper source (multporn.net). Converted from keiyoushi.",
+      "version": "1.4.6.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Multporn"
+    },
+    {
       "name": "MurimScan",
       "description": "MurimScan - ZeistManga source (www.murimscans.site). Converted from keiyoushi.",
       "version": "1.4.49.1",
@@ -5672,6 +7554,87 @@
         }
       ],
       "id": "MurimScan"
+    },
+    {
+      "name": "MyAdultComics",
+      "description": "MyAdultComics - HTML scraper source (myadultcomics.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MyAdultComics"
+    },
+    {
+      "name": "MyHentaiComics",
+      "description": "MyHentaiComics - gallery/comic source (myhentaicomics.com). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MyHentaiComics"
+    },
+    {
+      "name": "MyHentaiGallery",
+      "description": "MyHentaiGallery - HTML scraper source (myhentaigallery.com). Converted from keiyoushi.",
+      "version": "1.4.9.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "MyHentaiGallery"
     },
     {
       "name": "Necro Scans",
@@ -5817,6 +7780,87 @@
       "id": "NineAnime"
     },
     {
+      "name": "NineHentai",
+      "description": "NineHentai - JSON-API gallery source (9hentai.so). Converted from keiyoushi.",
+      "version": "1.4.6.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NineHentai"
+    },
+    {
+      "name": "Ninekon",
+      "description": "Ninekon - JSON API manga source (app.ninekon.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Ninekon"
+    },
+    {
+      "name": "NixManga",
+      "description": "NixManga - JSON API source (nixmanga.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NixManga"
+    },
+    {
       "name": "NovelCrow",
       "description": "NovelCrow - Madara source (novelcrow.com). Converted from keiyoushi.",
       "version": "1.4.52.1",
@@ -5876,6 +7920,27 @@
         }
       ],
       "id": "NoxenScans"
+    },
+    {
+      "name": "Nux Scans",
+      "description": "Nux Scans - Blogger (Blogspot) HTML scraper source (nuxscans-comics.blogspot.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "NuxScans"
     },
     {
       "name": "Nyanu Kafe",
@@ -6027,6 +8092,33 @@
       "id": "Oglaf"
     },
     {
+      "name": "Oh Joy Sex Toy",
+      "description": "Oh Joy Sex Toy - webcomic source (www.ohjoysextoy.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "OhJoySexToy"
+    },
+    {
       "name": "Omega Scans",
       "description": "Omega Scans - HeanCms source (omegascans.org). Converted from keiyoushi.",
       "version": "1.4.50.1",
@@ -6058,6 +8150,33 @@
         }
       ],
       "id": "OmegaScans"
+    },
+    {
+      "name": "Omoi",
+      "description": "Omoi - JSON API manga source (www.omoi.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Omoi"
     },
     {
       "name": "OneManga.info",
@@ -6112,6 +8231,54 @@
         }
       ],
       "id": "OnePunchMangaOnline"
+    },
+    {
+      "name": "Only The Best Hentai",
+      "description": "Only The Best Hentai - HTML scraper source (onlythebesthentai.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "OnlyTheBestHentai"
+    },
+    {
+      "name": "oots",
+      "description": "The Order Of The Stick (OOTS) - webcomic source (giantitp.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Oots"
     },
     {
       "name": "Oppai Stream",
@@ -6268,6 +8435,27 @@
       "id": "Paritehaber"
     },
     {
+      "name": "Patch Friday",
+      "description": "Patch Friday - webcomic source (patchfriday.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "PatchFriday"
+    },
+    {
       "name": "Paw Manga",
       "description": "Paw Manga - Madara source (pawmanga.com). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -6334,6 +8522,54 @@
       "id": "Petrotechsociety"
     },
     {
+      "name": "Philia Scans",
+      "description": "Philia Scans - JSON API source (philiascans.org). Converted from keiyoushi.",
+      "version": "1.4.58.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "PhiliaScans"
+    },
+    {
+      "name": "PornComix",
+      "description": "PornComix - HTML scraper source (bestporncomix.com). Converted from keiyoushi.",
+      "version": "1.4.49.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "PornComix"
+    },
+    {
       "name": "Qi Scans",
       "description": "Qi Scans - EZManhwa source (qimanga.com). Converted from keiyoushi.",
       "version": "1.4.26.1",
@@ -6360,6 +8596,27 @@
         }
       ],
       "id": "QiScans"
+    },
+    {
+      "name": "Questionable Content",
+      "description": "Questionable Content - webcomic source (questionablecontent.net). Converted from keiyoushi.",
+      "version": "1.4.10.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "QuestionableContent"
     },
     {
       "name": "RD Scans",
@@ -6444,6 +8701,27 @@
         }
       ],
       "id": "RageScans"
+    },
+    {
+      "name": "Randowiz",
+      "description": "Randowiz - webcomic source (randowis.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Randowiz"
     },
     {
       "name": "Raven Scans",
@@ -6975,6 +9253,75 @@
       "id": "ReadTokyoGhoulReTokyoGhoulMangaOnline"
     },
     {
+      "name": "Read Vagabond Manga",
+      "description": "Read Vagabond Manga - JSON API source (readbagabondo.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ReadVagabondManga"
+    },
+    {
+      "name": "Real Life Comics",
+      "description": "Real Life Comics - webcomic source (reallifecomics.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RealLifeComics"
+    },
+    {
+      "name": "ReiManga",
+      "description": "ReiManga - JSON-API + Next.js RSC source (reimanga.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ReiManga"
+    },
+    {
       "name": "Renascans",
       "description": "Renascans - Iken source (renascans.net). Converted from keiyoushi.",
       "version": "1.4.23.1",
@@ -7062,6 +9409,54 @@
         }
       ],
       "id": "RestScans"
+    },
+    {
+      "name": "Revival Scans",
+      "description": "Revival Scans - Next.js (RSC) JSON source (revivalscans.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RevivalScans"
+    },
+    {
+      "name": "Rinko Comics",
+      "description": "Rinko Comics - HTML scraper source (rinkocomics.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RinkoComics"
     },
     {
       "name": "RitharScans",
@@ -7176,6 +9571,27 @@
       "id": "RokariComics"
     },
     {
+      "name": "Rolia Scan",
+      "description": "Rolia Scan - JSON API source (roliascan.com). Converted from keiyoushi.",
+      "version": "1.4.8.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "RoliaScan"
+    },
+    {
       "name": "Rose Squad Scans",
       "description": "Rose Squad Scans - Madara source (rosesquadscans.aishiteru.org). Converted from keiyoushi.",
       "version": "1.4.52.1",
@@ -7270,6 +9686,75 @@
       "id": "S2Manga"
     },
     {
+      "name": "SACACHISPA",
+      "description": "SACACHISPA - HTML/JSON-API webtoon source (sacachispa.site). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SACACHISPA"
+    },
+    {
+      "name": "SUPER MEGA",
+      "description": "SUPER MEGA - webcomic source (supermegacomics.com). Converted from keiyoushi.",
+      "version": "1.4.4.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SUPERMEGA"
+    },
+    {
+      "name": "Sabrina Online",
+      "description": "Sabrina Online - webcomic source (www.sabrina-online.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SabrinaOnline"
+    },
+    {
       "name": "Sana Scans",
       "description": "Sana Scans - Iken source (sanascans.com). Converted from keiyoushi.",
       "version": "1.4.23.1",
@@ -7298,6 +9783,27 @@
       "id": "SanaScans"
     },
     {
+      "name": "Saturday Morning Breakfast Comics",
+      "description": "Saturday Morning Breakfast Comics - webcomic source (smbc-comics.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SaturdayMorningBreakfastComics"
+    },
+    {
       "name": "ScansGG",
       "description": "ScansGG - custom source (scans.gg). Converted from keiyoushi.",
       "version": "1.4.1.1",
@@ -7323,6 +9829,27 @@
         }
       ],
       "id": "ScansGG"
+    },
+    {
+      "name": "Schlock Mercenary",
+      "description": "Schlock Mercenary - webcomic source (www.schlockmercenary.com). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SchlockMercenary"
     },
     {
       "name": "Scythe Scans",
@@ -7503,6 +10030,27 @@
       "id": "SleepyTranslations"
     },
     {
+      "name": "Solar and Sundry",
+      "description": "Solar and Sundry - single webcomic JSON-API source (sas.ewanb.me). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SolarAndSundry"
+    },
+    {
       "name": "Spmanhwa",
       "description": "Spmanhwa - Madara source (spmanhwa.online). Converted from keiyoushi.",
       "version": "1.4.51.1",
@@ -7529,6 +10077,33 @@
         }
       ],
       "id": "Spmanhwa"
+    },
+    {
+      "name": "SpyFakku",
+      "description": "SpyFakku - JSON API gallery source (hentalk.pw). Converted from keiyoushi.",
+      "version": "1.4.15.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SpyFakku"
     },
     {
       "name": "18 Porn Comic",
@@ -7684,6 +10259,33 @@
       "id": "StoneScape"
     },
     {
+      "name": "Sunshine Butterfly Scans",
+      "description": "Sunshine Butterfly Scans - JSON-API manga source (wings.sbs). Converted from keiyoushi.",
+      "version": "1.4.39.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "SunshineButterflyScans"
+    },
+    {
       "name": "Swords Comic",
       "description": "Swords Comic - custom source (swordscomic.com). Converted from keiyoushi.",
       "version": "1.4.5.1",
@@ -7754,6 +10356,60 @@
       "id": "TCBScansUnoriginal"
     },
     {
+      "name": "Tapas",
+      "description": "Tapas - webcomic/HTML+JSON-API source (tapas.io). Converted from keiyoushi.",
+      "version": "1.4.24.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Tapas"
+    },
+    {
+      "name": "Team Shadowi",
+      "description": "Team Shadowi - Next.js JSON/RSC source (team-shadowi.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "TeamShadowi"
+    },
+    {
       "name": "Temple Scan",
       "description": "Temple Scan - custom source (templetoons.com). Converted from keiyoushi.",
       "version": "1.4.49.1",
@@ -7779,6 +10435,33 @@
         }
       ],
       "id": "TempleScan"
+    },
+    {
+      "name": "The Blank",
+      "description": "The Blank - JSON API source (theblank.net). Converted from keiyoushi.",
+      "version": "1.4.56.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "TheBlank"
     },
     {
       "name": "The Duck Webcomics",
@@ -7808,6 +10491,27 @@
       "id": "TheDuckWebcomics"
     },
     {
+      "name": "The Property of Hate",
+      "description": "The Property of Hate - webcomic source (jolleycomics.com). Converted from keiyoushi.",
+      "version": "1.4.5.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ThePropertyOfHate"
+    },
+    {
       "name": "TimelessToons",
       "description": "TimelessToons - Keyoapp source (timelesstoons.org). Converted from keiyoushi.",
       "version": "1.4.20.1",
@@ -7834,6 +10538,33 @@
         }
       ],
       "id": "TimelessToons"
+    },
+    {
+      "name": "TodayManga",
+      "description": "TodayManga - HTML scraper source (todaymanga.com). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "TodayManga"
     },
     {
       "name": "Toon18",
@@ -8189,6 +10920,48 @@
       "id": "Utoon"
     },
     {
+      "name": "VIZ",
+      "description": "VIZ - official manga reader source (viz.com). Converted from keiyoushi.",
+      "version": "1.4.25.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "VIZ"
+    },
+    {
+      "name": "Valir Scans",
+      "description": "Valir Scans - Next.js (RSC) HTML source (valirscans.org). Converted from keiyoushi.",
+      "version": "1.4.22.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "ValirScans"
+    },
+    {
       "name": "Vanilla Scans",
       "description": "Vanilla Scans - Iken source (vanillascans.org). Converted from keiyoushi.",
       "version": "1.4.23.1",
@@ -8217,6 +10990,27 @@
       "id": "VanillaScans"
     },
     {
+      "name": "vgperson",
+      "description": "vgperson - HTML scraper source (vgperson.com). Converted from keiyoushi.",
+      "version": "1.4.7.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Vgperson"
+    },
+    {
       "name": "Violet Scans",
       "description": "Violet Scans - MangaThemesia source (violetscans.org). Converted from keiyoushi.",
       "version": "1.4.35.1",
@@ -8243,6 +11037,48 @@
         }
       ],
       "id": "VioletScans"
+    },
+    {
+      "name": "Vortex Scans",
+      "description": "Vortex Scans - JSON API source (vortexscans.org). Converted from keiyoushi.",
+      "version": "1.4.61.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "VortexScans"
+    },
+    {
+      "name": "Voyce.Me",
+      "description": "Voyce.Me - GraphQL API source (voyce.me). Converted from keiyoushi.",
+      "version": "1.4.6.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "VoyceMe"
     },
     {
       "name": "VyvyManga",
@@ -8303,6 +11139,90 @@
         }
       ],
       "id": "VyvyMangaOrg"
+    },
+    {
+      "name": "War For Rayuba",
+      "description": "War For Rayuba - community art battle webcomic source (xrabohrok.github.io/WarMap). Converted from keiyoushi.",
+      "version": "1.4.3.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "WarForRayuba"
+    },
+    {
+      "name": "WebNovel",
+      "description": "WebNovel - JSON API comic source (www.webnovel.com). Converted from keiyoushi.",
+      "version": "1.4.13.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "WebNovel"
+    },
+    {
+      "name": "Webcomics",
+      "description": "Webcomics - HTML scraper source (webcomicsapp.com). Converted from keiyoushi.",
+      "version": "1.4.10.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Webcomics"
+    },
+    {
+      "name": "Webdex Scans",
+      "description": "Webdex Scans - HTML/JSON-API source (webdexscans.com). Converted from keiyoushi.",
+      "version": "1.4.52.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "WebdexScans"
     },
     {
       "name": "WebtoonScan",
@@ -8543,6 +11463,54 @@
       "id": "WuxiaWorld"
     },
     {
+      "name": "XOXO Comics",
+      "description": "XOXO Comics - HTML scraper source (xoxocomic.com). Converted from keiyoushi.",
+      "version": "1.4.13.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "XOXOComics"
+    },
+    {
+      "name": "XlecX",
+      "description": "XlecX - HTML gallery source (xlecx.one). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "XlecX"
+    },
+    {
       "name": "XoManga",
       "description": "XoManga - custom source (xomanga.site). Converted from keiyoushi.",
       "version": "1.4.1.1",
@@ -8568,6 +11536,27 @@
         }
       ],
       "id": "XoManga"
+    },
+    {
+      "name": "Xscans",
+      "description": "Xscans - JSON API manga source (xscans.site). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Xscans"
     },
     {
       "name": "YakshaComics",
@@ -8596,6 +11585,33 @@
         }
       ],
       "id": "YakshaComics"
+    },
+    {
+      "name": "YaoiHot",
+      "description": "YaoiHot - HTML scraper source (yaoihot.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "YaoiHot"
     },
     {
       "name": "YaoiScan",
@@ -8631,6 +11647,33 @@
       "id": "YaoiScan"
     },
     {
+      "name": "YaoiToon",
+      "description": "YaoiToon - HTML scraper source (yaoitoon.net). Converted from keiyoushi.",
+      "version": "1.4.48.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "MATURE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [
+        {
+          "label": "Mature",
+          "textColor": "#FFFFFF",
+          "backgroundColor": "#C62828"
+        }
+      ],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "YaoiToon"
+    },
+    {
       "name": "Yaoihub",
       "description": "Yaoihub - Madara source (yaoihub.net). Converted from keiyoushi.",
       "version": "1.4.53.1",
@@ -8662,6 +11705,27 @@
         }
       ],
       "id": "Yaoihub"
+    },
+    {
+      "name": "Yorai",
+      "description": "Yorai - Next.js manga source (yorai.io). Converted from keiyoushi.",
+      "version": "1.4.2.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "Converted from keiyoushi"
+        }
+      ],
+      "id": "Yorai"
     },
     {
       "name": "Zazamanga",
