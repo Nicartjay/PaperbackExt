@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-22T10:11:36.057Z",
+  "buildTime": "2026-06-22T10:34:28.263Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -1215,7 +1215,7 @@
     {
       "name": "Comix",
       "description": "Comix - HTML scraper source (comix.to). Converted from keiyoushi.",
-      "version": "1.4.31.23",
+      "version": "1.4.31.24",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
