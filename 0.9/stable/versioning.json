@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-22T13:26:18.629Z",
+  "buildTime": "2026-06-22T23:26:33.533Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -4963,7 +4963,7 @@
     {
       "name": "Mangadotnet",
       "description": "Mangadotnet - custom source (mangadot.net). Converted from keiyoushi.",
-      "version": "1.4.11.1",
+      "version": "1.4.11.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
