@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-21T23:42:36.087Z",
+  "buildTime": "2026-06-22T00:38:08.437Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -1215,7 +1215,7 @@
     {
       "name": "Comix",
       "description": "Comix - HTML scraper source (comix.to). Converted from keiyoushi.",
-      "version": "1.4.31.3",
+      "version": "1.4.31.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3621,7 +3621,7 @@
     {
       "name": "K Manga",
       "description": "K Manga - JSON API source (kmanga.kodansha.com). Converted from keiyoushi.",
-      "version": "1.4.5.3",
+      "version": "1.4.5.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10922,7 +10922,7 @@
     {
       "name": "VIZ",
       "description": "VIZ - official manga reader source (viz.com). Converted from keiyoushi.",
-      "version": "1.4.25.3",
+      "version": "1.4.25.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
