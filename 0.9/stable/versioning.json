@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-23T23:16:00.710Z",
+  "buildTime": "2026-06-23T23:36:33.868Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -2562,7 +2562,7 @@
     {
       "name": "Gourmet Scans",
       "description": "Gourmet Scans - Madara source (gourmetsupremacy.com). Converted from keiyoushi.",
-      "version": "1.4.51.5",
+      "version": "1.4.51.6",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
