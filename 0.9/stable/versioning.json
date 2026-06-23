@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-23T12:56:22.064Z",
+  "buildTime": "2026-06-23T13:18:39.166Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -4205,7 +4205,7 @@
     {
       "name": "Lily Manga",
       "description": "Lily Manga - Madara source (lilymanga.net). Converted from keiyoushi.",
-      "version": "1.4.58.2",
+      "version": "1.4.58.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
