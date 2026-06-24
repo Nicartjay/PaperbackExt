@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-24T14:29:33.605Z",
+  "buildTime": "2026-06-24T14:37:23.910Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -2201,7 +2201,7 @@
     {
       "name": "Flame Comics",
       "description": "Flame Comics - custom source (flamecomics.xyz). Converted from keiyoushi.",
-      "version": "1.4.49.2",
+      "version": "1.4.49.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
