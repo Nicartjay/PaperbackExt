@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-25T13:33:12.811Z",
+  "buildTime": "2026-06-25T13:39:57.091Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -4483,7 +4483,7 @@
     {
       "name": "Madokami",
       "description": "Madokami - HTML scraper source (manga.madokami.al). Converted from keiyoushi.",
-      "version": "1.4.13.1",
+      "version": "1.4.13.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4491,7 +4491,8 @@
         4,
         64,
         1,
-        16
+        16,
+        32
       ],
       "badges": [],
       "developers": [
