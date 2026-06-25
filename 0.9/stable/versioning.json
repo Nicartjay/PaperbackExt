@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-25T14:51:39.023Z",
+  "buildTime": "2026-06-25T23:31:18.799Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -1753,7 +1753,7 @@
     {
       "name": "Dynasty",
       "description": "Dynasty - JSON-API manga source (dynasty-scans.com). Converted from keiyoushi.",
-      "version": "1.4.30.3",
+      "version": "1.4.30.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
