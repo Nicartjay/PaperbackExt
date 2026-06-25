@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-25T00:33:41.495Z",
+  "buildTime": "2026-06-25T12:45:27.137Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -10439,7 +10439,7 @@
     {
       "name": "The Blank",
       "description": "The Blank - JSON API source (theblank.net). Converted from keiyoushi.",
-      "version": "1.4.56.9",
+      "version": "1.4.56.10",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
