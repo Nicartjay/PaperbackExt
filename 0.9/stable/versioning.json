@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-26T13:42:39.772Z",
+  "buildTime": "2026-06-26T13:47:08.817Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -12497,7 +12497,7 @@
     {
       "name": "Weeb Central",
       "description": "Weeb Central - custom source (weebcentral.com). Converted from keiyoushi.",
-      "version": "1.4.22.1",
+      "version": "1.4.22.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
