@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-26T00:49:36.058Z",
+  "buildTime": "2026-06-26T01:03:08.781Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -11731,7 +11731,7 @@
     {
       "name": "ToonGod",
       "description": "ToonGod - Madara source (www.toongod.org). Converted from keiyoushi.",
-      "version": "1.4.56.6",
+      "version": "1.4.56.7",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
