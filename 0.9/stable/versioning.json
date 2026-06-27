@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-26T13:56:07.238Z",
+  "buildTime": "2026-06-27T03:12:50.432Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -6019,7 +6019,7 @@
     {
       "name": "MangaKatana",
       "description": "MangaKatana - custom source (mangakatana.com). Converted from keiyoushi.",
-      "version": "1.4.12.1",
+      "version": "1.4.12.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
