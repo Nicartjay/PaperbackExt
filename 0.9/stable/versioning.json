@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-27T04:11:35.853Z",
+  "buildTime": "2026-06-27T04:17:59.031Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -5407,7 +5407,7 @@
     {
       "name": "Manga Demon",
       "description": "Manga Demon - custom source (demonicscans.org). Converted from keiyoushi.",
-      "version": "1.4.19.3",
+      "version": "1.4.19.4",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
