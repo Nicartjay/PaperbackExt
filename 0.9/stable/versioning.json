@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-27T15:00:27.107Z",
+  "buildTime": "2026-06-27T15:06:16.576Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -4107,7 +4107,7 @@
     {
       "name": "KaliScan",
       "description": "KaliScan - MadTheme source (kaliscan.com). Converted from keiyoushi.",
-      "version": "1.4.25.2",
+      "version": "1.4.25.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
