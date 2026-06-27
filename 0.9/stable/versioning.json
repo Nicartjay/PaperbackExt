@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-27T06:42:00.420Z",
+  "buildTime": "2026-06-27T06:49:09.992Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -6624,7 +6624,7 @@
     {
       "name": "Mangabat",
       "description": "Mangabat - MangaBox source (www.mangabats.com). Converted from keiyoushi.",
-      "version": "1.4.20.5",
+      "version": "1.4.20.6",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6756,7 +6756,7 @@
     {
       "name": "Mangakakalot",
       "description": "Mangakakalot - MangaBox source (www.mangakakalot.gg). Converted from keiyoushi.",
-      "version": "1.4.21.5",
+      "version": "1.4.21.6",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6852,7 +6852,7 @@
     {
       "name": "Manganato",
       "description": "Manganato - MangaBox source (www.natomanga.com). Converted from keiyoushi.",
-      "version": "1.4.18.5",
+      "version": "1.4.18.6",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
