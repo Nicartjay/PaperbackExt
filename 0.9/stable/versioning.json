@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-27T08:27:08.097Z",
+  "buildTime": "2026-06-27T08:30:56.862Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -9899,7 +9899,7 @@
     {
       "name": "ReadComicOnline",
       "description": "ReadComicOnline - custom source (readcomiconline.li). Converted from keiyoushi.",
-      "version": "1.4.43.9",
+      "version": "1.4.43.10",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
