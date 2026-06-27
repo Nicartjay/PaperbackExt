@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-27T03:20:31.430Z",
+  "buildTime": "2026-06-27T03:25:36.083Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.91",
     "types": "1.0.0-alpha.91"
@@ -5232,7 +5232,7 @@
     {
       "name": "MangaBlaze",
       "description": "MangaBlaze - Madara source (mangablaze.com). Converted from keiyoushi.",
-      "version": "1.4.51.2",
+      "version": "1.4.51.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
