@@ -1,8 +1,8 @@
 {
-  "buildTime": "2026-06-27T04:29:17.173Z",
+  "buildTime": "2026-06-27T06:33:15.052Z",
   "builtWith": {
-    "toolchain": "1.0.0-alpha.91",
-    "types": "1.0.0-alpha.91"
+    "toolchain": "1.0.0-alpha.92",
+    "types": "1.0.0-alpha.92"
   },
   "repository": {
     "name": "paperbackext",
