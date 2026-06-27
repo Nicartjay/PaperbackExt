@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-27T13:55:50.343Z",
+  "buildTime": "2026-06-27T14:14:01.568Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -695,7 +695,7 @@
     {
       "name": "BatCave",
       "description": "BatCave - custom source (batcave.biz). Converted from keiyoushi.",
-      "version": "1.4.6.5",
+      "version": "1.4.6.6",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
