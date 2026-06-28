@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-28T08:45:23.496Z",
+  "buildTime": "2026-06-28T08:50:18.190Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -364,7 +364,7 @@
     {
       "name": "Art Lapsa",
       "description": "Art Lapsa - Keyoapp source (artlapsa.com). Converted from keiyoushi.",
-      "version": "1.4.25.1",
+      "version": "1.4.25.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -456,7 +456,7 @@
     {
       "name": "Asmodeus Scans",
       "description": "Asmodeus Scans - Keyoapp source (asmotoon.com). Converted from keiyoushi.",
-      "version": "1.4.22.1",
+      "version": "1.4.22.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -2181,7 +2181,7 @@
     {
       "name": "Eris Scans",
       "description": "Eris Scans - Keyoapp source (erisscans.com). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -2696,7 +2696,7 @@
     {
       "name": "Genz Toons",
       "description": "Genz Toons - Keyoapp source (genztoons.org). Converted from keiyoushi.",
-      "version": "1.4.53.1",
+      "version": "1.4.53.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -2901,7 +2901,7 @@
     {
       "name": "Grim Scans",
       "description": "Grim Scans - Keyoapp source (grimscans.com). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4072,7 +4072,7 @@
     {
       "name": "Kaizen Scan",
       "description": "Kaizen Scan - Keyoapp source (kaizenscan.com). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4260,7 +4260,7 @@
     {
       "name": "Kewn Scans",
       "description": "Kewn Scans - Keyoapp source (kewnscans.org). Converted from keiyoushi.",
-      "version": "1.4.21.1",
+      "version": "1.4.21.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4810,7 +4810,7 @@
     {
       "name": "Luna Toons",
       "description": "Luna Toons - Keyoapp source (lunatoons.org). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8099,7 +8099,7 @@
     {
       "name": "MeiToon",
       "description": "MeiToon - Keyoapp source (meitoon.org). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -8196,7 +8196,7 @@
     {
       "name": "Mist Scans",
       "description": "Mist Scans - Keyoapp source (mistscans.com). Converted from keiyoushi.",
-      "version": "1.4.21.1",
+      "version": "1.4.21.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -8445,7 +8445,7 @@
     {
       "name": "Necro Scans",
       "description": "Necro Scans - Keyoapp source (necroscans.com). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -8784,7 +8784,7 @@
     {
       "name": "Nyanu Kafe",
       "description": "Nyanu Kafe - Keyoapp source (nyanukafe.com). Converted from keiyoushi.",
-      "version": "1.4.21.1",
+      "version": "1.4.21.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -8815,7 +8815,7 @@
     {
       "name": "Nyra Scans",
       "description": "Nyra Scans - Keyoapp source (nyrascans.com). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -9255,7 +9255,7 @@
     {
       "name": "Paradise Scans",
       "description": "Paradise Scans - Keyoapp source (paradisescans.com). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -10465,7 +10465,7 @@
     {
       "name": "RitharScans",
       "description": "RitharScans - Keyoapp source (ritharscans.com). Converted from keiyoushi.",
-      "version": "1.4.23.1",
+      "version": "1.4.23.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10649,7 +10649,7 @@
     {
       "name": "Ryumanga",
       "description": "Ryumanga - Keyoapp source (ryumanga.org). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11001,7 +11001,7 @@
     {
       "name": "Siren Scans",
       "description": "Siren Scans - Keyoapp source (sirenscans.com). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11635,7 +11635,7 @@
     {
       "name": "TimelessToons",
       "description": "TimelessToons - Keyoapp source (timelesstoons.org). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -12626,7 +12626,7 @@
     {
       "name": "Writer Scans",
       "description": "Writer Scans - Keyoapp source (writerscans.com). Converted from keiyoushi.",
-      "version": "1.4.20.1",
+      "version": "1.4.20.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
