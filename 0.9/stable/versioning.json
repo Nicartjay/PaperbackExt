@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-28T06:40:18.453Z",
+  "buildTime": "2026-06-28T06:42:47.083Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -4011,7 +4011,7 @@
     {
       "name": "K Manga",
       "description": "K Manga - JSON API source (kmanga.kodansha.com). Converted from keiyoushi.",
-      "version": "1.4.5.6",
+      "version": "1.4.5.7",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
