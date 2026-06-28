@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-28T10:32:08.702Z",
+  "buildTime": "2026-06-28T10:33:33.671Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -3758,7 +3758,7 @@
     {
       "name": "HotComics",
       "description": "HotComics - HotComics source (hotcomics.me). Converted from keiyoushi.",
-      "version": "1.4.2.2",
+      "version": "1.4.2.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
