@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-28T14:07:12.741Z",
+  "buildTime": "2026-06-28T14:11:53.440Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -3342,7 +3342,7 @@
     {
       "name": "HentaiRead",
       "description": "HentaiRead - Madara source (hentairead.com). Converted from keiyoushi.",
-      "version": "1.4.61.6",
+      "version": "1.4.61.7",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
