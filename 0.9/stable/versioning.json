@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-28T01:11:50.097Z",
+  "buildTime": "2026-06-28T01:17:07.572Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -1787,7 +1787,7 @@
     {
       "name": "Diva Scans",
       "description": "Diva Scans - Iken source (divatoon.com). Converted from keiyoushi.",
-      "version": "1.4.23.1",
+      "version": "1.4.23.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3612,7 +3612,7 @@
     {
       "name": "Hijala Scans",
       "description": "Hijala Scans - Iken source (en-hijala.com). Converted from keiyoushi.",
-      "version": "1.4.23.1",
+      "version": "1.4.23.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -3679,7 +3679,7 @@
     {
       "name": "Hive Scans",
       "description": "Hive Scans - Iken source (hivetoons.org). Converted from keiyoushi.",
-      "version": "1.4.65.1",
+      "version": "1.4.65.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4173,7 +4173,7 @@
     {
       "name": "Kayn Scans",
       "description": "Kayn Scans - Iken source (kaynscan.org). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.26.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4228,7 +4228,7 @@
     {
       "name": "Ken Scans",
       "description": "Ken Scans - Iken source (kencomics.com). Converted from keiyoushi.",
-      "version": "1.4.33.1",
+      "version": "1.4.33.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4991,7 +4991,7 @@
     {
       "name": "Magus Manga",
       "description": "Magus Manga - Iken source (magustoon.org). Converted from keiyoushi.",
-      "version": "1.4.69.1",
+      "version": "1.4.69.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -8850,7 +8850,7 @@
     {
       "name": "Nyx Scans",
       "description": "Nyx Scans - Iken source (nyxscans.com). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.26.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9223,7 +9223,7 @@
     {
       "name": "Orion Scans",
       "description": "Orion Scans - Iken source (orion-scans.com). Converted from keiyoushi.",
-      "version": "1.4.23.1",
+      "version": "1.4.23.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10312,7 +10312,7 @@
     {
       "name": "Renascans",
       "description": "Renascans - Iken source (renascans.net). Converted from keiyoushi.",
-      "version": "1.4.23.1",
+      "version": "1.4.23.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10793,7 +10793,7 @@
     {
       "name": "Sana Scans",
       "description": "Sana Scans - Iken source (sanascans.com). Converted from keiyoushi.",
-      "version": "1.4.23.1",
+      "version": "1.4.23.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -12129,7 +12129,7 @@
     {
       "name": "Vanilla Scans",
       "description": "Vanilla Scans - Iken source (vanillascans.org). Converted from keiyoushi.",
-      "version": "1.4.23.1",
+      "version": "1.4.23.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
