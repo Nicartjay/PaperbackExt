@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-29T13:34:05.082Z",
+  "buildTime": "2026-06-29T13:41:40.183Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -1672,7 +1672,7 @@
     {
       "name": "Death Toll Scans",
       "description": "Death Toll Scans - FoolSlide source (reader.deathtollscans.net). Converted from keiyoushi.",
-      "version": "1.4.5.2",
+      "version": "1.4.5.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -6920,7 +6920,7 @@
     {
       "name": "Mangatellers",
       "description": "Mangatellers - FoolSlide source (reader.mangatellers.gr). Converted from keiyoushi.",
-      "version": "1.4.5.2",
+      "version": "1.4.5.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
