@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-06-29T13:54:31.351Z",
+  "buildTime": "2026-06-30T00:37:51.797Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -235,7 +235,7 @@
     {
       "name": "Aqua Manga",
       "description": "Aqua Manga - Madara source (aquareader.org). Converted from keiyoushi.",
-      "version": "1.4.62.5",
+      "version": "1.4.64.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -5499,7 +5499,7 @@
     {
       "name": "Mangadotnet",
       "description": "Mangadotnet - custom source (mangadot.net). Converted from keiyoushi.",
-      "version": "1.4.11.2",
+      "version": "1.4.13.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
