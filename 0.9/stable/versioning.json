@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-07-04T10:11:08.583Z",
+  "buildTime": "2026-07-04T10:39:39.081Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -5264,7 +5264,7 @@
     {
       "name": "MangaBolt",
       "description": "MangaBolt - custom source (mangabolt.com). Converted from keiyoushi.",
-      "version": "1.4.1.1",
+      "version": "1.4.1.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
