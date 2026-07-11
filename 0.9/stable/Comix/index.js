@@ -25,7 +25,7 @@ var source=(function(e){Object.defineProperty(e,Symbol.toStringTag,{value:`Modul
 })();
 `);if(typeof t!=`string`||!t)return;let n;try{n=JSON.parse(t)}catch{return}return this.findBrowseItems({cap:n})}async captureChapters(e){let t=await this.runProxiedWebView(e,`
 (function(){
-  var items=[], seen=new Set(), totalPages=null, submitted=false, doneResolve;
+  var items=[], seen=new Set(), submitted=false, doneResolve;
   // Lock onto the FIRST manga whose chapter list we observe. The detail page's
   // own chapter list loads first; related/recommended lists (a DIFFERENT
   // mangaId) load afterwards and previously leaked in as duplicate chapters.
@@ -37,11 +37,22 @@ var source=(function(e){Object.defineProperty(e,Symbol.toStringTag,{value:`Modul
   var idleTimer;
   function armIdle(){ if(idleTimer) clearTimeout(idleTimer); idleTimer=setTimeout(submit, 20000); }
   armIdle();
-  function gotoNext(){
+  // The Next control isn't reliably an [aria-label*=Next] button: it may carry
+  // the label in title/textContent, or be a bare numbered button (page+1). Scan
+  // all enabled footer buttons and match any of those forms.
+  function findNextButton(page){
+    var buttons=[].slice.call(document.querySelectorAll(".mchap-foot button")).filter(function(b){ return !b.disabled; });
+    var byLabel=buttons.find(function(b){
+      var label=[b.getAttribute("aria-label"), b.getAttribute("title"), b.textContent].filter(Boolean).join(" ");
+      return /\\bnext\\b/i.test(label);
+    });
+    return byLabel || buttons.find(function(b){ return Number((b.textContent||"").trim())===page+1; });
+  }
+  function gotoNext(page){
     var tries=0;
     var iv=setInterval(function(){
-      var btn=document.querySelector(".mchap-foot button[aria-label*=Next]");
-      if(btn && !btn.disabled){ btn.click(); clearInterval(iv); }
+      var btn=findNextButton(page);
+      if(btn){ btn.click(); clearInterval(iv); }
       else if(++tries>50){ clearInterval(iv); submit(); }
     },100);
   }
@@ -55,16 +66,17 @@ var source=(function(e){Object.defineProperty(e,Symbol.toStringTag,{value:`Modul
         var payloadMangaId=parsed.result.items[0].mangaId;
         if(lockedMangaId===null && payloadMangaId!==undefined) lockedMangaId=String(payloadMangaId);
         if(lockedMangaId===null || payloadMangaId===undefined || String(payloadMangaId)===lockedMangaId){
-          var meta=parsed.result.meta || parsed.result.pagination;
-          var page=(meta && meta.page) || 1;
+          var meta=parsed.result.meta || parsed.result.pagination || {};
+          var page=meta.page || 1;
+          var lastPage=meta.lastPage || meta.last_page || page;
+          var hasNext=meta.hasNext || page<lastPage;
           if(!seen.has(page)){
             seen.add(page);
             for(var i=0;i<parsed.result.items.length;i++){
               var it=parsed.result.items[i];
               if(lockedMangaId===null || it.mangaId===undefined || String(it.mangaId)===lockedMangaId) items.push(it);
             }
-            if(totalPages===null && meta && typeof meta.lastPage==="number") totalPages=meta.lastPage;
-            if(totalPages!==null && page<totalPages){ armIdle(); gotoNext(); } else submit();
+            if(hasNext){ armIdle(); gotoNext(page); } else submit();
           }
         }
       }
