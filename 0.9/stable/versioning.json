@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-07-11T11:19:24.057Z",
+  "buildTime": "2026-07-11T11:34:32.489Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -3150,7 +3150,7 @@
     {
       "name": "HentaiHere",
       "description": "HentaiHere - HTML scraper source (hentaihere.com). Converted from keiyoushi.",
-      "version": "1.4.7.1",
+      "version": "1.4.7.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
