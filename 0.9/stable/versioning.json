@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-07-12T09:29:48.590Z",
+  "buildTime": "2026-07-12T09:57:59.700Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -12529,7 +12529,7 @@
     {
       "name": "XOXO Comics",
       "description": "XOXO Comics - HTML scraper source (xoxocomic.com). Converted from keiyoushi.",
-      "version": "1.4.13.1",
+      "version": "1.4.13.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
