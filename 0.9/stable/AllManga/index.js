@@ -13,15 +13,29 @@ Alternative Titles:
 `)}let a=n.authors&&n.authors.length>0?n.authors[0].trim():void 0,o=[...n.genres??[],...n.tags??[]],s=o.length>0?[{id:`genres`,title:`Genres`,tags:o.map(e=>({id:e.toLowerCase().replace(/\s+/g,`-`),title:e}))}]:[];return{mangaId:e,mangaInfo:{primaryTitle:n.englishName||n.name,secondaryTitles:[],thumbnailUrl:this.parseThumbnailUrl(n.thumbnail),author:a,artist:a,synopsis:r,contentRating:we.MATURE,status:this.parseStatus(n.status),tagGroups:s,shareUrl:`${Yu}/manga/${t}`}}}async getChapters(e){let t=this.idFromMangaId(e.mangaId),n=await this.fetchGraphQL(`query ($id: String!, $showId: String!) { manga(_id: $id) { _id name availableChaptersDetail } episodeInfos(showId: $showId, episodeNumStart: 0, episodeNumEnd: 9999) { episodeIdNum notes uploadDates } }`,{id:t,showId:`manga@${t}`}),r=this.titleToSlug(n.manga.name),i=n.manga.availableChaptersDetail?.sub??[],a=new Map;for(let e of n.episodeInfos??[])a.set(String(e.episodeIdNum),e);let o=[];for(let n of i){let i=a.get(String(n)),s=i?.notes?.trim()??``,c=`Chapter ${n}`;s.length>0&&!/\d/.test(s)&&(c+=`: ${s}`);let l=`/read/${t}/${r}/chapter-${n}-sub`;o.push({chapterId:this.toSafeId(l),sourceManga:e,title:c,volume:0,chapNum:parseFloat(n)||0,publishDate:this.parseDate(i?.uploadDates?.sub),langCode:`🇬🇧`})}return o}async getChapterDetails(e){let t=this.chapterShareUrl(e.chapterId),[n,r]=await Application.scheduleRequest({url:t,method:`GET`});if(n.status===404)throw Error(`Content not found`);let i=Application.arrayBufferToUTF8String(r),a=await Application.executeInWebView({source:{html:i,baseUrl:t,loadCSS:!1,loadImages:!1},inject:`
       (function(){
         window.__cap = null;
-        var orig = JSON.parse;
-        JSON.parse = function(text){
-          var obj = orig.apply(this, arguments);
+        var capture = function(obj){
           try {
             if (obj && obj.data && obj.data.chapterPages) { window.__cap = obj.data; }
             else if (obj && obj.chapterPages) { window.__cap = obj; }
           } catch(e){}
+        };
+        var orig = JSON.parse;
+        JSON.parse = function(text){
+          var obj = orig.apply(this, arguments);
+          capture(obj);
           return obj;
         };
+        // Upstream #18050: the site may read the GraphQL payload through
+        // Response.json() (which never goes through JSON.parse), so hook it too.
+        try {
+          var originalJson = Response.prototype.json;
+          Response.prototype.json = function(){
+            return originalJson.call(this).then(function(data){
+              capture(data);
+              return data;
+            });
+          };
+        } catch(e){}
       })();
       new Promise(function(resolve){
         var start = Date.now();
