@@ -10,7 +10,15 @@ var source=(function(e){Object.defineProperty(e,Symbol.toStringTag,{value:`Modul
 
 Alternative Titles:
 `;r+=e+i.map(e=>`\u2022 ${e.trim()}`).join(`
-`)}let a=n.authors&&n.authors.length>0?n.authors[0].trim():void 0,o=[...n.genres??[],...n.tags??[]],s=o.length>0?[{id:`genres`,title:`Genres`,tags:o.map(e=>({id:e.toLowerCase().replace(/\s+/g,`-`),title:e}))}]:[];return{mangaId:e,mangaInfo:{primaryTitle:n.englishName||n.name,secondaryTitles:[],thumbnailUrl:this.parseThumbnailUrl(n.thumbnail),author:a,artist:a,synopsis:r,contentRating:we.MATURE,status:this.parseStatus(n.status),tagGroups:s,shareUrl:`${Yu}/manga/${t}`}}}async getChapters(e){let t=this.idFromMangaId(e.mangaId),n=await this.fetchGraphQL(`query ($id: String!, $showId: String!) { manga(_id: $id) { _id name availableChaptersDetail } episodeInfos(showId: $showId, episodeNumStart: 0, episodeNumEnd: 9999) { episodeIdNum notes uploadDates } }`,{id:t,showId:`manga@${t}`}),r=this.titleToSlug(n.manga.name),i=n.manga.availableChaptersDetail?.sub??[],a=new Map;for(let e of n.episodeInfos??[])a.set(String(e.episodeIdNum),e);let o=[];for(let n of i){let i=a.get(String(n)),s=i?.notes?.trim()??``,c=`Chapter ${n}`;s.length>0&&!/\d/.test(s)&&(c+=`: ${s}`);let l=`/read/${t}/${r}/chapter-${n}-sub`;o.push({chapterId:this.toSafeId(l),sourceManga:e,title:c,volume:0,chapNum:parseFloat(n)||0,publishDate:this.parseDate(i?.uploadDates?.sub),langCode:`🇬🇧`})}return o}async getChapterDetails(e){let t=this.chapterShareUrl(e.chapterId),[n,r]=await Application.scheduleRequest({url:t,method:`GET`});if(n.status===404)throw Error(`Content not found`);let i=Application.arrayBufferToUTF8String(r),a=await Application.executeInWebView({source:{html:i,baseUrl:t,loadCSS:!1,loadImages:!1},inject:`
+`)}let a=n.authors&&n.authors.length>0?n.authors[0].trim():void 0,o=[...n.genres??[],...n.tags??[]],s=o.length>0?[{id:`genres`,title:`Genres`,tags:o.map(e=>({id:e.toLowerCase().replace(/\s+/g,`-`),title:e}))}]:[];return{mangaId:e,mangaInfo:{primaryTitle:n.englishName||n.name,secondaryTitles:[],thumbnailUrl:this.parseThumbnailUrl(n.thumbnail),author:a,artist:a,synopsis:r,contentRating:we.MATURE,status:this.parseStatus(n.status),tagGroups:s,shareUrl:`${Yu}/manga/${t}`}}}async getChapters(e){let t=this.idFromMangaId(e.mangaId),n=await this.fetchGraphQL(`query ($id: String!, $showId: String!) { manga(_id: $id) { _id name availableChaptersDetail } episodeInfos(showId: $showId, episodeNumStart: 0, episodeNumEnd: 9999) { episodeIdNum notes uploadDates } }`,{id:t,showId:`manga@${t}`}),r=this.titleToSlug(n.manga.name),i=n.manga.availableChaptersDetail?.sub??[],a=new Map;for(let e of n.episodeInfos??[])a.set(String(e.episodeIdNum),e);let o=[];for(let n of i){let i=a.get(String(n)),s=i?.notes?.trim()??``,c=`Chapter ${n}`;s.length>0&&!/\d/.test(s)&&(c+=`: ${s}`);let l=`/read/${t}/${r}/chapter-${n}-sub`;o.push({chapterId:this.toSafeId(l),sourceManga:e,title:c,volume:0,chapNum:parseFloat(n)||0,publishDate:this.parseDate(i?.uploadDates?.sub),langCode:`🇬🇧`})}return o}async getChapterDetails(e){let t=this.chapterShareUrl(e.chapterId),[n,r]=await Application.scheduleRequest({url:t,method:`GET`});if(n.status===404)throw Error(`Content not found`);let i=this.injectPageListHooks(Application.arrayBufferToUTF8String(r)),a=await Application.executeInWebView({source:{html:i,baseUrl:t,loadCSS:!1,loadImages:!1},inject:`
+      new Promise(function(resolve){
+        var start = Date.now();
+        var t = setInterval(function(){
+          if (window.__cap) { clearInterval(t); resolve(JSON.stringify(window.__cap)); }
+          else if (Date.now() - start > 28000) { clearInterval(t); resolve("null"); }
+        }, 250);
+      });
+    `,storage:{cookies:[]}}),o=JSON.parse(String(a.result??`null`))?.chapterPages?.edges??[];if(o.length===0)return{id:e.chapterId,mangaId:e.sourceManga.mangaId,pages:[]};let s=o.find(e=>{let t=e.pictureUrls??[],n=t.length>0?t[0].url:void 0;return n&&Xu.test(n)||e.pictureUrlHead!=null});s||(s=o[0]);let c=s.pictureUrlHead,l=`https://ytimgf.youtube-anime.com/`;c&&(l=Xu.test(c)?c.replace(/\/$/,``)+`/`:`https://`+c.replace(/\/$/,``)+`/`);let u=Ku(),d=[];for(let e of s.pictureUrls??[]){if(!e.url)continue;let t=Xu.test(e.url)?e.url:l+e.url.replace(/^\//,``);if(u!==`original`){let e=t.match(/^https?:\/\/([^#]+)/);e&&(t=`https://wp.youtube-anime.com/${e[1]}?w=${u}`)}d.push(t)}return{id:e.chapterId,mangaId:e.sourceManga.mangaId,pages:d}}async getMangaShareUrl(e){return`${Yu}/manga/${this.idFromMangaId(e)}`}async cloudflareBypassCompleted(e,t,n){for(let e of this.cookieStorageInterceptor.cookies)this.cookieStorageInterceptor.deleteCookie(e);for(let e of t)e.expires&&e.expires.getTime()<=Date.now()||this.cookieStorageInterceptor.setCookie(e)}async fetchGraphQL(e,t){let[n,r]=await Application.scheduleRequest({url:`https://api.mkissa.net/api`,method:`POST`,headers:{"content-type":`application/json`,referer:`${Yu}/`},body:JSON.stringify({variables:t,query:e})});if(n.status===404)throw Error(`Content not found`);return JSON.parse(Application.arrayBufferToUTF8String(r)).data}mangaIdFromCard(e){return this.toSafeId(`/manga/${e._id}/${this.titleToSlug(e.name)}`)}idFromMangaId(e){let t=this.safeDecode(e);return t.split(`/`)[2]??t}chapterShareUrl(e){let t=this.safeDecode(e).split(`/`);return`${Yu}/manga/${t[2]??``}/${t[4]??``}`}injectPageListHooks(e){let t=`<script>
       (function(){
         window.__cap = null;
         var capture = function(obj){
@@ -36,12 +44,24 @@ Alternative Titles:
             });
           };
         } catch(e){}
+        // Upstream #18189: neuter iframe contentWindow so the site's
+        // anti-automation probe does not stall the reader.
+        try {
+          var hook = function(el){
+            if (el && String(el.tagName).toUpperCase() === "IFRAME") {
+              Object.defineProperty(el, "contentWindow", {
+                get: function(){ return null; },
+                configurable: false,
+              });
+            }
+            return el;
+          };
+          ["createElement", "createElementNS"].forEach(function(key){
+            var original = Document.prototype[key];
+            Document.prototype[key] = function(){
+              return hook(original.apply(this, arguments));
+            };
+          });
+        } catch(e){}
       })();
-      new Promise(function(resolve){
-        var start = Date.now();
-        var t = setInterval(function(){
-          if (window.__cap) { clearInterval(t); resolve(JSON.stringify(window.__cap)); }
-          else if (Date.now() - start > 28000) { clearInterval(t); resolve("null"); }
-        }, 250);
-      });
-    `,storage:{cookies:[]}}),o=JSON.parse(String(a.result??`null`))?.chapterPages?.edges??[];if(o.length===0)return{id:e.chapterId,mangaId:e.sourceManga.mangaId,pages:[]};let s=o.find(e=>{let t=e.pictureUrls??[],n=t.length>0?t[0].url:void 0;return n&&Xu.test(n)||e.pictureUrlHead!=null});s||(s=o[0]);let c=s.pictureUrlHead,l=`https://ytimgf.youtube-anime.com/`;c&&(l=Xu.test(c)?c.replace(/\/$/,``)+`/`:`https://`+c.replace(/\/$/,``)+`/`);let u=Ku(),d=[];for(let e of s.pictureUrls??[]){if(!e.url)continue;let t=Xu.test(e.url)?e.url:l+e.url.replace(/^\//,``);if(u!==`original`){let e=t.match(/^https?:\/\/([^#]+)/);e&&(t=`https://wp.youtube-anime.com/${e[1]}?w=${u}`)}d.push(t)}return{id:e.chapterId,mangaId:e.sourceManga.mangaId,pages:d}}async getMangaShareUrl(e){return`${Yu}/manga/${this.idFromMangaId(e)}`}async cloudflareBypassCompleted(e,t,n){for(let e of this.cookieStorageInterceptor.cookies)this.cookieStorageInterceptor.deleteCookie(e);for(let e of t)e.expires&&e.expires.getTime()<=Date.now()||this.cookieStorageInterceptor.setCookie(e)}async fetchGraphQL(e,t){let[n,r]=await Application.scheduleRequest({url:`https://api.mkissa.net/api`,method:`POST`,headers:{"content-type":`application/json`,referer:`${Yu}/`},body:JSON.stringify({variables:t,query:e})});if(n.status===404)throw Error(`Content not found`);return JSON.parse(Application.arrayBufferToUTF8String(r)).data}mangaIdFromCard(e){return this.toSafeId(`/manga/${e._id}/${this.titleToSlug(e.name)}`)}idFromMangaId(e){let t=this.safeDecode(e);return t.split(`/`)[2]??t}chapterShareUrl(e){let t=this.safeDecode(e).split(`/`);return`${Yu}/manga/${t[2]??``}/${t[4]??``}`}titleToSlug(e){return e.trim().toLowerCase().replace(/[^a-z0-9]+/g,`-`)}parseThumbnailUrl(e){return e?Xu.test(e)?e:`https://wp.youtube-anime.com/aln.youtube-anime.com/${e}?w=250`:``}parseStatus(e){let t=(e??``).toLowerCase();return t.includes(`releasing`)?`Ongoing`:t.includes(`finished`)?`Completed`:`Unknown`}parseDate(e){if(!e)return new Date(0);let t=new Date(e);return isNaN(t.getTime())?new Date(0):t}stripHtml(e){return e?Iu(ar(e)).root().text().trim():``}toSafeId(e){return e.replace(/[^A-Za-z0-9._\-@()[\]%?#+=/&:]/g,e=>{let t=encodeURIComponent(e);return t===e?`%`+e.charCodeAt(0).toString(16).toUpperCase().padStart(2,`0`):t})}safeDecode(e){try{return decodeURIComponent(e)}catch{return e}}},e})({});
+    <\/script>`,n=e.match(/<head[^>]*>/i);if(n?.index!==void 0){let r=n.index+n[0].length;return e.slice(0,r)+t+e.slice(r)}let r=e.match(/<html[^>]*>/i);if(r?.index!==void 0){let n=r.index+r[0].length;return e.slice(0,n)+`<head>${t}</head>`+e.slice(n)}return t+e}titleToSlug(e){return e.trim().toLowerCase().replace(/[^a-z0-9]+/g,`-`)}parseThumbnailUrl(e){return e?Xu.test(e)?e:`https://wp.youtube-anime.com/aln.youtube-anime.com/${e}?w=250`:``}parseStatus(e){let t=(e??``).toLowerCase();return t.includes(`releasing`)?`Ongoing`:t.includes(`finished`)?`Completed`:`Unknown`}parseDate(e){if(!e)return new Date(0);let t=new Date(e);return isNaN(t.getTime())?new Date(0):t}stripHtml(e){return e?Iu(ar(e)).root().text().trim():``}toSafeId(e){return e.replace(/[^A-Za-z0-9._\-@()[\]%?#+=/&:]/g,e=>{let t=encodeURIComponent(e);return t===e?`%`+e.charCodeAt(0).toString(16).toUpperCase().padStart(2,`0`):t})}safeDecode(e){try{return decodeURIComponent(e)}catch{return e}}},e})({});

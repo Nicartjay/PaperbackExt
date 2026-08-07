@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-08-04T05:22:50.896Z",
+  "buildTime": "2026-08-07T01:21:25.931Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -127,7 +127,7 @@
     {
       "name": "AllManga",
       "description": "AllManga - custom source (mkissa.to). Converted from keiyoushi.",
-      "version": "1.4.25.1",
+      "version": "1.4.26.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -226,6 +226,31 @@
         }
       ],
       "id": "AllPornComicIo"
+    },
+    {
+      "name": "Alpha Manga",
+      "description": "Alpha Manga - JSON API source (alpha-manga.com). Converted from keiyoushi.",
+      "version": "1.4.1.1",
+      "icon": "icon.png",
+      "language": "en",
+      "contentRating": "SAFE",
+      "capabilities": [
+        4,
+        64,
+        1,
+        16,
+        32
+      ],
+      "badges": [],
+      "developers": [
+        {
+          "name": "nicartjay"
+        },
+        {
+          "name": "keiyoushi"
+        }
+      ],
+      "id": "AlphaManga"
     },
     {
       "name": "Anisa Scans",
@@ -1854,7 +1879,7 @@
     {
       "name": "Doujin.io - J18",
       "description": "Doujin.io - J18 - JSON API source (doujin.io). Converted from keiyoushi.",
-      "version": "1.4.3.1",
+      "version": "1.4.4.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -12393,7 +12418,7 @@
     {
       "name": "Weeb Central",
       "description": "Weeb Central - custom source (weebcentral.com). Converted from keiyoushi.",
-      "version": "1.4.24.1",
+      "version": "1.4.25.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
