@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "S2Manga",
   description: "S2Manga - Madara source (s2read.com). Converted from keiyoushi.",
-  version: "1.4.56.1",
+  version: "1.4.58.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "MangaCloud",
   description: "MangaCloud - custom source (mangacloud.org). Converted from keiyoushi.",
-  version: "1.4.7.1",
+  version: "1.4.8.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

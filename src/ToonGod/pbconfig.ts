@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "ToonGod",
   description: "ToonGod - Madara source (www.toongod.org). Converted from keiyoushi.",
-  version: "1.4.57.1",
+  version: "1.4.59.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

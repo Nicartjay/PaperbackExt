@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Drake Scans",
   description: "Drake Scans - MangaThemesia source (drakecomic.org). Converted from keiyoushi.",
-  version: "1.4.48.2",
+  version: "1.4.48.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "LHTranslation",
   description: "LHTranslation - Madara source (lhtranslation.net). Converted from keiyoushi.",
-  version: "1.4.53.1",
+  version: "1.4.55.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

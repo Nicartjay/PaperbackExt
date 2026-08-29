@@ -3,7 +3,7 @@ import { MangaCatalogExtension } from "../utils/mangacatalog/template";
 
 export const ReadOnePieceMangaOnline = new MangaCatalogExtension({
   name: "Read One Piece Manga Online",
-  baseUrl: "https://ww12.readonepiece.com",
+  baseUrl: "https://ww13.readonepiece.com",
   contentRating: ContentRating.EVERYONE,
   langCode: "🇬🇧",
   mangaList: [

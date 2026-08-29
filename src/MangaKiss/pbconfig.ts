@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Manga Kiss",
   description: "Manga Kiss - Madara source (mangakiss.org). Converted from keiyoushi.",
-  version: "1.4.53.1",
+  version: "1.4.55.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

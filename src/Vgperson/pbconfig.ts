@@ -4,7 +4,7 @@ export default {
   name: "vgperson",
   description:
     "vgperson - HTML scraper source (vgperson.com). Converted from keiyoushi.",
-  version: "1.4.7.1",
+  version: "1.4.8.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

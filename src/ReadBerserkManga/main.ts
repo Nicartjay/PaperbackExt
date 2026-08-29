@@ -8,6 +8,8 @@ export const ReadBerserkManga = new MangaCatalogExtension({
   langCode: "🇬🇧",
   detailVariant: "card",
   chapterVariant: "table",
+  // Upstream #18571: reader markup changed to img.pages__img.
+  pageVariant: "pagesImg",
   mangaList: [
     { title: "Berserk", url: "/manga/berserk/" },
     { title: "Guidebook", url: "/manga/berserk-official-guidebook/" },

@@ -1,10 +1,11 @@
 import { ContentRating } from "@paperback/types";
-import { MangaThemesiaExtension } from "../utils/mangathemesia/template";
+import { VineThemeExtension } from "../utils/vinetheme/template";
 
-export const WitchScans = new MangaThemesiaExtension({
+// Upstream #18653: the site re-platformed off MangaThemesia onto the Next.js
+// RSC stack shared by the `vinetheme` sources, and moved to witchtoons.net.
+export const WitchScans = new VineThemeExtension({
   name: "WitchScans",
-  baseUrl: "https://witchscans.com",
-  mangaUrlDirectory: "/manga",
+  baseUrl: "https://witchtoons.net",
   contentRating: ContentRating.EVERYONE,
   langCode: "🇬🇧",
 });

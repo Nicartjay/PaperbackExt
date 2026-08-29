@@ -13,6 +13,7 @@ import {
   DiscoverSectionProviding,
   DiscoverSectionType,
   Extension,
+  Form,
   MangaProviding,
   Metadata,
   PagedResults,
@@ -22,6 +23,7 @@ import {
   SearchQuery,
   SearchResultItem,
   SearchResultsProviding,
+  SettingsFormProviding,
   SourceManga,
   TagSection,
 } from "@paperback/types";
@@ -29,6 +31,7 @@ import * as cheerio from "cheerio";
 import { CheerioAPI, Cheerio } from "cheerio";
 import type { Element } from "domhandler";
 import * as htmlparser2 from "htmlparser2";
+import { getHideRaws, MangaGoSettingsForm } from "./settings";
 import { descrambleMangago } from "../utils/descramble/canvas";
 
 const BASE_URL = "https://www.mangago.me";
@@ -122,6 +125,7 @@ type MangaGoImplementation = Extension &
   MangaProviding &
   ChapterProviding &
   CloudflareBypassRequestProviding &
+  SettingsFormProviding &
   DiscoverSectionProviding;
 
 export class MangaGoExtension implements MangaGoImplementation {
@@ -134,6 +138,10 @@ export class MangaGoExtension implements MangaGoImplementation {
     bufferInterval: 1,
     ignoreImages: true,
   });
+
+  async getSettingsForm(): Promise<Form> {
+    return new MangaGoSettingsForm();
+  }
 
   async initialise(): Promise<void> {
     this.requestManager.registerInterceptor();
@@ -383,13 +391,18 @@ export class MangaGoExtension implements MangaGoImplementation {
     const chapters: Chapter[] = [];
     const seen = new Set<string>();
 
+    // Upstream #18581: RAW (untranslated) chapters live in a separate
+    // `#raws_table`, which was previously missed entirely. cheerio has no
+    // `:is()`, so the tables are listed out explicitly.
+    const hideRaws = getHideRaws();
     $(
-      "table#chapter_table > tbody > tr, table.uk-table > tbody > tr",
+      "table#raws_table > tbody > tr, table#chapter_table > tbody > tr, table.uk-table > tbody > tr",
     ).each((_, element) => {
       const row = $(element);
       const link = row.find("a.chico").first();
       const href = link.attr("href") || "";
       if (!href) return;
+      if (hideRaws && href.includes("/raw/")) return;
 
       const chapterId = this.parseChapterId(href);
       if (!chapterId || seen.has(chapterId)) return;

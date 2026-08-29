@@ -4,7 +4,7 @@ export default {
   name: "Valir Scans",
   description:
     "Valir Scans - Next.js (RSC) HTML source (valirscans.org). Converted from keiyoushi.",
-  version: "1.4.22.1",
+  version: "1.4.23.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,
@@ -13,6 +13,7 @@ export default {
     SourceIntents.SEARCH_RESULT_PROVIDING,
     SourceIntents.CHAPTER_PROVIDING,
     SourceIntents.CLOUDFLARE_BYPASS_PROVIDING,
+    SourceIntents.SETTINGS_FORM_PROVIDING,
   ],
   badges: [],
   developers: [{ name: "nicartjay" }, { name: "keiyoushi" }],

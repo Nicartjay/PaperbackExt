@@ -1,10 +1,11 @@
 import { ContentRating } from "@paperback/types";
-import { MangaThemesiaExtension } from "../utils/mangathemesia/template";
+import { VineThemeExtension } from "../utils/vinetheme/template";
 
-export const DrakeScans = new MangaThemesiaExtension({
+// Upstream #18653: the site re-platformed off MangaThemesia onto the Next.js
+// RSC stack shared by the `vinetheme` sources, and moved to drakecomic.net.
+export const DrakeScans = new VineThemeExtension({
   name: "Drake Scans",
-  baseUrl: "https://drakecomic.org",
-  mangaUrlDirectory: "/manga",
+  baseUrl: "https://drakecomic.net",
   contentRating: ContentRating.EVERYONE,
   langCode: "🇬🇧",
 });

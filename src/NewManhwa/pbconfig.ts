@@ -4,7 +4,7 @@ export default {
   name: "New Manhwa",
   description:
     "New Manhwa - custom source (newmanhwa.com). Converted from keiyoushi.",
-  version: "1.4.34.1",
+  version: "1.4.35.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

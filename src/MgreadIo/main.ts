@@ -478,10 +478,18 @@ export class MgreadIoExtension implements MgreadIoImplementation {
     const $ = await this.fetchCheerio({ url, method: "GET" });
 
     const pages: string[] = [];
-    $("#chapter-content img[src]").each((_, element) => {
-      const src = $(element).attr("src") || "";
-      if (src) pages.push(this.absoluteUrl(src));
-    });
+    // Upstream #18641: the reader lazy-loads pages, so `src` holds a
+    // placeholder and the real URL lives in `data-original-src`. Prefer that
+    // and fall back to `src` for any non-lazy image.
+    $("#chapter-content img[data-original-src], #chapter-content img[src]").each(
+      (_, element) => {
+        const el = $(element);
+        const src = el.attr("data-original-src") || el.attr("src") || "";
+        if (!src) return;
+        const absolute = this.absoluteUrl(src);
+        if (!pages.includes(absolute)) pages.push(absolute);
+      },
+    );
 
     return {
       id: chapter.chapterId,

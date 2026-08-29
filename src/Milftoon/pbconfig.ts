@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Milftoon",
   description: "Milftoon - Madara source (milftoon.xxx). Converted from keiyoushi.",
-  version: "1.4.54.1",
+  version: "1.4.56.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read One Piece Manga Online",
   description: "Read One Piece Manga Online - MangaCatalog source (ww12.readonepiece.com). Converted from keiyoushi.",
-  version: "1.4.8.3",
+  version: "1.4.9.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

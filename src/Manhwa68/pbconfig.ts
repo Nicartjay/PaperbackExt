@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Manhwa68",
   description: "Manhwa68 - Madara source (manhwa68.com). Converted from keiyoushi.",
-  version: "1.4.55.1",
+  version: "1.4.57.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

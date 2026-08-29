@@ -66,7 +66,8 @@ export interface MangaCatalogConfig {
   /** Chapter-list DOM layout. */
   chapterVariant?: "default" | "gridCol" | "table" | "links";
   /** Page-list DOM layout. */
-  pageVariant?: "default" | "entryContent";
+  /** `pagesImg`: upstream #18571 ReadBerserk markup (`div.pages img.pages__img`). */
+  pageVariant?: "default" | "entryContent" | "pagesImg";
   /** Strip "Manga: " prefix from the card-variant title (readopm). */
   stripMangaPrefix?: boolean;
 }
@@ -128,7 +129,7 @@ export class MangaCatalogExtension implements MangaCatalogImplementation {
   readonly mangaList: MangaCatalogEntry[];
   readonly detailVariant: "default" | "card" | "meta";
   readonly chapterVariant: "default" | "gridCol" | "table" | "links";
-  readonly pageVariant: "default" | "entryContent";
+  readonly pageVariant: "default" | "entryContent" | "pagesImg";
   readonly stripMangaPrefix: boolean;
 
   /** mangaId (path, no leading slash) -> configured title. */
@@ -380,7 +381,15 @@ export class MangaCatalogExtension implements MangaCatalogImplementation {
     const $ = await this.fetchCheerio({ url, method: "GET" });
     const pages: string[] = [];
 
-    if (this.pageVariant === "entryContent") {
+    if (this.pageVariant === "pagesImg") {
+      // Upstream #18571: ReadBerserk switched to eager-loaded `img.pages__img`
+      // with a plain `src`, so the default `img[data-src]` selector found
+      // nothing and chapters opened empty.
+      $("div.pages img.pages__img, img.pages__img").each((_, element) => {
+        const src = this.imageFromElement($(element));
+        if (src) pages.push(src);
+      });
+    } else if (this.pageVariant === "entryContent") {
       $("div.entry-content img").each((_, element) => {
         const src = this.imageFromElement($(element));
         if (src) pages.push(src);

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "WitchScans",
   description: "WitchScans - MangaThemesia source (witchscans.com). Converted from keiyoushi.",
-  version: "1.4.32.2",
+  version: "1.4.32.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

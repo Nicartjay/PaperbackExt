@@ -4,7 +4,7 @@ export default {
   name: "Mangafreak",
   description:
     "Mangafreak - custom source (ww2.mangafreak.me). Converted from keiyoushi.",
-  version: "1.4.14.1",
+  version: "1.4.15.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

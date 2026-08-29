@@ -705,7 +705,14 @@ export class MadaraExtension implements MadaraImplementation {
     const url = this.buildMangaUrl(mangaId);
     const $ = await this.fetchCheerio({ url, method: "GET" });
 
-    const title = $(this.mangaDetailsTitleSelector).first().text().trim();
+    // Upstream #18681 switched this from `text()` to Jsoup's `ownText()`: some
+    // themes nest extra elements inside the title heading (rating badges, a
+    // "HOT"/"NEW" span, the alternative-name node), and those were being
+    // concatenated into the manga title. cheerio has no `ownText()`, so clone
+    // the node and drop its children to leave only its own text nodes.
+    const titleNode = $(this.mangaDetailsTitleSelector).first();
+    const title = titleNode.clone().children().remove().end().text().trim() ||
+      titleNode.text().trim();
 
     const altTitles: string[] = [];
     $("div.post-content_item:contains(Alternative) div.summary-content")
@@ -1028,11 +1035,18 @@ export class MadaraExtension implements MadaraImplementation {
       base = `${this.baseUrl.replace(/\/+$/, "")}/${this.mangaSubString}/${this.safeDecode(chapter.sourceManga.mangaId)}/${decodedId}`;
     }
     const path = base.replace(/\/+$/, "") + "/";
+    // Upstream Madara 1.6 (#18075) made `?style=list` CONDITIONAL: the plain
+    // chapter URL is fetched first and the list-style variant is only re-fetched
+    // when the reader is actually paginated (`#single-pager` present). The old
+    // unconditional suffix was flagged upstream as tripping Cloudflare on some
+    // sites, so only pay for the second request when it buys something.
     let url: string;
+    let styleListFallback: string | undefined;
     if (!this.chapterUrlSuffix) {
       url = path;
     } else if (this.chapterUrlSuffix === "?style=list") {
-      url = `${path}?style=list`;
+      url = path;
+      styleListFallback = `${path}?style=list`;
     } else {
       url = path + this.chapterUrlSuffix;
     }
@@ -1042,7 +1056,10 @@ export class MadaraExtension implements MadaraImplementation {
     // other Madara source.
     await this.ensureMdxAuth();
 
-    const $ = await this.fetchCheerio({ url, method: "GET" });
+    let $ = await this.fetchCheerio({ url, method: "GET" });
+    if (styleListFallback && $("#single-pager").length > 0) {
+      $ = await this.fetchCheerio({ url: styleListFallback, method: "GET" });
+    }
     const pages: string[] = [];
 
     // Real (image) manga may be served behind the Madara "chapter protector":

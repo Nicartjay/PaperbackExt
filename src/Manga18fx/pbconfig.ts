@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Manga18fx",
   description: "Manga18fx - Madara source (manga18fx.com). Converted from keiyoushi.",
-  version: "1.4.57.1",
+  version: "1.4.58.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

@@ -4,7 +4,7 @@ export default {
   name: "K Manga",
   description:
     "K Manga - JSON API source (kmanga.kodansha.com). Converted from keiyoushi.",
-  version: "1.4.6.1",
+  version: "1.4.7.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

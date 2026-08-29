@@ -30,7 +30,7 @@ import { CheerioAPI } from "cheerio";
 import * as htmlparser2 from "htmlparser2";
 import { NewManhwaSearchForm, NewManhwaSearchMeta } from "./forms";
 
-const BASE_URL = "https://newmanhwa.com";
+const BASE_URL = "https://saymanhwa.com";
 
 interface NewManhwaMetadata {
   page?: number;
@@ -216,14 +216,18 @@ export class NewManhwaExtension implements NewManhwaImplementation {
     hasNextPage: boolean;
   } {
     const items: { mangaId: string; title: string; imageUrl: string }[] = [];
-    $("a.series-card").each((_, element) => {
+    // Upstream #18541: the site moved to saymanhwa.com and rebuilt the cards.
+    // Each entry is now an `<article class="series-card">` wrapping a separate
+    // cover anchor and a body heading, instead of one big `<a class="series-card">`.
+    $("article.series-card").each((_, element) => {
       const el = $(element);
-      const href = el.attr("href") || "";
+      const coverLink = el.find("a.series-card-cover").first();
+      const href = coverLink.attr("href") || "";
       const title = this.removeTitleRank(
-        el.find("strong").first().text().trim(),
+        el.find("div.series-card-body h2 a").first().text().trim(),
       );
       if (!href || !title) return;
-      const img = el.find("img").first();
+      const img = coverLink.find("img").first();
       const imageUrl = this.absoluteUrl(
         img.attr("data-src") || img.attr("src") || "",
       );
@@ -242,17 +246,40 @@ export class NewManhwaExtension implements NewManhwaImplementation {
     const url = this.mangaUrl(mangaId);
     const $ = await this.fetchCheerio({ url, method: "GET" });
 
+    // Upstream #18541: the details page was rebuilt with the `series-v72-*`
+    // layout. Author/artist are no longer exposed as definition lists; the
+    // sidebar now carries label/value pairs (Status, Type, Released, Category)
+    // and genres come from the sidebar links or the JSON-LD block.
     const title = $("h1").first().text().trim() || this.safeDecode(mangaId);
-    const synopsis = $("section.summary-inline p").first().text().trim();
-    const author = $("dt:contains(Author) + dd a span").first().text().trim();
-    const artist = $("dt:contains(Artist) + dd a span").first().text().trim();
-    const statusText = $("dt:contains(Status) + dd span").first().text().trim();
+    const synopsis = $("div.series-v72-description").first().text().trim();
+    const statusText = this.metaValue($, "Status");
     const thumbnailUrl = this.absoluteUrl(
-      $("aside.series-left .cover-card img").first().attr("src") || "",
+      $(".series-v72-cover img").first().attr("src") || "",
     );
 
+    const altTitles = $("div.series-v72-alt")
+      .first()
+      .text()
+      .split("/")
+      .map((s) => s.trim())
+      .filter((s) => s.length > 0);
+
     const tagGroups = [];
-    const jsonLd = $("script[type='application/ld+json']")
+    const sidebarGenres = $("div.series-v72-genres a")
+      .toArray()
+      .map((el) => $(el).text().trim())
+      .filter((g) => g.length > 0);
+    if (sidebarGenres.length > 0) {
+      tagGroups.push({
+        id: "genres",
+        title: "Genres",
+        tags: sidebarGenres.map((g) => ({
+          id: g.toLowerCase().replace(/\s+/g, "-"),
+          title: g,
+        })),
+      });
+    }
+    const jsonLd = tagGroups.length > 0 ? undefined : $("script[type='application/ld+json']")
       .toArray()
       .map((el) => $(el).text())
       .find((d) => d.includes('"@type":"ComicSeries"'));
@@ -281,10 +308,10 @@ export class NewManhwaExtension implements NewManhwaImplementation {
       mangaId,
       mangaInfo: {
         primaryTitle: title,
-        secondaryTitles: [],
+        secondaryTitles: altTitles,
         thumbnailUrl,
-        author: author || undefined,
-        artist: artist || undefined,
+        author: undefined,
+        artist: undefined,
         synopsis,
         contentRating: ContentRating.MATURE,
         status: this.parseStatus(statusText),
@@ -303,13 +330,16 @@ export class NewManhwaExtension implements NewManhwaImplementation {
     const $ = await this.fetchCheerio({ url, method: "GET" });
 
     const chapters: Chapter[] = [];
-    $(".chapter-list .chapter-row").each((_, element) => {
+    // Upstream #18541: chapter rows are now `a.series-v72-chapter-row` with the
+    // label in `.series-chapter-number-text` and an ISO `datetime` attribute.
+    $("a.series-v72-chapter-row").each((_, element) => {
       const el = $(element);
-      const link = el.find("a.chapter-main").first();
-      const href = link.attr("href") || "";
+      const href = el.attr("href") || "";
       if (!href) return;
-      const name = link.find(".chapter-name strong").first().text().trim();
-      const dateText = el.find(".chapter-age").first().text().trim();
+      const name = el.find(".series-chapter-number-text").first().text().trim();
+      const dateText =
+        el.find("time.series-chapter-date").first().attr("datetime") ||
+        el.find(".series-chapter-date").first().text().trim();
 
       chapters.push({
         chapterId: this.parsePath(href),
@@ -330,7 +360,8 @@ export class NewManhwaExtension implements NewManhwaImplementation {
     const $ = await this.fetchCheerio({ url, method: "GET" });
 
     const pages: string[] = [];
-    $("main#reader img.chapter-page").each((_, element) => {
+    // Upstream #18541: reader images live in `div.reader-pages`.
+    $("div.reader-pages img").each((_, element) => {
       const el = $(element);
       const src = el.attr("data-src") || el.attr("src") || "";
       if (src) pages.push(this.absoluteUrl(src));
@@ -350,6 +381,22 @@ export class NewManhwaExtension implements NewManhwaImplementation {
   // ----------------------------------------------------------------
   // Helpers
   // ----------------------------------------------------------------
+
+  /**
+   * Read a `series-v72` sidebar label/value pair (Status, Type, Released,
+   * Category). The markup is `<div><span>Label</span><strong>Value</strong></div>`.
+   */
+  private metaValue($: CheerioAPI, label: string): string {
+    let value = "";
+    $(".series-v72-meta span").each((_, el) => {
+      if (value) return;
+      const span = $(el);
+      if (span.text().trim() !== label) return;
+      const strong = span.parent().find("strong").first();
+      if (strong.length > 0) value = strong.text().trim();
+    });
+    return value;
+  }
 
   private removeTitleRank(title: string): string {
     return title.replace(/^#\d+\s+/, "").trim();

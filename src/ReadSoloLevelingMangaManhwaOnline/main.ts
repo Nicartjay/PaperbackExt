@@ -3,7 +3,7 @@ import { MangaCatalogExtension } from "../utils/mangacatalog/template";
 
 export const ReadSoloLevelingMangaManhwaOnline = new MangaCatalogExtension({
   name: "Read Solo Leveling Manga Manhwa Online",
-  baseUrl: "https://ww3.readsololeveling.org",
+  baseUrl: "https://ww4.readsololeveling.org",
   contentRating: ContentRating.EVERYONE,
   langCode: "🇬🇧",
   mangaList: [

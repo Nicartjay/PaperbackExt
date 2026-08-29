@@ -36,7 +36,7 @@ import {
   MangaFreakSearchMeta,
 } from "./forms";
 
-const BASE_URL = "https://ww2.mangafreak.me";
+const BASE_URL = "https://ww3.mangafreak.me";
 
 interface MangaFreakMetadata {
   page?: number;

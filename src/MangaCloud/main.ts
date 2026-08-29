@@ -211,7 +211,7 @@ class MangaCloudExtension implements MangaCloudImplementation {
     if (sort && sort.length > 0) payload.sort = sort;
 
     const data = await this.fetchJson<DataWrap<BrowseManga[]>>({
-      url: `${API_URL}/comic/browse`,
+      url: `${API_URL}/comic/library`,
       method: "POST",
       headers: { "content-type": "application/json", referer: `${BASE_URL}/` },
       body: JSON.stringify(payload),
@@ -332,7 +332,7 @@ class MangaCloudExtension implements MangaCloudImplementation {
     const decoded = this.safeDecode(chapter.chapterId);
     const chapterContentId = decoded.split("#")[1] ?? decoded;
     const data = await this.fetchJson<DataWrap<ChapterContent>>({
-      url: `${API_URL}/chapter5/${chapterContentId}`,
+      url: `${API_URL}/chapters/${chapterContentId}`,
       method: "GET",
     });
     const content = data.data;

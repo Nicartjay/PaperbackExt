@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read Solo Leveling Manga Manhwa Online",
   description: "Read Solo Leveling Manga Manhwa Online - MangaCatalog source (ww3.readsololeveling.org). Converted from keiyoushi.",
-  version: "1.4.10.3",
+  version: "1.4.11.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

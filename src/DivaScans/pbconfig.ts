@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Diva Scans",
   description: "Diva Scans - Iken source (divatoon.com). Converted from keiyoushi.",
-  version: "1.4.25.1",
+  version: "1.4.26.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

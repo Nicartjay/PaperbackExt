@@ -26,7 +26,9 @@ import {
 } from "@paperback/types";
 
 const BASE_URL = "https://leslie-victims.pages.dev";
-const LIBRARY_URL = `${BASE_URL}/api/library`;
+// Upstream #18667: /api/library started returning 503; the site serves the
+// same catalog blob from /manga.json (verified: old 503, new 200).
+const LIBRARY_URL = `${BASE_URL}/manga.json`;
 const MAX_PROBE_PAGES = 150;
 
 interface ChapterRoot {
