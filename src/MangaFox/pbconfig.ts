@@ -4,7 +4,7 @@ export default {
   name: "MangaFox",
   description:
     "MangaFox - HTML scraper source (fanfox.net). Converted from keiyoushi.",
-  version: "1.4.9.1",
+  version: "1.4.9.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Violet Scans",
   description: "Violet Scans - MangaThemesia source (violetscans.org). Converted from keiyoushi.",
-  version: "1.4.36.1",
+  version: "1.4.37.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

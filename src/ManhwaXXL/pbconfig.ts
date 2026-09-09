@@ -1,10 +1,10 @@
 import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 
 export default {
-  name: "Manhwa XXL",
+  name: "HentaiTnT",
   description:
-    "Manhwa XXL - HTML scraper source (hentaitnt.net). Converted from keiyoushi.",
-  version: "1.4.6.1",
+    "HentaiTnT - custom source (hentaitnt.net). Converted from keiyoushi.",
+  version: "1.4.7.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

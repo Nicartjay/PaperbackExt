@@ -4,7 +4,7 @@ export default {
   name: "MangaKatana",
   description:
     "MangaKatana - custom source (mangakatana.com). Converted from keiyoushi.",
-  version: "1.4.12.2",
+  version: "1.4.12.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

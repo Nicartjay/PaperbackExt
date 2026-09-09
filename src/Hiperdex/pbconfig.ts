@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Hiperdex",
   description: "Hiperdex - Hiper source (hiperdex.com). Converted from keiyoushi.",
-  version: "1.4.88.1",
+  version: "1.4.89.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

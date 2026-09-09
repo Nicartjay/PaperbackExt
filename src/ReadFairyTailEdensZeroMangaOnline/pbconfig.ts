@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read Fairy Tail & Edens Zero Manga Online",
   description: "Read Fairy Tail & Edens Zero Manga Online - MangaCatalog source (ww8.readfairytail.com). Converted from keiyoushi.",
-  version: "1.4.9.3",
+  version: "1.4.10.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

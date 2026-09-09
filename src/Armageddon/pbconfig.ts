@@ -1,9 +1,10 @@
 import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 
 export default {
-  name: "Armageddon",
-  description: "Armageddon - MangaThemesia source (www.silentquill.net). Converted from keiyoushi.",
-  version: "1.4.34.2",
+  name: "SilentQuill",
+  description:
+    "SilentQuill - custom source (silentquill.net). Converted from keiyoushi.",
+  version: "1.4.35.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,
@@ -12,10 +13,8 @@ export default {
     SourceIntents.SEARCH_RESULT_PROVIDING,
     SourceIntents.CHAPTER_PROVIDING,
     SourceIntents.CLOUDFLARE_BYPASS_PROVIDING,
-    SourceIntents.SETTINGS_FORM_PROVIDING,
   ],
   badges: [
-    { label: "MangaThemesia", textColor: "#FFFFFF", backgroundColor: "#1565C0" },
     { label: "Mature", textColor: "#FFFFFF", backgroundColor: "#C62828" },
   ],
   developers: [

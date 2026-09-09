@@ -4,7 +4,7 @@ export default {
   name: "The Blank",
   description:
     "The Blank - JSON API source (theblank.net). Converted from keiyoushi.",
-  version: "1.4.56.12",
+  version: "1.4.57.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

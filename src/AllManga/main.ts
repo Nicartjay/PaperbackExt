@@ -46,11 +46,17 @@ const POPULAR_QUERY =
 const SEARCH_QUERY =
   "query ($search: SearchInput, $size: Int, $page: Int, $translationType: VaildTranslationTypeMangaEnumType, $countryOrigin: VaildCountryOriginEnumType) { mangas(search: $search, limit: $size, page: $page, translationType: $translationType, countryOrigin: $countryOrigin) { edges { _id name thumbnail englishName } } }";
 
+// Upstream #18906: some titles return `manga = null` unless the request carries
+// the `search: { fromSearch: true }` SearchInput, so it is passed on both the
+// details and the chapter-list queries.
 const DETAILS_QUERY =
-  "query ($id: String!) { manga(_id: $id) { _id name thumbnail description authors genres tags status altNames englishName } }";
+  "query ($id: String!, $search: SearchInput) { manga(_id: $id, search: $search) { _id name thumbnail description authors genres tags status altNames englishName } }";
 
 const CHAPTERS_QUERY =
-  "query ($id: String!, $showId: String!) { manga(_id: $id) { _id name availableChaptersDetail } episodeInfos(showId: $showId, episodeNumStart: 0, episodeNumEnd: 9999) { episodeIdNum notes uploadDates } }";
+  "query ($id: String!, $showId: String!, $search: SearchInput) { manga(_id: $id, search: $search) { _id name availableChaptersDetail } episodeInfos(showId: $showId, episodeNumStart: 0, episodeNumEnd: 9999) { episodeIdNum notes uploadDates } }";
+
+/** Upstream `mapOf("fromSearch" to true)`. */
+const FROM_SEARCH = { fromSearch: true };
 
 interface AnyCard {
   _id: string;
@@ -267,7 +273,10 @@ class AllMangaExtension implements AllMangaImplementation {
 
   async getMangaDetails(mangaId: string): Promise<SourceManga> {
     const id = this.idFromMangaId(mangaId);
-    const data = await this.fetchGraphQL<DetailsResponse>(DETAILS_QUERY, { id });
+    const data = await this.fetchGraphQL<DetailsResponse>(DETAILS_QUERY, {
+      id,
+      search: FROM_SEARCH,
+    });
     const manga = data.manga;
 
     let synopsis = this.stripHtml(manga.description ?? "");
@@ -317,6 +326,7 @@ class AllMangaExtension implements AllMangaImplementation {
     const data = await this.fetchGraphQL<ChaptersResponse>(CHAPTERS_QUERY, {
       id,
       showId: `manga@${id}`,
+      search: FROM_SEARCH,
     });
 
     const slug = this.titleToSlug(data.manga.name);
@@ -407,7 +417,7 @@ class AllMangaExtension implements AllMangaImplementation {
   }
 
   async getMangaShareUrl(mangaId: string): Promise<string> {
-    return `${BASE_URL}/manga/${this.idFromMangaId(mangaId)}`;
+    return `${BASE_URL}/manga/${this.idFromMangaId(mangaId)}?fromSearch=1`;
   }
 
   async cloudflareBypassCompleted(

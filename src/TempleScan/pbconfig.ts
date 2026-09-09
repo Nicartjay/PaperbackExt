@@ -4,7 +4,7 @@ export default {
   name: "Temple Scan",
   description:
     "Temple Scan - custom source (templetoons.com). Converted from keiyoushi.",
-  version: "1.4.50.1",
+  version: "1.4.51.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

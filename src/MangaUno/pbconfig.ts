@@ -4,7 +4,7 @@ export default {
   name: "Manga.uno",
   description:
     "Manga.uno - JSON API source (manga.uno). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.2.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

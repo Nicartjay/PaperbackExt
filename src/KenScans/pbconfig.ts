@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Ken Scans",
   description: "Ken Scans - Iken source (kencomics.com). Converted from keiyoushi.",
-  version: "1.4.36.1",
+  version: "1.4.37.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

@@ -1,9 +1,10 @@
 import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 
 export default {
-  name: "Arya Scans",
-  description: "Arya Scans - Madara source (brainrotcomics.com). Converted from keiyoushi.",
-  version: "1.4.56.1",
+  name: "BrainRotComics",
+  description:
+    "BrainRotComics - Madara source (brainrotcomics.com). Converted from keiyoushi.",
+  version: "1.4.57.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

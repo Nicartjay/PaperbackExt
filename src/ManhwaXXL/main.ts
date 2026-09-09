@@ -218,7 +218,12 @@ export class ManhwaXXLExtension implements ManhwaXXLImplementation {
     const author =
       $("i[title=Artists] + span a").first().text().trim() || undefined;
     const synopsis = $("#synopsisText").first().text().trim();
-    const statusText = $("i[title=Status]").first().text().trim();
+    // Upstream #18816: the status label is a text node on the PARENT span, not
+    // inside the `<i>` icon element:
+    //   <span ...><i class="fas ..." title="Status"></i> ONGOING </span>
+    // so reading the `<i>`'s own text returned an empty string and every title
+    // showed "Unknown".
+    const statusText = $("i[title=Status]").first().parent().text().trim();
 
     const genres = $(".genre-item")
       .map((_, el) => $(el).text().trim())

@@ -4,7 +4,7 @@ export default {
   name: "Asura Scans",
   description:
     "Asura Scans - custom source (asurascans.com). Converted from keiyoushi.",
-  version: "1.4.67.1",
+  version: "1.4.69.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

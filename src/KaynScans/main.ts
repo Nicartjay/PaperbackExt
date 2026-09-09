@@ -1,10 +1,11 @@
 import { ContentRating } from "@paperback/types";
-import { IkenExtension } from "../utils/iken/template";
+import { VineThemeExtension } from "../utils/vinetheme/template";
 
-export const KaynScans = new IkenExtension({
+// Upstream #18699 moved this source onto the shared VineTheme: the Iken API at
+// api.kaynscan.org now answers 403 and the site relocated to kaynscans.com.
+export const KaynScans = new VineThemeExtension({
   name: "Kayn Scans",
-  baseUrl: "https://kaynscan.org",
-  apiUrl: "https://api.kaynscan.org",
+  baseUrl: "https://kaynscans.com",
   contentRating: ContentRating.EVERYONE,
   langCode: "🇬🇧",
 });

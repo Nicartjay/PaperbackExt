@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Magus Manga",
   description: "Magus Manga - Iken source (magustoon.org). Converted from keiyoushi.",
-  version: "1.4.72.1",
+  version: "1.4.73.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

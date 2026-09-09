@@ -4,7 +4,7 @@ export default {
   name: "SUPER MEGA",
   description:
     "SUPER MEGA - webcomic source (supermegacomics.com). Converted from keiyoushi.",
-  version: "1.4.4.1",
+  version: "1.4.4.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

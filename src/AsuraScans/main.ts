@@ -66,6 +66,7 @@ interface MangaDetailsDto {
   description?: string;
   rating?: number;
   popularityRank?: number;
+  bookmarkCount?: number;
   alternativeTitles?: string;
   genres?: { name: string; slug?: string }[];
   status?: string;
@@ -418,8 +419,18 @@ class AsuraScansExtension implements AsuraScansImplementation {
     const parts: string[] = [];
     const plain = this.stripHtml(series.description ?? "");
     if (plain) parts.push(plain);
-    if (series.popularityRank != null) parts.push(`Rank: #${series.popularityRank}`);
-    if (series.rating != null) parts.push(`Rating: ${series.rating.toFixed(2)}`);
+
+    // Upstream #18771: collapse the stats onto one " • "-separated line instead
+    // of a stack of one-line paragraphs, and surface the bookmark count.
+    const metadata: string[] = [];
+    if (series.popularityRank != null) {
+      metadata.push(`Rank: #${series.popularityRank}`);
+    }
+    if (series.rating != null) metadata.push(`Rating: ${series.rating.toFixed(2)}`);
+    if (series.bookmarkCount != null) {
+      metadata.push(`Bookmarks: ${series.bookmarkCount.toLocaleString("en-US")}`);
+    }
+    if (metadata.length > 0) parts.push(metadata.join(" • "));
     const altSource = series.alternativeTitles ?? "";
     const altTitles = (altSource.includes("•") ? altSource.split("•") : altSource.split(","))
       .map((t) => t.trim())
@@ -487,9 +498,21 @@ class AsuraScansExtension implements AsuraScansImplementation {
   }
 }
 
+// Astro's serialised payload wraps values as `[typeTag, value]` where the tag is
+// an INTEGER. Upstream #18729 tightened this check: testing only that the first
+// element is "not an object" also matched `[string, ...]` arrays (e.g. a
+// two-image chapter), which were then silently collapsed to their second entry.
+// A lone `[int]` array is a typed null.
+function isAstroTag(value: unknown): boolean {
+  return typeof value === "number" && Number.isInteger(value);
+}
+
 function unwrapAstro(el: unknown): unknown {
   if (Array.isArray(el)) {
-    if (el.length === 2 && typeof el[0] !== "object") {
+    if (el.length === 1 && isAstroTag(el[0])) {
+      return null;
+    }
+    if (el.length === 2 && isAstroTag(el[0])) {
       return unwrapAstro(el[1]);
     }
     return el.map(unwrapAstro);

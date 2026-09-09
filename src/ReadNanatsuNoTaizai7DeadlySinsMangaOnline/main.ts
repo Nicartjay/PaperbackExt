@@ -3,7 +3,7 @@ import { MangaCatalogExtension } from "../utils/mangacatalog/template";
 
 export const ReadNanatsuNoTaizai7DeadlySinsMangaOnline = new MangaCatalogExtension({
   name: "Read Nanatsu no Taizai 7 Deadly Sins Manga Online",
-  baseUrl: "https://ww7.read7deadlysins.com",
+  baseUrl: "https://ww8.read7deadlysins.com",
   contentRating: ContentRating.EVERYONE,
   langCode: "🇬🇧",
   mangaList: [

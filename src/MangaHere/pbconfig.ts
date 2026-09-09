@@ -4,7 +4,7 @@ export default {
   name: "Mangahere",
   description:
     "Mangahere - custom source (mangahere.cc). Converted from keiyoushi.",
-  version: "1.4.24.1",
+  version: "1.4.24.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

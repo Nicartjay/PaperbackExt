@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read Nanatsu no Taizai 7 Deadly Sins Manga Online",
   description: "Read Nanatsu no Taizai 7 Deadly Sins Manga Online - MangaCatalog source (ww7.read7deadlysins.com). Converted from keiyoushi.",
-  version: "1.4.10.3",
+  version: "1.4.11.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

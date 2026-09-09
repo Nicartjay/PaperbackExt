@@ -5,73 +5,83 @@ import {
   type JSONObject,
 } from "@paperback/types";
 
-export interface StoneScapeSearchMeta extends JSONObject {
+export interface SilentQuillSearchMeta extends JSONObject {
   status: string[];
-  genres: string[];
+  genre: string[];
 }
 
-const STATUS_OPTIONS = [
+// Upstream Filters.kt (#18885).
+export const STATUS_OPTIONS = [
   { id: "", title: "All" },
   { id: "ongoing", title: "Ongoing" },
   { id: "completed", title: "Completed" },
-  { id: "hiatus", title: "Hiatus" },
 ];
 
-const GENRE_OPTIONS = [
+export const GENRE_OPTIONS = [
+  { id: "", title: "All" },
   { id: "action", title: "Action" },
   { id: "adaptation", title: "Adaptation" },
   { id: "adult", title: "Adult" },
   { id: "adventure", title: "Adventure" },
+  { id: "aliens", title: "Aliens" },
   { id: "comedy", title: "Comedy" },
+  { id: "delinquents", title: "Delinquents" },
   { id: "demons", title: "Demons" },
   { id: "drama", title: "Drama" },
   { id: "ecchi", title: "Ecchi" },
+  { id: "erotica", title: "Erotica" },
   { id: "fantasy", title: "Fantasy" },
-  { id: "genderbender", title: "Gender Bender" },
+  { id: "full-color", title: "Full Color" },
+  { id: "gender-bender", title: "Gender Bender" },
+  { id: "genderswap", title: "Genderswap" },
+  { id: "ghosts", title: "Ghosts" },
+  { id: "girls-love", title: "Girls' Love" },
   { id: "gore", title: "Gore" },
+  { id: "gyaru", title: "Gyaru" },
   { id: "harem", title: "Harem" },
+  { id: "hentai", title: "Hentai" },
   { id: "historical", title: "Historical" },
   { id: "horror", title: "Horror" },
   { id: "isekai", title: "Isekai" },
   { id: "josei", title: "Josei" },
   { id: "magic", title: "Magic" },
-  { id: "martialarts", title: "Martial Arts" },
+  { id: "martial-arts", title: "Martial Arts" },
   { id: "mature", title: "Mature" },
   { id: "mecha", title: "Mecha" },
-  { id: "military", title: "Military" },
+  { id: "monster-girls", title: "Monster Girls" },
   { id: "monsters", title: "Monsters" },
   { id: "mystery", title: "Mystery" },
-  { id: "post-apocalyptic", title: "Post-Apocalyptic" },
+  { id: "one-shot", title: "One-shot" },
   { id: "psychological", title: "Psychological" },
+  { id: "reincarnation", title: "Reincarnation" },
   { id: "romance", title: "Romance" },
-  { id: "schoollife", title: "School Life" },
-  { id: "sci-fi", title: "Sci-Fi" },
+  { id: "school-life", title: "School Life" },
+  { id: "sci-fi", title: "Sci-fi" },
   { id: "seinen", title: "Seinen" },
+  { id: "sexual-violence", title: "Sexual Violence" },
   { id: "shoujo", title: "Shoujo" },
-  { id: "shoujoai", title: "Shoujo Ai" },
   { id: "shounen", title: "Shounen" },
-  { id: "shounenai", title: "Shounen Ai" },
-  { id: "sliceoflife", title: "Slice of Life" },
+  { id: "slice-of-life", title: "Slice of Life" },
   { id: "smut", title: "Smut" },
   { id: "sports", title: "Sports" },
+  { id: "suggestive", title: "Suggestive" },
   { id: "supernatural", title: "Supernatural" },
+  { id: "survival", title: "Survival" },
   { id: "thriller", title: "Thriller" },
   { id: "tragedy", title: "Tragedy" },
   { id: "video-games", title: "Video Games" },
-  { id: "webtoons", title: "Webtoons" },
-  { id: "wuxia", title: "Wuxia" },
-  { id: "yaoi", title: "Yaoi" },
-  { id: "yuri", title: "Yuri" },
+  { id: "web-comic", title: "Web Comic" },
+  { id: "zombies", title: "Zombies" },
 ];
 
-export class StoneScapeSearchForm extends AdvancedSearchForm {
+export class SilentQuillSearchForm extends AdvancedSearchForm {
   private status: string[];
-  private genres: string[];
+  private genre: string[];
 
-  constructor(initialMeta?: StoneScapeSearchMeta) {
+  constructor(initialMeta?: SilentQuillSearchMeta) {
     super();
     this.status = initialMeta?.status ?? [];
-    this.genres = initialMeta?.genres ?? [];
+    this.genre = initialMeta?.genre ?? [];
   }
 
   async updateStatus(value: string[]): Promise<void> {
@@ -79,17 +89,17 @@ export class StoneScapeSearchForm extends AdvancedSearchForm {
     this.reloadForm();
   }
 
-  async updateGenres(value: string[]): Promise<void> {
-    this.genres = value;
+  async updateGenre(value: string[]): Promise<void> {
+    this.genre = value;
     this.reloadForm();
   }
 
-  getSearchQueryMetadata(): JSONObject {
+  getSearchQueryMetadata() {
     return {
       searchMeta: {
         status: this.status,
-        genres: this.genres,
-      } satisfies StoneScapeSearchMeta,
+        genre: this.genre,
+      } satisfies SilentQuillSearchMeta,
     };
   }
 
@@ -102,21 +112,21 @@ export class StoneScapeSearchForm extends AdvancedSearchForm {
           options: STATUS_OPTIONS,
           minItemCount: 0,
           maxItemCount: 1,
-          onValueChange: Application.Selector(
-            this as StoneScapeSearchForm,
-            "updateStatus",
-          ),
+          onValueChange: Application.Selector<
+            SilentQuillSearchForm,
+            (value: string[]) => Promise<void>
+          >(this, "updateStatus"),
         }),
-        SelectRow("genres", {
+        SelectRow("genre", {
           title: "Genres",
-          value: this.genres,
+          value: this.genre,
           options: GENRE_OPTIONS,
           minItemCount: 0,
-          maxItemCount: GENRE_OPTIONS.length,
-          onValueChange: Application.Selector(
-            this as StoneScapeSearchForm,
-            "updateGenres",
-          ),
+          maxItemCount: 1,
+          onValueChange: Application.Selector<
+            SilentQuillSearchForm,
+            (value: string[]) => Promise<void>
+          >(this, "updateGenre"),
         }),
       ]),
     ];

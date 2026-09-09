@@ -32,7 +32,7 @@ const BASE_URL = "https://www.supermegacomics.com";
 const MANGA_ID = "/";
 const TITLE = "SUPER MEGA";
 const AUTHOR = "JohnnySmash";
-const THUMBNAIL = "https://www.supermegacomics.com/runningman_inverted.PNG";
+const THUMBNAIL = "https://www.supermegacomics.com/runningman.png";
 const DESCRIPTION = "";
 
 class SUPERMEGAInterceptor extends PaperbackInterceptor {

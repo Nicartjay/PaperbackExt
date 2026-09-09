@@ -7,7 +7,7 @@ import {
 export default {
   name: "StoneScape",
   description: "StoneScape - custom source (stonescape.xyz). Converted from keiyoushi.",
-  version: "1.4.49.1",
+  version: "1.4.50.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

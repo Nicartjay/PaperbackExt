@@ -3,7 +3,7 @@ import { MangaCatalogExtension } from "../utils/mangacatalog/template";
 
 export const ReadFairyTailEdensZeroMangaOnline = new MangaCatalogExtension({
   name: "Read Fairy Tail & Edens Zero Manga Online",
-  baseUrl: "https://ww8.readfairytail.com",
+  baseUrl: "https://ww9.readfairytail.com",
   contentRating: ContentRating.EVERYONE,
   langCode: "🇬🇧",
   mangaList: [

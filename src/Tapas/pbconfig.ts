@@ -4,7 +4,7 @@ export default {
   name: "Tapas",
   description:
     "Tapas - webcomic/HTML+JSON-API source (tapas.io). Converted from keiyoushi.",
-  version: "1.4.24.2",
+  version: "1.4.24.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

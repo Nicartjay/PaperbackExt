@@ -129,6 +129,8 @@ type ViewerResponse = {
 
 type TokenResponse = {
   token?: string;
+  /** Unix seconds. Used to cache the token until shortly before it expires. */
+  expiresAt?: number;
 };
 
 type PageKeysResponse = {
@@ -202,6 +204,9 @@ type PhiliaScansImplementation = Extension &
   DiscoverSectionProviding;
 
 export class PhiliaScansExtension implements PhiliaScansImplementation {
+  /** Refresh the reader token this long before it expires (upstream #18895). */
+  static readonly TOKEN_SKEW_MS = 60_000;
+
   requestManager = new PhiliaScansInterceptor("main");
   cookieStorageInterceptor = new CookieStorageInterceptor({
     storage: "stateManager",
@@ -575,9 +580,27 @@ export class PhiliaScansExtension implements PhiliaScansImplementation {
     };
   }
 
-  private async fetchAccessToken(): Promise<string> {
+  /**
+   * Upstream #18895: the reader access token is valid for a while, so cache it
+   * instead of POSTing for a new one on every chapter open (the endpoint is
+   * rate-limited and was returning 429s). Refreshed once it is within
+   * TOKEN_SKEW_MS of expiring.
+   */
+  private cachedToken?: string;
+  private cachedTokenExpiresAtMs = 0;
+
+  private async fetchAccessToken(forceRefresh = false): Promise<string> {
+    const now = Date.now();
+    if (
+      !forceRefresh &&
+      this.cachedToken &&
+      this.cachedTokenExpiresAtMs - now > PhiliaScansExtension.TOKEN_SKEW_MS
+    ) {
+      return this.cachedToken;
+    }
+
     try {
-      const token = await this.fetchJson<TokenResponse>({
+      const result = await this.fetchJson<TokenResponse>({
         url: `${API_URL}/reader/access-token`,
         method: "POST",
         headers: {
@@ -585,8 +608,18 @@ export class PhiliaScansExtension implements PhiliaScansImplementation {
           "x-requested-with": "XMLHttpRequest",
         },
       });
-      return (token.token || "").trim();
+      const token = (result.token || "").trim();
+      if (token) {
+        this.cachedToken = token;
+        // `expiresAt` is Unix seconds; treat a missing value as immediately
+        // stale so the next call re-fetches rather than caching forever.
+        this.cachedTokenExpiresAtMs =
+          typeof result.expiresAt === "number" ? result.expiresAt * 1000 : 0;
+      }
+      return token;
     } catch {
+      this.cachedToken = undefined;
+      this.cachedTokenExpiresAtMs = 0;
       return "";
     }
   }

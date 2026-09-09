@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Renascans",
   description: "Renascans - Iken source (renascans.net). Converted from keiyoushi.",
-  version: "1.4.26.1",
+  version: "1.4.27.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

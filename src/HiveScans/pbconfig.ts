@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Hive Scans",
   description: "Hive Scans - Iken source (hivetoons.org). Converted from keiyoushi.",
-  version: "1.4.70.1",
+  version: "1.4.71.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

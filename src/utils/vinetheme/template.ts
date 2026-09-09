@@ -43,6 +43,8 @@ import {
   SourceManga,
   TagSection,
 } from "@paperback/types";
+import * as cheerio from "cheerio";
+import * as htmlparser2 from "htmlparser2";
 import { findRscObject } from "../nextjs-rsc/flight";
 import { VineThemeSearchForm, VineThemeSearchMeta } from "./forms";
 import {
@@ -318,7 +320,7 @@ export class VineThemeExtension implements VineThemeImplementation {
       info.push(`Sale: ${series.salePercent}%`);
     }
 
-    let synopsis = (series.description ?? "").trim();
+    let synopsis = this.htmlToText(series.description ?? "");
     if (info.length > 0) {
       synopsis += (synopsis ? "\n\n" : "") + info.join("\n");
     }
@@ -539,6 +541,36 @@ export class VineThemeExtension implements VineThemeImplementation {
     } catch {
       return undefined;
     }
+  }
+
+  /**
+   * Upstream #18699: descriptions come back as HTML. Render them as readable
+   * text — links become `[text](url)`, paragraphs become blank lines and `<br>`
+   * becomes a newline — instead of dumping raw tags into the synopsis.
+   */
+  private htmlToText(html: string): string {
+    const raw = (html || "").trim();
+    if (!raw) return "";
+    if (!/[<&]/.test(raw)) return raw;
+
+    const $ = cheerio.load(htmlparser2.parseDocument(raw));
+    $("a[href]").each((_, el) => {
+      const link = $(el);
+      const href = this.absoluteUrl(link.attr("href") ?? "");
+      const text = link.text().trim();
+      link.replaceWith(text.length === 0 ? href : `[${text}](${href})`);
+    });
+    $("p").each((_, el) => {
+      $(el).after("\n\n");
+    });
+    $("br").each((_, el) => {
+      $(el).replaceWith("\n");
+    });
+
+    return $.root()
+      .text()
+      .replace(/\n{3,}/g, "\n\n")
+      .trim();
   }
 
   private absoluteUrl(src: string): string {

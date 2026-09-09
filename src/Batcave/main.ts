@@ -65,6 +65,13 @@ class BatCaveInterceptor extends PaperbackInterceptor {
       accept:
         "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
       "accept-language": "en-US,en;q=0.5",
+      // Upstream #18775: the site's search started rejecting requests that do
+      // not look like a top-level browser navigation, so send the Sec-Fetch
+      // metadata a real address-bar navigation would carry.
+      "sec-fetch-dest": "document",
+      "sec-fetch-mode": "navigate",
+      "sec-fetch-site": "none",
+      "sec-fetch-user": "?1",
     };
     return request;
   }
