@@ -1,5 +1,5 @@
 {
-  "buildTime": "2026-08-29T07:04:46.794Z",
+  "buildTime": "2026-09-09T13:02:29.509Z",
   "builtWith": {
     "toolchain": "1.0.0-alpha.92",
     "types": "1.0.0-alpha.92"
@@ -127,7 +127,7 @@
     {
       "name": "AllManga",
       "description": "AllManga - custom source (mkissa.to). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.28.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -382,9 +382,9 @@
       "id": "ArenaScans"
     },
     {
-      "name": "Armageddon",
-      "description": "Armageddon - MangaThemesia source (www.silentquill.net). Converted from keiyoushi.",
-      "version": "1.4.34.2",
+      "name": "SilentQuill",
+      "description": "SilentQuill - custom source (silentquill.net). Converted from keiyoushi.",
+      "version": "1.4.35.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -392,15 +392,9 @@
         4,
         64,
         1,
-        16,
-        32
+        16
       ],
       "badges": [
-        {
-          "label": "MangaThemesia",
-          "textColor": "#FFFFFF",
-          "backgroundColor": "#1565C0"
-        },
         {
           "label": "Mature",
           "textColor": "#FFFFFF",
@@ -449,9 +443,9 @@
       "id": "ArtLapsa"
     },
     {
-      "name": "Arya Scans",
-      "description": "Arya Scans - Madara source (brainrotcomics.com). Converted from keiyoushi.",
-      "version": "1.4.56.1",
+      "name": "BrainRotComics",
+      "description": "BrainRotComics - Madara source (brainrotcomics.com). Converted from keiyoushi.",
+      "version": "1.4.57.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -574,7 +568,7 @@
     {
       "name": "Asura Scans",
       "description": "Asura Scans - custom source (asurascans.com). Converted from keiyoushi.",
-      "version": "1.4.67.1",
+      "version": "1.4.69.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -752,7 +746,7 @@
     {
       "name": "BatCave",
       "description": "BatCave - custom source (batcave.biz). Converted from keiyoushi.",
-      "version": "1.4.9.1",
+      "version": "1.4.11.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -1332,7 +1326,7 @@
     {
       "name": "Comix",
       "description": "Comix - HTML scraper source (comix.to). Converted from keiyoushi.",
-      "version": "1.4.36.1",
+      "version": "1.4.38.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1772,7 +1766,7 @@
     {
       "name": "Diva Scans",
       "description": "Diva Scans - Iken source (divatoon.com). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.27.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -1899,7 +1893,7 @@
     {
       "name": "Drake Scans",
       "description": "Drake Scans - MangaThemesia source (drakecomic.org). Converted from keiyoushi.",
-      "version": "1.4.48.3",
+      "version": "1.4.50.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -3525,7 +3519,7 @@
     {
       "name": "Hijala Scans",
       "description": "Hijala Scans - Iken source (en-hijala.com). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.27.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -3556,7 +3550,7 @@
     {
       "name": "Hiperdex",
       "description": "Hiperdex - Hiper source (hiperdex.com). Converted from keiyoushi.",
-      "version": "1.4.88.1",
+      "version": "1.4.89.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -3590,7 +3584,7 @@
     {
       "name": "Hive Scans",
       "description": "Hive Scans - Iken source (hivetoons.org). Converted from keiyoushi.",
-      "version": "1.4.70.1",
+      "version": "1.4.71.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -3796,7 +3790,7 @@
     {
       "name": "InfinityScans",
       "description": "InfinityScans - JSON-API manga source (infinityscans.org). Converted from keiyoushi.",
-      "version": "1.4.12.1",
+      "version": "1.4.13.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -4085,7 +4079,7 @@
     {
       "name": "Kayn Scans",
       "description": "Kayn Scans - Iken source (kaynscan.org). Converted from keiyoushi.",
-      "version": "1.4.31.1",
+      "version": "1.4.33.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4140,7 +4134,7 @@
     {
       "name": "Ken Scans",
       "description": "Ken Scans - Iken source (kencomics.com). Converted from keiyoushi.",
-      "version": "1.4.36.1",
+      "version": "1.4.37.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -4903,7 +4897,7 @@
     {
       "name": "Magus Manga",
       "description": "Magus Manga - Iken source (magustoon.org). Converted from keiyoushi.",
-      "version": "1.4.72.1",
+      "version": "1.4.73.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -5380,7 +5374,7 @@
     {
       "name": "Mangadotnet",
       "description": "Mangadotnet - custom source (mangadot.net). Converted from keiyoushi.",
-      "version": "1.4.18.1",
+      "version": "1.4.20.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5442,7 +5436,7 @@
     {
       "name": "MangaFox",
       "description": "MangaFox - HTML scraper source (fanfox.net). Converted from keiyoushi.",
-      "version": "1.4.9.1",
+      "version": "1.4.9.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5703,7 +5697,7 @@
     {
       "name": "Mangahere",
       "description": "Mangahere - custom source (mangahere.cc). Converted from keiyoushi.",
-      "version": "1.4.24.1",
+      "version": "1.4.24.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -5872,7 +5866,7 @@
     {
       "name": "MangaKatana",
       "description": "MangaKatana - custom source (mangakatana.com). Converted from keiyoushi.",
-      "version": "1.4.12.2",
+      "version": "1.4.12.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6229,7 +6223,7 @@
     {
       "name": "MangaRead.org",
       "description": "MangaRead.org - Madara source (www.mangaread.org). Converted from keiyoushi.",
-      "version": "1.4.56.1",
+      "version": "1.4.57.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6435,7 +6429,7 @@
     {
       "name": "Manga.uno",
       "description": "Manga.uno - JSON API source (manga.uno). Converted from keiyoushi.",
-      "version": "1.4.1.1",
+      "version": "1.4.2.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -6735,7 +6729,7 @@
     {
       "name": "Mangamo",
       "description": "Mangamo - Firebase/Firestore JSON API source (mangamo.com). Converted from keiyoushi.",
-      "version": "1.4.7.1",
+      "version": "1.4.8.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -7643,9 +7637,9 @@
       "id": "ManhwaToon"
     },
     {
-      "name": "Manhwa XXL",
-      "description": "Manhwa XXL - HTML scraper source (hentaitnt.net). Converted from keiyoushi.",
-      "version": "1.4.6.1",
+      "name": "HentaiTnT",
+      "description": "HentaiTnT - custom source (hentaitnt.net). Converted from keiyoushi.",
+      "version": "1.4.7.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -7964,7 +7958,7 @@
     {
       "name": "Mgread.io",
       "description": "Mgread.io - HTML scraper source (mgread.io). Converted from keiyoushi.",
-      "version": "1.4.2.1",
+      "version": "1.4.3.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -8684,7 +8678,7 @@
     {
       "name": "Nyx Scans",
       "description": "Nyx Scans - Iken source (nyxscans.com). Converted from keiyoushi.",
-      "version": "1.4.30.1",
+      "version": "1.4.31.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9057,7 +9051,7 @@
     {
       "name": "Orion Scans",
       "description": "Orion Scans - Iken source (orion-scans.com). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.27.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9256,7 +9250,7 @@
     {
       "name": "Philia Scans",
       "description": "Philia Scans - JSON API source (philiascans.org). Converted from keiyoushi.",
-      "version": "1.4.59.1",
+      "version": "1.4.59.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9482,7 +9476,7 @@
     {
       "name": "Raven Scans",
       "description": "Raven Scans - MangaThemesia source (ravenscans.org). Converted from keiyoushi.",
-      "version": "1.4.36.1",
+      "version": "1.4.37.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -9727,7 +9721,7 @@
     {
       "name": "Read Comics Online",
       "description": "Read Comics Online - MMRCMS source (readcomicsonline.ru). Converted from keiyoushi.",
-      "version": "1.4.14.1",
+      "version": "1.4.15.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9758,7 +9752,7 @@
     {
       "name": "Read Fairy Tail & Edens Zero Manga Online",
       "description": "Read Fairy Tail & Edens Zero Manga Online - MangaCatalog source (ww8.readfairytail.com). Converted from keiyoushi.",
-      "version": "1.4.9.3",
+      "version": "1.4.10.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -9881,7 +9875,7 @@
     {
       "name": "Read Nanatsu no Taizai 7 Deadly Sins Manga Online",
       "description": "Read Nanatsu no Taizai 7 Deadly Sins Manga Online - MangaCatalog source (ww7.read7deadlysins.com). Converted from keiyoushi.",
-      "version": "1.4.10.3",
+      "version": "1.4.11.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10114,7 +10108,7 @@
     {
       "name": "Renascans",
       "description": "Renascans - Iken source (renascans.net). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.27.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10417,37 +10411,6 @@
       "id": "RoseSquadScans"
     },
     {
-      "name": "Ryumanga",
-      "description": "Ryumanga - Keyoapp source (ryumanga.org). Converted from keiyoushi.",
-      "version": "1.4.21.1",
-      "icon": "icon.png",
-      "language": "en",
-      "contentRating": "SAFE",
-      "capabilities": [
-        4,
-        64,
-        1,
-        16,
-        32
-      ],
-      "badges": [
-        {
-          "label": "Keyoapp",
-          "textColor": "#FFFFFF",
-          "backgroundColor": "#6A1B9A"
-        }
-      ],
-      "developers": [
-        {
-          "name": "nicartjay"
-        },
-        {
-          "name": "keiyoushi"
-        }
-      ],
-      "id": "Ryumanga"
-    },
-    {
       "name": "S2Manga",
       "description": "S2Manga - Madara source (s2read.com). Converted from keiyoushi.",
       "version": "1.4.58.1",
@@ -10516,7 +10479,7 @@
     {
       "name": "SUPER MEGA",
       "description": "SUPER MEGA - webcomic source (supermegacomics.com). Converted from keiyoushi.",
-      "version": "1.4.4.1",
+      "version": "1.4.4.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10564,7 +10527,7 @@
     {
       "name": "Sana Scans",
       "description": "Sana Scans - Iken source (sanascans.com). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.27.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -10619,7 +10582,7 @@
     {
       "name": "ScansGG",
       "description": "ScansGG - custom source (scans.gg). Converted from keiyoushi.",
-      "version": "1.4.1.1",
+      "version": "1.4.2.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11062,7 +11025,7 @@
     {
       "name": "StoneScape",
       "description": "StoneScape - custom source (stonescape.xyz). Converted from keiyoushi.",
-      "version": "1.4.49.1",
+      "version": "1.4.50.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11086,7 +11049,7 @@
     {
       "name": "Sunshine Butterfly Scans",
       "description": "Sunshine Butterfly Scans - JSON-API manga source (wings.sbs). Converted from keiyoushi.",
-      "version": "1.4.39.2",
+      "version": "1.4.39.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11116,7 +11079,7 @@
     {
       "name": "Swords Comic",
       "description": "Swords Comic - custom source (swordscomic.com). Converted from keiyoushi.",
-      "version": "1.4.5.1",
+      "version": "1.4.5.2",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11195,7 +11158,7 @@
     {
       "name": "Tapas",
       "description": "Tapas - webcomic/HTML+JSON-API source (tapas.io). Converted from keiyoushi.",
-      "version": "1.4.24.2",
+      "version": "1.4.24.3",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11225,7 +11188,7 @@
     {
       "name": "Team Shadowi",
       "description": "Team Shadowi - Next.js JSON/RSC source (team-shadowi.com). Converted from keiyoushi.",
-      "version": "1.4.1.1",
+      "version": "1.4.2.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11255,7 +11218,7 @@
     {
       "name": "Temple Scan",
       "description": "Temple Scan - custom source (templetoons.com). Converted from keiyoushi.",
-      "version": "1.4.50.1",
+      "version": "1.4.51.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11285,7 +11248,7 @@
     {
       "name": "The Blank",
       "description": "The Blank - JSON API source (theblank.net). Converted from keiyoushi.",
-      "version": "1.4.56.12",
+      "version": "1.4.57.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11315,7 +11278,7 @@
     {
       "name": "The Duck Webcomics",
       "description": "The Duck Webcomics - custom source (theduckwebcomics.com). Converted from keiyoushi.",
-      "version": "1.4.3.1",
+      "version": "1.4.4.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11345,7 +11308,7 @@
     {
       "name": "The Property of Hate",
       "description": "The Property of Hate - webcomic source (jolleycomics.com). Converted from keiyoushi.",
-      "version": "1.4.5.1",
+      "version": "1.4.6.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11431,7 +11394,7 @@
     {
       "name": "TodayManga",
       "description": "TodayManga - HTML scraper source (todaymanga.com). Converted from keiyoushi.",
-      "version": "1.4.3.1",
+      "version": "1.4.4.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "MATURE",
@@ -11804,7 +11767,7 @@
     {
       "name": "Valir Scans",
       "description": "Valir Scans - Next.js (RSC) HTML source (valirscans.org). Converted from keiyoushi.",
-      "version": "1.4.23.1",
+      "version": "1.4.24.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11829,7 +11792,7 @@
     {
       "name": "Vanilla Scans",
       "description": "Vanilla Scans - Iken source (vanillascans.org). Converted from keiyoushi.",
-      "version": "1.4.26.1",
+      "version": "1.4.27.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11884,7 +11847,7 @@
     {
       "name": "Violet Scans",
       "description": "Violet Scans - MangaThemesia source (violetscans.org). Converted from keiyoushi.",
-      "version": "1.4.36.1",
+      "version": "1.4.37.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -11969,7 +11932,7 @@
     {
       "name": "Vortex Scans",
       "description": "Vortex Scans - JSON API source (vortexscans.org). Converted from keiyoushi.",
-      "version": "1.4.88.1",
+      "version": "1.4.89.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
@@ -12281,7 +12244,7 @@
     {
       "name": "WitchScans",
       "description": "WitchScans - MangaThemesia source (witchscans.com). Converted from keiyoushi.",
-      "version": "1.4.32.3",
+      "version": "1.4.34.1",
       "icon": "icon.png",
       "language": "en",
       "contentRating": "SAFE",
