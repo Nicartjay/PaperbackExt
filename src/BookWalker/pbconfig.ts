@@ -4,7 +4,7 @@ export default {
   name: "BookWalker",
   description:
     "BookWalker - official digital manga store (bookwalker.com). Converted from keiyoushi.",
-  version: "1.4.7.1",
+  version: "1.4.7.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

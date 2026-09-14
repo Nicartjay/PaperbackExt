@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Rage Scans",
   description: "Rage Scans - MangaThemesia source (ragescans.com). Converted from keiyoushi.",
-  version: "1.4.34.1",
+  version: "1.4.34.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

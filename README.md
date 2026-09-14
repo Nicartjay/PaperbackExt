@@ -106,7 +106,7 @@ every source built on it.
 | Framework | Style | Sources | Notes |
 | --------- | ----- | ------: | ----- |
 | Madara | HTML | 110 | WordPress theme; `mangaSubString` / `useNewChapterEndpoint` per source |
-| MangaThemesia | HTML | 36 | Flat chapter URLs; `?title=&page=&order=` browse |
+| MangaThemesia | HTML | 26 | Flat chapter URLs; `?title=&page=&order=` browse |
 | Keyoapp | HTML | 17 | Homepage popular + client-side search; CSS background-image thumbs |
 | MangaCatalog | HTML | 13 | Single-franchise sites with hardcoded title lists |
 | Iken | JSON | 9 | `{apiUrl}/api/query|post|chapter`; locked-chapter toggle |
@@ -149,8 +149,8 @@ images, unscrambled in-process via Paperback's canvas polyfill),
 
 ## Available Sources
 
-**411** sources are currently published. Sources marked **Mature** contain
-adult/NSFW content (219 Mature, 192 Everyone).
+**401** sources are currently published. Sources marked **Mature** contain
+adult/NSFW content (212 Mature, 189 Everyone).
 
 The lists below group sources by manual testing status. **Tested** sources
 have been verified working on a device. **Not yet tested** sources are plain
@@ -167,10 +167,10 @@ If a source is broken, please open an issue.
 | Aqua Manga | 1.4.65.1 | Everyone |  |
 | Asura Scans | 1.4.69.1 | Everyone |  |
 | Bakkin | 1.4.7.1 | Everyone |  |
-| BatCave | 1.4.11.1 | Everyone |  |
+| BatCave | 1.4.12.1 | Everyone |  |
 | Bbato | 1.4.1.1 | Mature |  |
 | ComicK Fanmade | 1.4.2.1 | Mature |  |
-| Comic Asura | 1.4.34.3 | Mature |  |
+| Comic Asura | 1.4.34.4 | Mature |  |
 | Comix | 1.4.38.1 | Mature | Scanlation group shown in each chapter title, e.g. [Group]. |
 | DragonTea | 1.4.59.1 | Everyone |  |
 | Drake Scans | 1.4.50.1 | Everyone |  |
@@ -185,7 +185,7 @@ If a source is broken, please open an issue.
 | Hiperdex | 1.4.89.1 | Mature |  |
 | Hive Scans | 1.4.71.1 | Everyone |  |
 | HotComics | 1.4.3.1 | Mature |  |
-| InfinityScans | 1.4.13.1 | Mature |  |
+| InfinityScans | 1.4.14.1 | Mature |  |
 | Kaizen Scan | 1.4.21.1 | Mature | Coin-locked (paid) chapters can’t be opened — purchase required on the site. |
 | KaliScan | 1.4.25.6 | Mature |  |
 | K Manga | 1.4.7.1 | Everyone | Only unlocked/free chapters tested; rented/purchased chapters require logging in (region-locked to Japan). |
@@ -225,7 +225,7 @@ If a source is broken, please open an issue.
 | Read One Piece Manga Online | 1.4.9.1 | Everyone |  |
 | ReadComicOnline | 1.4.43.13 | Everyone |  |
 | Rinko Comics | 1.4.2.1 | Everyone |  |
-| Rizz Comic | 1.4.46.1 | Everyone |  |
+| Rizz Comic | 1.4.46.2 | Everyone |  |
 | TCB Scans | 1.4.12.1 | Everyone |  |
 | Tapas | 1.4.24.3 | Mature | Locked/paywalled chapters can’t be opened — purchase required. |
 | Temple Scan | 1.4.51.1 | Mature |  |
@@ -251,34 +251,34 @@ site is currently down.
 | Toonily.me | 1.4.4.1 | Mature | Re-platformed upstream — the source moved off MadTheme onto the new shared **MangaK** theme and its domain changed from `toonily.me` to `toontop.io`. Both `toontop.io` and its `api.toontop.io` search endpoint answer every non-browser request with Cloudflare HTTP 403 (`Just a moment…`), so the port can only be exercised through Paperback's Cloudflare bypass on-device. Will re-test once verified on a device. |
 | XOXO Comics | 1.4.13.5 | Everyone | Images unavailable to headless clients — every chapter page image is self-hosted on xoxocomic.com (`/comic/<slug>/<issue>/<id>/<n>.jpg`) but those URLs return HTTP 200 with a ~106 KB HTML "404!" reader page instead of image bytes for any non-browser request (verified across iOS/Googlebot UAs, image-only Accept, with/without referer/cookies). The site gates page images behind JS/Cloudflare/adblock detection, so Paperback can never retrieve them. Affects all headless clients. |
 
-### 🧪 Not yet tested (332)
+### 🧪 Not yet tested (322)
 
 | Source | Version | Content |
 | ------ | ------- | ------- |
 | 18 Porn Comic | 1.4.3.1 | Mature |
 | 1Manga.co | 1.4.36.1 | Mature |
 | Akai Comic | 1.4.3.1 | Everyone |
-| Akaza Scans | 1.4.32.1 | Everyone |
+| Akaza Scans | 1.4.32.2 | Everyone |
 | Alandal | 1.4.2.1 | Everyone |
-| AllManga | 1.4.28.1 | Mature |
+| AllManga | 1.4.29.1 | Mature |
 | AllPornComic | 1.4.56.1 | Mature |
 | AllPornComic.io | 1.4.54.1 | Mature |
 | Alpha Manga | 1.4.2.1 | Everyone |
 | Anisa Scans | 1.4.55.1 | Mature |
 | AP Comics | 1.4.54.1 | Mature |
-| Arena Scans | 1.4.32.2 | Everyone |
+| Arena Scans | 1.4.32.3 | Everyone |
 | SilentQuill | 1.4.35.1 | Mature |
 | Art Lapsa | 1.4.26.1 | Everyone |
 | BrainRotComics | 1.4.57.1 | Everyone |
 | AsiaToon | 1.4.2.1 | Mature |
 | Asmodeus Scans | 1.4.24.1 | Everyone |
 | Assorted Scans | 1.4.18.1 | Everyone |
-| Athrea Scans | 1.4.33.2 | Mature |
+| Athrea Scans | 1.4.33.3 | Mature |
 | Atsumaru | 1.4.23.1 | Mature |
 | aurora | 1.4.4.1 | Everyone |
 | Bakkin Self-hosted | 1.4.7.1 | Everyone |
 | Battle In 5 Seconds After Meeting | 1.4.54.1 | Everyone |
-| BookWalker | 1.4.7.1 | Mature |
+| BookWalker | 1.4.7.2 | Mature |
 | Borat Scans | 1.4.54.1 | Everyone |
 | Broccoli Soup | 1.4.1.1 | Everyone |
 | Bun Manga | 1.4.54.1 | Everyone |
@@ -291,12 +291,10 @@ site is currently down.
 | Comic CX | 1.4.1.1 | Mature |
 | ComicHubFree | 1.4.3.1 | Everyone |
 | ComicLand | 1.4.1.1 | Mature |
-| Comics Land | 1.4.32.2 | Mature |
 | Comivex | 1.4.3.1 | Everyone |
 | Coolmic | 1.4.4.1 | Mature |
-| Crow Scans | 1.4.32.2 | Everyone |
 | Cucumber Manga | 1.4.54.1 | Mature |
-| CulturedWorks | 1.4.33.2 | Mature |
+| CulturedWorks | 1.4.33.3 | Mature |
 | Cutie Comics | 1.4.5.1 | Mature |
 | Cyanide & Happiness | 1.4.5.1 | Everyone |
 | Danke fürs Lesen | 1.4.7.1 | Mature |
@@ -313,19 +311,19 @@ site is currently down.
 | Eggporncomics | 1.4.3.1 | Mature |
 | El Goonish Shive | 1.4.2.1 | Everyone |
 | Elan School | 1.4.1.1 | Everyone |
-| Elf Toon | 1.4.34.2 | Everyone |
+| Elf Toon | 1.4.34.3 | Everyone |
 | emaqi | 1.4.1.2 | Mature |
 | Eris Scans | 1.4.21.1 | Mature |
 | Ero18x | 1.4.54.1 | Mature |
 | Erofus | 1.4.3.1 | Mature |
-| Eva Scans | 1.4.35.1 | Everyone |
+| Eva Scans | 1.4.35.2 | Everyone |
 | Existential Comics | 1.4.5.1 | Everyone |
 | Fairy Scans | 1.4.34.1 | Mature |
 | Firescans | 1.4.56.1 | Everyone |
 | FlameScans.lol | 1.4.53.1 | Everyone |
 | Frieren Online | 1.4.52.1 | Everyone |
 | GakaMangas | 1.4.54.1 | Everyone |
-| Galaxy Manga | 1.4.32.2 | Mature |
+| Galaxy Manga | 1.4.32.3 | Mature |
 | GalaxyDegenScans | 1.4.58.1 | Mature |
 | GEDE Comix | 1.4.54.1 | Mature |
 | Gensura | 1.4.3.1 | Mature |
@@ -339,10 +337,9 @@ site is currently down.
 | Grrl Power Comic | 1.4.5.1 | Everyone |
 | Gunnerkrigg Court | 1.4.3.1 | Everyone |
 | Hachirumi | 1.4.7.1 | Mature |
-| Hades Scans | 1.4.33.2 | Everyone |
+| Hades Scans | 1.4.33.3 | Everyone |
 | Hentai3z.CC | 1.4.3.1 | Mature |
 | Hentai4Free | 1.4.52.1 | Mature |
-| HentaiDex | 1.4.34.2 | Mature |
 | HentaiKisu | 1.4.1.1 | Mature |
 | HentaiKun | 1.4.1.1 | Mature |
 | HentaiRead.io | 1.4.1.1 | Mature |
@@ -360,23 +357,23 @@ site is currently down.
 | I'm An Evil God | 1.4.7.3 | Everyone |
 | I Roved Out | 1.4.5.1 | Mature |
 | IsekaiScan.top (unoriginal) | 1.4.53.1 | Mature |
-| J-Novel | 1.4.4.1 | Everyone |
+| J-Novel | 1.4.4.2 | Everyone |
 | Jinmangas | 1.4.54.1 | Mature |
-| Kappa Beast | 1.4.33.1 | Mature |
+| Kappa Beast | 1.4.33.2 | Mature |
 | Kayn Scans | 1.4.33.1 | Everyone |
 | keenspot | 1.4.3.1 | Everyone |
 | Ken Scans | 1.4.37.1 | Everyone |
 | Kewn Scans | 1.4.22.1 | Everyone |
 | Kill Six Billion Demons | 1.4.6.1 | Everyone |
-| King of Shojo | 1.4.32.2 | Mature |
+| King of Shojo | 1.4.32.3 | Mature |
 | KingComiX | 1.4.2.1 | Mature |
 | Kissmanga.in | 1.4.58.1 | Mature |
 | Kodansha | 1.4.1.1 | Mature |
 | KokoMangas | 1.4.56.1 | Mature |
 | KSGroupScans | 1.4.54.1 | Mature |
 | Kun Manga Online | 1.4.53.1 | Mature |
-| KuraManga | 1.4.2.1 | Mature |
-| Lagoon Scans | 1.4.32.2 | Everyone |
+| KuraManga | 1.4.3.1 | Mature |
+| Lagoon Scans | 1.4.32.3 | Everyone |
 | Leslie&Victims | 1.4.2.1 | Everyone |
 | LHTranslation | 1.4.55.1 | Everyone |
 | LinkManga | 1.4.54.1 | Mature |
@@ -384,8 +381,8 @@ site is currently down.
 | Lua Scans | 1.4.52.1 | Everyone |
 | Luminare Translations | 1.4.3.1 | Everyone |
 | Luna Toons | 1.4.21.1 | Mature |
-| LustToon | 1.4.1.1 | Mature |
-| Madara Scans | 1.4.35.1 | Everyone |
+| LustToon | 1.4.2.1 | Mature |
+| Madara Scans | 1.4.35.2 | Everyone |
 | Mahouirexnohentaikarte | 1.4.54.1 | Mature |
 | Manga 18x | 1.4.55.1 | Mature |
 | Manga Dass | 1.4.53.1 | Mature |
@@ -393,7 +390,7 @@ site is currently down.
 | Manga Drama | 1.4.52.1 | Mature |
 | Manga Kiss | 1.4.55.1 | Everyone |
 | Manga Mirai | 1.4.1.1 | Everyone |
-| Manga Trend | 1.4.32.2 | Everyone |
+| Manga Trend | 1.4.32.3 | Everyone |
 | Manga-Bay | 1.4.1.1 | Mature |
 | Manga.uno | 1.4.2.1 | Mature |
 | Manga18Free | 1.4.55.1 | Mature |
@@ -421,7 +418,7 @@ site is currently down.
 | MangaReader.site | 1.4.36.1 | Everyone |
 | Mangasushi | 1.4.57.1 | Everyone |
 | MangaToday | 1.4.36.1 | Mature |
-| MangaTX | 1.4.33.2 | Mature |
+| MangaTX | 1.4.33.3 | Mature |
 | MangaYi | 1.4.2.1 | Everyone |
 | MangaYY | 1.4.55.1 | Mature |
 | Manhua Plus | 1.4.61.1 | Everyone |
@@ -430,7 +427,6 @@ site is currently down.
 | ManhuaFast.net (unoriginal) | 1.4.52.1 | Everyone |
 | ManhuaHot | 1.4.54.1 | Everyone |
 | Manhuanext | 1.4.55.1 | Everyone |
-| Manhuascan.us | 1.4.32.2 | Mature |
 | ManhuaTop | 1.4.55.1 | Mature |
 | ManhuaUS | 1.4.59.1 | Everyone |
 | Manhwa Comics | 1.4.54.1 | Mature |
@@ -444,12 +440,10 @@ site is currently down.
 | ManhwaGet | 1.4.54.1 | Everyone |
 | ManhwaHub | 1.4.5.1 | Mature |
 | Manhwalike | 1.4.3.1 | Mature |
-| Manhwalover | 1.4.32.2 | Mature |
 | ManhwaManhua | 1.4.54.1 | Mature |
 | ManhwaNex | 1.4.54.1 | Everyone |
 | ManhwaRead | 1.4.1.1 | Mature |
 | Manhwatop | 1.4.56.1 | Mature |
-| Manhwax | 1.4.32.2 | Mature |
 | ManhwaZone | 1.4.1.1 | Mature |
 | Megatokyo | 1.4.4.1 | Everyone |
 | Mehgazone | 1.4.2.1 | Mature |
@@ -464,12 +458,10 @@ site is currently down.
 | MyHentaiComics | 1.4.4.1 | Mature |
 | MyHentaiGallery | 1.4.10.1 | Mature |
 | New Manhwa | 1.4.35.1 | Mature |
-| NexComic | 1.4.32.2 | Mature |
-| Nika Toons | 1.4.32.2 | Everyone |
+| NexComic | 1.4.32.3 | Mature |
 | Ninekon | 1.4.1.1 | Mature |
 | NixManga | 1.4.2.1 | Mature |
 | NovelCrow | 1.4.53.1 | Mature |
-| Noxen Scans | 1.4.32.2 | Everyone |
 | Nux Scans | 1.4.2.1 | Everyone |
 | Nuvia Toon | 1.4.1.1 | Everyone |
 | Nyanu Kafe | 1.4.22.1 | Everyone |
@@ -495,11 +487,11 @@ site is currently down.
 | PornComix | 1.4.49.1 | Mature |
 | Qi Scans | 1.4.26.1 | Everyone |
 | Questionable Content | 1.4.10.1 | Everyone |
-| Rackus | 1.4.39.2 | Everyone |
-| Rage Scans | 1.4.34.1 | Everyone |
+| Rackus | 1.4.39.3 | Everyone |
+| Rage Scans | 1.4.34.2 | Everyone |
 | Randowiz | 1.4.2.1 | Everyone |
-| Raven Scans | 1.4.37.1 | Mature |
-| Razure | 1.4.32.2 | Everyone |
+| Raven Scans | 1.4.37.2 | Mature |
+| Razure | 1.4.32.3 | Everyone |
 | RD Scans | 1.4.52.1 | Everyone |
 | Read Attack on Titan Shingeki no Kyojin Manga | 1.4.14.1 | Everyone |
 | Read Berserk Manga | 1.4.9.1 | Everyone |
@@ -518,25 +510,23 @@ site is currently down.
 | Real Life Comics | 1.4.3.1 | Everyone |
 | ReiManga | 1.4.5.1 | Mature |
 | Renascans | 1.4.27.1 | Everyone |
-| Rest Scans | 1.4.32.2 | Mature |
 | Revival Scans | 1.4.1.1 | Mature |
-| RitharScans | 1.4.24.1 | Everyone |
-| Rizz Comic (unoriginal) | 1.4.32.2 | Everyone |
-| RokariComics | 1.4.34.2 | Everyone |
+| RitharScans | 1.4.25.1 | Everyone |
+| Rizz Comic (unoriginal) | 1.4.32.3 | Everyone |
+| RokariComics | 1.4.34.3 | Everyone |
 | Rolia Scan | 1.4.9.1 | Everyone |
 | Rose Squad Scans | 1.4.53.1 | Mature |
-| S2Manga | 1.4.58.1 | Mature |
+| S2Manga | 1.4.59.1 | Mature |
 | Sabrina Online | 1.4.2.1 | Everyone |
 | SACACHISPA | 1.4.1.1 | Mature |
 | Sana Scans | 1.4.27.1 | Everyone |
 | Saturday Morning Breakfast Comics | 1.4.2.1 | Everyone |
 | ScansGG | 1.4.2.1 | Mature |
 | Schlock Mercenary | 1.4.2.1 | Everyone |
-| Scythe Scans | 1.4.40.1 | Everyone |
+| Scythe Scans | 1.4.40.2 | Everyone |
 | Setsu Scans | 1.4.55.1 | Everyone |
 | Shiba Manga | 1.4.52.1 | Mature |
 | Siren Scans | 1.4.21.1 | Everyone |
-| Sky Manga | 1.4.33.2 | Mature |
 | Sleepy Translations | 1.4.55.1 | Everyone |
 | Solar and Sundry | 1.4.2.1 | Everyone |
 | Spmanhwa | 1.4.54.1 | Everyone |
@@ -549,7 +539,7 @@ site is currently down.
 | Team Shadowi | 1.4.2.1 | Mature |
 | The Duck Webcomics | 1.4.4.1 | Mature |
 | The Property of Hate | 1.4.6.1 | Everyone |
-| Thunderscans | 1.4.33.1 | Everyone |
+| Thunderscans | 1.4.33.2 | Everyone |
 | TimelessToons | 1.4.22.1 | Everyone |
 | TodayManga | 1.4.4.1 | Mature |
 | Toon18 | 1.4.52.1 | Mature |
@@ -561,7 +551,7 @@ site is currently down.
 | Valir Scans | 1.4.24.1 | Everyone |
 | Vanilla Scans | 1.4.27.1 | Everyone |
 | vgperson | 1.4.8.1 | Everyone |
-| Violet Scans | 1.4.37.1 | Everyone |
+| Violet Scans | 1.4.37.2 | Everyone |
 | Vision Haze | 1.4.1.1 | Everyone |
 | Vixen Logic | 1.4.1.1 | Everyone |
 | Voyce.Me | 1.4.7.1 | Everyone |
@@ -784,91 +774,75 @@ and should be reviewed; reset its internal revision to `.1` when you do.
      LAST_REVIEWED_DATE=<ISO 8601>
      LAST_APPLIED_COMMIT=<full sha of newest commit that resulted in a code change>
      LAST_APPLIED_PR=<PR number>
-     REVIEW_SCOPE=all English sources in our repo (~411 sources)
+     REVIEW_SCOPE=all English sources in our repo (~401 sources)
 -->
 
 ```
-LAST_REVIEWED_COMMIT=b658a2c225b3de6cc4143e87e4f735ac89e2b44d
-LAST_REVIEWED_DATE=2026-09-09
-LAST_APPLIED_COMMIT=f158cd0527ffb00b4308480d56e6b66c7f1b5239
-LAST_APPLIED_PR=#18906
+LAST_REVIEWED_COMMIT=a1a1d8ccfb31f3fa9c8cf2fab3e4f1cd67071b1f
+LAST_REVIEWED_DATE=2026-09-19
+LAST_APPLIED_COMMIT=426a07f73f33bc16996544c0fb7a3e222fd08a10
+LAST_APPLIED_PR=#18890
 BASELINE_PORT_DATE=2026-06-20
 ```
 
 **How to read:** All keiyoushi commits up to and including `LAST_REVIEWED_COMMIT`
 have been evaluated against our sources. `LAST_APPLIED_COMMIT` is the newest
-upstream commit that produced an actual code change here (the AllManga details
-fix, PR #18906). This review covered the 127 upstream commits since the previous
-baseline. Out of scope as usual: non-English sources, `src/all` sources we do not
-ship, themes with no consumer here, and CI/gradle chores.
+upstream commit that produced an actual code change here (the MangaThemesia 1.6
+migration, PR #18890). This review covered the 51 upstream commits since the
+previous baseline. Out of scope as usual: non-English sources, `src/all` sources
+we do not ship, themes with no consumer here, and CI/gradle chores.
 
-**Upstream changed how `versionCode` works (#18703).** The Android version code
-is now derived from `libVersion + versionCode`, so a source migrating to ext-lib
-1.6 resets its `versionCode` to 1 (MangaKatana 12 → 1, Tapas 24 → 1, Philia Scans
-59 → 1, and five more). Our scheme has no `libVersion` component, and Paperback
-only offers an update when the version *increases*, so mirroring those resets
-would strand every install. Those eight sources keep a monotonic keiyoushi
-component with only the internal revision bumped. This is the same policy applied
-to WitchScans/Drake Scans last sync — and upstream has since re-synced both to
-monotonic numbering (34 and 50), which our numbers now match exactly, so the
-divergence has closed on its own.
+**MangaThemesia 1.6 (#18890)** was the bulk of the window. The theme's
+`baseVersionCode` reset from 32 to 0 (the `libVersion`-derived scheme from
+#18703), so 28 of our sources would have moved *backwards*; they keep a monotonic
+keiyoushi component with only the internal revision bumped, same policy as the
+previous two syncs. Every one of those sources was diffed individually: the
+changes are 1.6 API-shape refactors (`dateFormat` → `datePattern`, rate-limit
+plumbing, `KeiSource` signatures) with no behavioural delta for our port. Our
+date parser is already case-insensitive, so that fix was a no-op too.
 
-Renames and removals (411 sources, down from 412):
+**Ten sources removed** (411 → 401), all confirmed dead independently rather than
+on upstream's word: **HentaiDex** and **Manhuascan.us** no longer resolve in DNS;
+**Comics Land**, **Crow Scans**, **Manhwalover**, **Manhwax**, **Nika Toons** and
+**Sky Manga** accept no connection; **Rest Scans** returns Cloudflare 526 (origin
+certificate failure); and **Noxen Scans** serves a 114-byte redirect to a
+`/lander` parking page.
 
-- **Armageddon → SilentQuill** (#18885). Not just a rebrand: the site was
-  rebuilt on Next.js and the old MangaThemesia markup is gone entirely, so this
-  is a full re-port. Listings, details and genres come from the served HTML;
-  chapters and pages come from the React flight payload via the shared parser.
-  Verified live: 84 series links, 18 chapters for a real title, 37 pages.
-- **Arya Scans → BrainRotComics** (#18788). While porting this I found the config
-  carried `popularMangaUrlSelector: "${super.popularMangaUrlSelector}:not(...)"`
-  — a Kotlin string-interpolation expression copied verbatim into TypeScript,
-  where it is *not* a template literal. The selector was therefore the literal
-  text `${super...}` and matched nothing, silently emptying the popular list.
-  Upstream has dropped the override, so it is simply removed.
-- **Manhwa XXL → HentaiTnT** (#18816), plus a real status fix: the status label is
-  a text node on the parent `<span>`, not inside the `<i>` icon, so every title
-  reported "Unknown".
-- **Ryumanga removed** — deleted upstream and confirmed dead here: the domain now
-  serves a JS redirect to a token/parking page.
+Two long-standing bugs in our own port surfaced while working through this:
 
-Themes:
+- **S2Manga returned no pages at all.** Its config carried
+  `pageListSelector: "div.page-break img[src*=\\\"https\\\"]"` — escaped
+  quotes copied out of the upstream Kotlin string literal, which TypeScript does
+  *not* unescape. cheerio therefore received a selector containing literal
+  backslash-quote characters and matched **zero** elements (verified both forms
+  against cheerio directly). Upstream dropped the override in #18962, and its
+  only real change — trimming the image URL — is already done by our
+  `imageFromElement`, so the default selector now applies.
+- **RitharScans let locked chapters through.** Upstream #18950 widened the paid
+  marker to `img[src*=star-circle]` alongside the standard `img[alt~=Coin]`; the
+  Keyoapp template now takes a configurable `paidChapterSelector`.
 
-- **VineTheme** 1 → 2: descriptions arrive as HTML and are now rendered as
-  readable text (links become `[text](url)`, `<p>`/`<br>` become line breaks).
-  **Kayn Scans** moved onto it (#18699) — its old Iken API at `api.kaynscan.org`
-  now answers 403 and the site relocated to `kaynscans.com`, so that source was
-  broken here. Verified live end-to-end (100 chapters across 2 pages).
-- **iken** 26 → 27 and **hiper** 7 → 8 are no-ops for us (iken drops a
-  `scanlator` field Paperback has no equivalent for; hiper is an import change).
+Other source fixes:
 
-Source fixes:
+- **Elf Toon** (#18890): paid ("gem") chapters are now a *Hide paid chapters*
+  setting rather than being filtered unconditionally. Confirmed the
+  `.gem-price-icon` marker on the live site.
+- **InfinityScans** (#19010): the site redeployed and the Next.js server-action
+  id for the page list changed; the seed value is updated.
+- **AllManga** (#19009): the details/chapter queries now also pass
+  `allowAdult: true`, without which mature titles return `manga = null`.
+- **BatCave**, **KuraManga**, **LustToon**: version-aligned; their changes are
+  1.6 restructures or Suwayomi-specific.
 
-- **AsuraScans** (#18729): a genuine data-loss bug in our port. The Astro payload
-  unwrapper treated any `[nonObject, x]` array as a typed wrapper, so a
-  two-image chapter `["a.jpg","b.jpg"]` collapsed to just `"b.jpg"` — dropping
-  the first page. The tag must be an *integer*; fixed and checked against both
-  shapes. Also adopts the tidier one-line description (#18771).
-- **AllManga** (#18906): some titles return `manga = null` unless the request
-  carries the `search: { fromSearch: true }` SearchInput; added to both the
-  details and chapter queries.
-- **StoneScape** (#18833): the API expects hyphen-free genre slugs
-  (`schoollife`, not `school-life`), so six of our genre filters silently
-  matched nothing.
-- **BatCave** (#18775): search now needs browser-style `Sec-Fetch-*` headers.
-- **Violet Scans** (#18834): exclude light novels (`.novelabel` cards) from
-  browse and search.
-- **Philia Scans** (#18895): cache the reader access token until shortly before
-  it expires instead of re-POSTing per chapter (the endpoint rate-limits).
-- **SUPER MEGA** (#18868): thumbnail URL follows upstream.
-- **Domains** (all confirmed live): Read Fairy Tail `ww8` → `ww9`, Read Nanatsu
-  no Taizai `ww7` → `ww8`, Raven Scans `.net` → `.org`.
-
-Reviewed, no code change needed (versions aligned so future syncs stay
-comparable): the many ext-lib 1.6 restructures, Mgread.io's image fallback
-(already ported last sync), Comix's chapter-dedup memo (we do not implement fast
-dedup), and Mangadotnet's "hide adult covers" preference (we already gate adult
-content at the query level, which is stronger than blurring covers).
+**Deliberately not mirrored:** upstream moved **RokariComics** onto
+`MangaThemesiaAlt` (rotating `<digits>-` slug prefixes), noting "server redirects
+already, but added anyways". Checked against the live site: the numeric prefix
+there is part of genuine title slugs, not a rotating token —
+`/manga/28-the-prime-of-youth/` returns 200 while the prefix-stripped
+`/manga/the-prime-of-youth/` returns 404. Enabling that behaviour would strip the
+prefix and break those titles, so the plain template is kept. Likewise
+**MadaraScans**' new mirror list adds nothing for us: `.com` already redirects to
+the `.org` we use, and every source has a base-URL override in settings.
 
 Five sources remain behind from *earlier* windows and are untouched here:
 ComicK Fanmade, Digital Comic Museum, MangaBlaze, ManhuaPlus (unoriginal) and

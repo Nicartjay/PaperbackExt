@@ -338,6 +338,18 @@ export class MangaThemesiaExtension implements MangaThemesiaImplementation {
   // Search
   // ----------------------------------------------------------------
 
+  /**
+   * Chapter-row selector. Exposed as a getter (not just a constructor override)
+   * so subclasses can vary it at runtime — e.g. Elf Toon filters out paid
+   * chapters based on a user setting (upstream #18890).
+   */
+  get chapterSelector(): string {
+    return (
+      this.chapterSelectorOverride ??
+      "div.bxcl li, div.cl li, #chapterlist li, ul li:has(div.chbox):has(div.eph-num)"
+    );
+  }
+
   get searchMangaSelector(): string {
     return (
       this.discoverItemSelectorOverride ??
@@ -649,10 +661,7 @@ export class MangaThemesiaExtension implements MangaThemesiaImplementation {
     const $ = await this.fetchCheerio({ url: mangaUrl, method: "GET" });
     const chapters: Chapter[] = [];
 
-    $(
-      this.chapterSelectorOverride ??
-        "div.bxcl li, div.cl li, #chapterlist li, ul li:has(div.chbox):has(div.eph-num)",
-    ).each((_, element) => {
+    $(this.chapterSelector).each((_, element) => {
       const el = $(element);
       // Some forks (e.g. Comic Asura) use the row element itself as the
       // anchor; otherwise the anchor is nested inside the row.

@@ -55,8 +55,11 @@ const DETAILS_QUERY =
 const CHAPTERS_QUERY =
   "query ($id: String!, $showId: String!, $search: SearchInput) { manga(_id: $id, search: $search) { _id name availableChaptersDetail } episodeInfos(showId: $showId, episodeNumStart: 0, episodeNumEnd: 9999) { episodeIdNum notes uploadDates } }";
 
-/** Upstream `mapOf("fromSearch" to true)`. */
-const FROM_SEARCH = { fromSearch: true };
+/**
+ * Upstream `mapOf("fromSearch" to true, "allowAdult" to true)`. #19009 added
+ * `allowAdult` so mature titles resolve instead of returning `manga = null`.
+ */
+const FROM_SEARCH = { fromSearch: true, allowAdult: true };
 
 interface AnyCard {
   _id: string;

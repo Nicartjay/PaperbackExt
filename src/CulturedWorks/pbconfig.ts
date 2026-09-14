@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "CulturedWorks",
   description: "CulturedWorks - MangaThemesia source (culturedworks.com). Converted from keiyoushi.",
-  version: "1.4.33.2",
+  version: "1.4.33.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

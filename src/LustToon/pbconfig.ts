@@ -4,7 +4,7 @@ export default {
   name: "LustToon",
   description:
     "LustToon - HTML/JSON-API source (lustoon.com). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.2.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

@@ -42,6 +42,12 @@ export interface KeyoappConfig {
   baseUrl: string;
   contentRating?: ContentRating;
   langCode?: string;
+  /**
+   * Selector matching the "locked/paid chapter" marker on a chapter row.
+   * Defaults to the standard Keyoapp coin badge; forks that use a different
+   * icon override it (upstream `paidChapterSelector`, #18950).
+   */
+  paidChapterSelector?: string;
 }
 
 interface KeyoappMetadata {
@@ -102,6 +108,7 @@ export class KeyoappExtension implements KeyoappImplementation {
   readonly defaultBaseUrl: string;
   readonly contentRating: ContentRating;
   readonly langCode: string;
+  readonly paidChapterSelector: string;
 
   get baseUrl(): string {
     return getBaseUrlOverride(this.sourceName) ?? this.defaultBaseUrl;
@@ -122,6 +129,8 @@ export class KeyoappExtension implements KeyoappImplementation {
     this.defaultBaseUrl = config.baseUrl.replace(/\/+$/, "");
     this.contentRating = config.contentRating ?? ContentRating.EVERYONE;
     this.langCode = config.langCode ?? "🇬🇧";
+    this.paidChapterSelector =
+      config.paidChapterSelector ?? "img[alt~='Coin']";
     this.requestManager = new KeyoappInterceptor("main", () => this.baseUrl);
   }
 
@@ -378,7 +387,10 @@ export class KeyoappExtension implements KeyoappImplementation {
         return;
       }
 
-      const isPaid = el.find("img[alt~='Coin']").length > 0;
+      // Upstream #18950: some forks (RitharScans) mark locked chapters with a
+      // star-circle image instead of the "Coin" alt text, so both are matched.
+      const isPaid =
+        el.find(this.paidChapterSelector).length > 0;
       if (isPaid && !showPaid) return;
 
       const href = el.is("a[href]")

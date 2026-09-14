@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Hades Scans",
   description: "Hades Scans - MangaThemesia source (hadesscans.com). Converted from keiyoushi.",
-  version: "1.4.33.2",
+  version: "1.4.33.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

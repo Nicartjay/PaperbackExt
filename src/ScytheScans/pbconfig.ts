@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Scythe Scans",
   description: "Scythe Scans - MangaThemesia source (scythescans.com). Converted from keiyoushi.",
-  version: "1.4.40.1",
+  version: "1.4.40.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

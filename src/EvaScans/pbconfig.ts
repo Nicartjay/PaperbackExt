@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Eva Scans",
   description: "Eva Scans - MangaThemesia source (evascans.org). Converted from keiyoushi.",
-  version: "1.4.35.1",
+  version: "1.4.35.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

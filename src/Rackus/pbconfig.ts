@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Rackus",
   description: "Rackus - MangaThemesia source (rackusreads.com). Converted from keiyoushi.",
-  version: "1.4.39.2",
+  version: "1.4.39.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Razure",
   description: "Razure - MangaThemesia source (razure.org). Converted from keiyoushi.",
-  version: "1.4.32.2",
+  version: "1.4.32.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

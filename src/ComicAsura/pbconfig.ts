@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Comic Asura",
   description: "Comic Asura - MangaThemesia source (comicasura.net). Converted from keiyoushi.",
-  version: "1.4.34.3",
+  version: "1.4.34.4",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

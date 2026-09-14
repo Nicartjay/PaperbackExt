@@ -39,7 +39,10 @@ const SLUG_HASH_KEY = "pref_slug_hash";
 const HASH_REGEX = /NEXT_REDIRECT.*https.+?-(\w+);/s;
 
 // Server-action id for the chapter page-list action. Mirrors upstream.
-const PAGES_NEXT_ACTION = "6059eb844d4cb2658ebbdc562485ac7f318a7c89cb";
+// Upstream #19010: the site redeployed and the Next.js server-action id for the
+// page list changed. Our runtime re-derivation caches the working id, but the
+// seed value must be current or the first fetch fails.
+const PAGES_NEXT_ACTION = "603b9ae64dc53c5457f77cf6a4ea08b361e2e36b2f";
 
 // The API only returns data when a valid session cookie is present. The
 // cookie is established by the site's client JS POSTing to /api/validate.

@@ -4,7 +4,7 @@ export default {
   name: "Thunderscans",
   description:
     "Thunderscans - MangaThemesia source (en-thunderscans.com). Converted from keiyoushi.",
-  version: "1.4.33.1",
+  version: "1.4.33.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,
