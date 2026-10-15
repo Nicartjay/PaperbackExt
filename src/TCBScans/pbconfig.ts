@@ -4,7 +4,7 @@ export default {
   name: "TCB Scans",
   description:
     "TCB Scans - custom source (tcbonepiecechapters.com). Converted from keiyoushi.",
-  version: "1.4.12.1",
+  version: "1.4.12.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

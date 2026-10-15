@@ -4,7 +4,7 @@ export default {
   name: "Only The Best Hentai",
   description:
     "Only The Best Hentai - HTML scraper source (onlythebesthentai.com). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.1.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

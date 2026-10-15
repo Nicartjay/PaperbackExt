@@ -4,7 +4,7 @@ export default {
   name: "Mangatown",
   description:
     "Mangatown - HTML scraper source (www.mangatown.com). Converted from keiyoushi.",
-  version: "1.4.10.2",
+  version: "1.4.10.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

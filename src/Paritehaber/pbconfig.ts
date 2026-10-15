@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Paritehaber",
   description: "Paritehaber - Madara source (www.paritehaber.com). Converted from keiyoushi.",
-  version: "1.4.53.1",
+  version: "1.4.56.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

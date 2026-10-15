@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "XoManga",
   description: "XoManga - custom source (xomanga.site). Converted from keiyoushi.",
-  version: "1.4.2.1",
+  version: "1.4.3.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

@@ -27,7 +27,12 @@ import {
   SourceManga,
   TagSection,
 } from "@paperback/types";
-import { AtsumaruSettingsForm, getExcludedGenres } from "./settings";
+import {
+  AtsumaruSettingsForm,
+  getDeduplicateChapters,
+  getExcludedGenres,
+  getScanlatorBlacklist,
+} from "./settings";
 
 const BASE_URL = "https://atsu.moe";
 const TYPES = "Manga,Manwha,Manhua,OEL";
@@ -85,7 +90,7 @@ interface MangaJson {
   views?: unknown;
   otherNames?: string[];
   avgRating?: number;
-  scanlators?: { id: string; name: string }[];
+  scanlators?: { id: string; name: string; score?: number }[];
   recommendations?: MangaJson[];
 }
 
@@ -410,6 +415,7 @@ export class AtsumaruExtension implements AtsumaruImplementation {
 
     // Resolve scanlator names from the details endpoint (best effort).
     let scanlatorMap: Record<string, string> = {};
+    let scanlatorScore: Record<string, number> = {};
     try {
       const detailsUrl = `${BASE_URL}/api/manga/page?id=${encodeURIComponent(
         id,
@@ -419,12 +425,36 @@ export class AtsumaruExtension implements AtsumaruImplementation {
       };
       for (const s of detailsJson.mangaPage?.scanlators ?? []) {
         scanlatorMap[s.id] = s.name;
+        if (typeof s.score === "number") scanlatorScore[s.id] = s.score;
       }
     } catch {
       scanlatorMap = {};
+      scanlatorScore = {};
     }
 
-    const raw = json.chapters ?? [];
+    // Upstream #19782: optional scanlator blacklist and per-number dedupe
+    // (highest-scored group wins, newest upload breaks ties).
+    let raw = json.chapters ?? [];
+    const blacklist = getScanlatorBlacklist();
+    if (blacklist.size > 0) {
+      raw = raw.filter((c) => {
+        const name = c.scanlationMangaId ? scanlatorMap[c.scanlationMangaId] : undefined;
+        return name === undefined || !blacklist.has(name.trim().toLowerCase());
+      });
+    }
+    if (getDeduplicateChapters()) {
+      const best = new Map<number, ChapterJson>();
+      const score = (c: ChapterJson) =>
+        (c.scanlationMangaId ? scanlatorScore[c.scanlationMangaId] : undefined) ?? Number.MIN_SAFE_INTEGER;
+      const time = (c: ChapterJson) => this.parseDate(c.createdAt).getTime() || 0;
+      for (const c of raw) {
+        const cur = best.get(c.number);
+        if (!cur || score(c) > score(cur) || (score(c) === score(cur) && time(c) > time(cur))) {
+          best.set(c.number, c);
+        }
+      }
+      raw = [...best.values()];
+    }
     const chapters: Chapter[] = raw.map((c) => {
       const scanlator = c.scanlationMangaId
         ? scanlatorMap[c.scanlationMangaId]
@@ -517,7 +547,9 @@ export class AtsumaruExtension implements AtsumaruImplementation {
         .replace(/^\//, "")
         .replace(/^static\//, "")}`;
     }
-    return full.replace(PROTOCOL_REGEX, "https://");
+    // Upstream #19086: page images are served from the `cdn.` host; the main
+    // host answers 410 Gone for them.
+    return full.replace(PROTOCOL_REGEX, "https://cdn.").replace(/^https:\/\/cdn\.cdn\./, "https://cdn.");
   }
 
   private parseNames(element: unknown): string[] {

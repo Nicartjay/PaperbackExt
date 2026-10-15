@@ -4,7 +4,7 @@ export default {
   name: "Elan School",
   description:
     "Elan School - webcomic source (elan.school). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.1.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

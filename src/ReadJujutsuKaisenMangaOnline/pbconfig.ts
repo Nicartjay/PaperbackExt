@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read Jujutsu Kaisen Manga Online",
   description: "Read Jujutsu Kaisen Manga Online - MangaCatalog source (ww5.readjujutsukaisen.com). Converted from keiyoushi.",
-  version: "1.4.10.1",
+  version: "1.4.10.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

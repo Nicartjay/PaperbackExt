@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Art Lapsa",
   description: "Art Lapsa - Keyoapp source (artlapsa.com). Converted from keiyoushi.",
-  version: "1.4.26.1",
+  version: "1.4.29.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "WebtoonXYZ",
   description: "WebtoonXYZ - Madara source (www.webtoon.xyz). Converted from keiyoushi.",
-  version: "1.4.56.1",
+  version: "1.4.59.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

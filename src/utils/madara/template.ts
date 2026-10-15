@@ -106,6 +106,8 @@ export interface MadaraConfig {
   chapterUrlSuffix?: string;
   /** Page-image container selector (upstream `pageListParseSelector`). */
   pageListSelector?: string;
+  /** Upstream `nextPageSelector()`: marks a following directory page. */
+  nextPageSelector?: string;
   /** Manga-details selector overrides (upstream `mangaDetailsSelector*`). */
   mangaDetailsTitleSelector?: string;
   mangaDetailsStatusSelector?: string;
@@ -225,6 +227,7 @@ export class MadaraExtension implements MadaraImplementation {
   readonly chapterListSelector: string;
   readonly chapterUrlSuffix: string;
   readonly pageListSelector: string;
+  readonly nextPageSelector: string;
   readonly mangaDetailsTitleSelector: string;
   readonly mangaDetailsStatusSelector?: string;
   readonly mangaDetailsDescriptionSelector?: string;
@@ -271,6 +274,9 @@ export class MadaraExtension implements MadaraImplementation {
       config.searchMangaUrlSelector ?? "div.post-title a";
     this.chapterListSelector = config.chapterListSelector ?? "li.wp-manga-chapter";
     this.chapterUrlSuffix = config.chapterUrlSuffix ?? "?style=list";
+    this.nextPageSelector =
+      config.nextPageSelector ??
+      "div.nav-previous, nav.navigation-ajax, a.nextpostslink";
     this.pageListSelector =
       config.pageListSelector ??
       "div.page-break, li.blocks-gallery-item, .reading-content .text-left:not(:has(.blocks-gallery-item)) img";
@@ -476,7 +482,7 @@ export class MadaraExtension implements MadaraImplementation {
     // With load-more, an empty fragment means no more pages.
     const hasNextPage = this.useLoadMoreRequest
       ? items.length > 0
-      : $("div.nav-previous, nav.navigation-ajax, a.nextpostslink").length > 0;
+      : $(this.nextPageSelector).length > 0;
 
     return {
       items,
@@ -683,7 +689,7 @@ export class MadaraExtension implements MadaraImplementation {
     });
 
     const hasNextPage =
-      $("div.nav-previous, nav.navigation-ajax, a.nextpostslink").length > 0;
+      $(this.nextPageSelector).length > 0;
 
     // Cap search pagination so the app doesn't keep loading every page.
     const reachedPageLimit = page >= MadaraExtension.MAX_SEARCH_PAGES;
@@ -948,7 +954,14 @@ export class MadaraExtension implements MadaraImplementation {
         }
       }
 
-      const dateText = el.find("span.chapter-release-date").text().trim();
+      // Upstream Madara: recent chapters render their date only as the
+      // `title` of the "new" tag link ("18 hours ago"); the span text then
+      // holds just the view counter, which must not be parsed as a year.
+      const dateEl = el.find("span.chapter-release-date").first();
+      const dateText =
+        dateEl.find("img:not(.thumb)").attr("alt")?.trim() ||
+        dateEl.find("a[title]").attr("title")?.trim() ||
+        dateEl.clone().find(".views").remove().end().text().trim();
       const publishDate = this.parseDate(dateText);
 
       chapters.push({
@@ -1333,24 +1346,25 @@ export class MadaraExtension implements MadaraImplementation {
 
   protected parseDate(dateText: string): Date {
     if (!dateText) return new Date();
+    // A bare number (e.g. a view counter) is not a date.
+    if (/^\d+$/.test(dateText.trim())) return new Date();
     const direct = new Date(dateText);
     if (!isNaN(direct.getTime())) return direct;
 
     const now = new Date();
     const lower = dateText.toLowerCase();
     if (lower.includes("ago")) {
-      const amount = parseInt(lower.match(/\d+/)?.[0] || "0");
-      if (lower.includes("min")) return new Date(now.getTime() - amount * 60000);
-      if (lower.includes("hour"))
-        return new Date(now.getTime() - amount * 3600000);
-      if (lower.includes("day"))
-        return new Date(now.getTime() - amount * 86400000);
-      if (lower.includes("week"))
-        return new Date(now.getTime() - amount * 604800000);
-      if (lower.includes("month"))
-        return new Date(now.getTime() - amount * 2592000000);
-      if (lower.includes("year"))
-        return new Date(now.getTime() - amount * 31536000000);
+      // "an hour ago" / "a day ago" carry no digit; treat them as 1.
+      const amount = parseInt(lower.match(/\d+/)?.[0] ?? (/\ban?\b/.test(lower) ? "1" : "0"));
+      // Upstream #19098: match unit keywords as whole words, not substrings.
+      const has = (re: RegExp) => re.test(lower);
+      if (has(/\b(min|mins|minute|minutes)\b/)) return new Date(now.getTime() - amount * 60000);
+      if (has(/\b(hour|hours|hr|hrs)\b/)) return new Date(now.getTime() - amount * 3600000);
+      if (has(/\b(day|days)\b/)) return new Date(now.getTime() - amount * 86400000);
+      if (has(/\b(week|weeks)\b/)) return new Date(now.getTime() - amount * 604800000);
+      if (has(/\b(month|months)\b/)) return new Date(now.getTime() - amount * 2592000000);
+      if (has(/\b(year|years)\b/)) return new Date(now.getTime() - amount * 31536000000);
+      if (has(/\b(sec|secs|second|seconds)\b/)) return new Date(now.getTime() - amount * 1000);
     }
     return now;
   }

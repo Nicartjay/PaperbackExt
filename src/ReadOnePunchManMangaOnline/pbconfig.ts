@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read One-Punch Man Manga Online",
   description: "Read One-Punch Man Manga Online - MangaCatalog source (ww6.readopm.com). Converted from keiyoushi.",
-  version: "1.4.9.1",
+  version: "1.4.9.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

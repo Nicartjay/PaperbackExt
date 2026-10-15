@@ -2,8 +2,9 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 
 export default {
   name: "HentaiSco",
-  description: "HentaiSco - Madara source (hentaisco.cc). Converted from keiyoushi.",
-  version: "1.4.54.1",
+  description:
+    "HentaiSco - custom source (hentaisco.cc). Converted from keiyoushi.",
+  version: "1.4.56.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,
@@ -12,10 +13,8 @@ export default {
     SourceIntents.SEARCH_RESULT_PROVIDING,
     SourceIntents.CHAPTER_PROVIDING,
     SourceIntents.CLOUDFLARE_BYPASS_PROVIDING,
-    SourceIntents.SETTINGS_FORM_PROVIDING,
   ],
   badges: [
-    { label: "Madara", textColor: "#FFFFFF", backgroundColor: "#2E7D32" },
     { label: "Mature", textColor: "#FFFFFF", backgroundColor: "#C62828" },
   ],
   developers: [

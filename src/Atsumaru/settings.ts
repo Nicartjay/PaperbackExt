@@ -1,4 +1,4 @@
-import { Form, Section, SelectRow } from "@paperback/types";
+import { Form, InputRow, Section, SelectRow, ToggleRow } from "@paperback/types";
 
 const EXCLUDE_GENRES_KEY = "atsumaru.excludeGenres";
 
@@ -17,12 +17,49 @@ function setExcludedGenres(value: string[]): void {
   Application.setState(value, EXCLUDE_GENRES_KEY);
 }
 
+const DEDUPLICATE_KEY = "atsumaru.deduplicateChapters";
+const SCANLATOR_BLACKLIST_KEY = "atsumaru.scanlatorBlacklist";
+
+/** Upstream #19782: show one upload per chapter number. Default off. */
+export function getDeduplicateChapters(): boolean {
+  return Application.getState(DEDUPLICATE_KEY) === true;
+}
+
+/** Upstream #19782: comma-separated scanlator names, lower-cased. */
+export function getScanlatorBlacklistRaw(): string {
+  const v = Application.getState(SCANLATOR_BLACKLIST_KEY);
+  return typeof v === "string" ? v : "";
+}
+
+export function getScanlatorBlacklist(): Set<string> {
+  return new Set(
+    getScanlatorBlacklistRaw()
+      .split(",")
+      .map((s) => s.trim().toLowerCase())
+      .filter((s) => s.length > 0),
+  );
+}
+
 export class AtsumaruSettingsForm extends Form {
   private excluded: string[];
+  private dedupe: boolean;
+  private blacklist: string;
 
   constructor(private readonly genres: { name: string; id: string }[]) {
     super();
     this.excluded = getExcludedGenres();
+    this.dedupe = getDeduplicateChapters();
+    this.blacklist = getScanlatorBlacklistRaw();
+  }
+
+  async updateDedupe(value: boolean): Promise<void> {
+    this.dedupe = value;
+    Application.setState(value, DEDUPLICATE_KEY);
+  }
+
+  async updateBlacklist(value: string): Promise<void> {
+    this.blacklist = value;
+    Application.setState(value, SCANLATOR_BLACKLIST_KEY);
   }
 
   async updateExcluded(value: string[]): Promise<void> {
@@ -51,6 +88,34 @@ export class AtsumaruSettingsForm extends Form {
               AtsumaruSettingsForm,
               (value: string[]) => Promise<void>
             >(this, "updateExcluded"),
+          }),
+        ],
+      ),
+      Section(
+        {
+          id: "chapters",
+          header: "Chapters",
+          footer:
+            "Deduplicate keeps one upload per chapter, from the highest rated " +
+            "group that has it. Excluded scanlators is a comma-separated list " +
+            "of group names to drop from the chapter list.",
+        },
+        [
+          ToggleRow("deduplicate_chapters", {
+            title: "Deduplicate chapters",
+            value: this.dedupe,
+            onValueChange: Application.Selector<
+              AtsumaruSettingsForm,
+              (value: boolean) => Promise<void>
+            >(this, "updateDedupe"),
+          }),
+          InputRow("scanlator_blacklist", {
+            title: "Excluded scanlators",
+            value: this.blacklist,
+            onValueChange: Application.Selector<
+              AtsumaruSettingsForm,
+              (value: string) => Promise<void>
+            >(this, "updateBlacklist"),
           }),
         ],
       ),

@@ -4,7 +4,7 @@ export default {
   name: "Rinko Comics",
   description:
     "Rinko Comics - HTML scraper source (rinkocomics.com). Converted from keiyoushi.",
-  version: "1.4.2.1",
+  version: "1.4.2.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

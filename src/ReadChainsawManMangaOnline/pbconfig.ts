@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read Chainsaw Man Manga Online",
   description: "Read Chainsaw Man Manga Online - MangaCatalog source (ww5.readchainsawman.com). Converted from keiyoushi.",
-  version: "1.4.10.1",
+  version: "1.4.10.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

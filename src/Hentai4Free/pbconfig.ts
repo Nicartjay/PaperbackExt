@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Hentai4Free",
   description: "Hentai4Free - Madara source (hentai4free.net). Converted from keiyoushi.",
-  version: "1.4.52.1",
+  version: "1.4.55.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

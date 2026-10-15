@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Kewn Scans",
   description: "Kewn Scans - Keyoapp source (kewnscans.org). Converted from keiyoushi.",
-  version: "1.4.22.1",
+  version: "1.4.23.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

@@ -4,7 +4,7 @@ export default {
   name: "Saturday Morning Breakfast Comics",
   description:
     "Saturday Morning Breakfast Comics - webcomic source (smbc-comics.com). Converted from keiyoushi.",
-  version: "1.4.2.1",
+  version: "1.4.2.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

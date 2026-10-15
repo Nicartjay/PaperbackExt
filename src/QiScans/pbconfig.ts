@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Qi Scans",
   description: "Qi Scans - EZManhwa source (qimanga.com). Converted from keiyoushi.",
-  version: "1.4.26.1",
+  version: "1.4.26.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

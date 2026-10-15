@@ -594,8 +594,14 @@ export class XOXOComicsExtension implements XOXOComicsImplementation {
   private parseDate(dateText: string): Date {
     const text = (dateText || "").trim();
     if (!text) return new Date(0);
-    // upstream dateFormat: MM/dd/yyyy
-    const m = text.match(/(\d{1,2})\/(\d{1,2})\/(\d{2,4})/);
+    // upstream dateFormat: MM/dd/yyyy. Upstream #19312: accept `-` and `.`
+    // delimiters, and a year-less "MM/dd" means the current year.
+    const m =
+      text.match(/(\d{1,2})[-/.](\d{1,2})[-/.](\d{2,4})/) ??
+      (() => {
+        const short = text.match(/^(\d{1,2})[-/.](\d{1,2})$/);
+        return short ? [short[0], short[1], short[2], String(new Date().getFullYear())] : null;
+      })();
     if (m) {
       const month = parseInt(m[1], 10) - 1;
       const day = parseInt(m[2], 10);

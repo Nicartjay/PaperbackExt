@@ -4,7 +4,7 @@ export default {
   name: "Existential Comics",
   description:
     "Existential Comics - webcomic source (existentialcomics.com). Converted from keiyoushi.",
-  version: "1.4.5.1",
+  version: "1.4.5.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

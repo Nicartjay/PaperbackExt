@@ -4,7 +4,7 @@ export default {
   name: "Gensura",
   description:
     "Gensura - HTML scraper source (gensura.net). Converted from keiyoushi.",
-  version: "1.4.3.1",
+  version: "1.4.3.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

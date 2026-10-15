@@ -694,9 +694,15 @@ export class MangaHubExtension implements MangaHubImplementation {
     const pagesField = result.data?.chapter?.pages;
 
     const pages: string[] = [];
-    if (pagesField) {
+    // Upstream #19592: the pages field may now arrive encrypted as
+    // `enc:v1:<keyId>:<iv>:<authTag>:<ciphertext>` (URL-safe base64 parts).
+    let pagesJson = pagesField;
+    if (pagesJson && pagesJson.startsWith("enc:v1")) {
+      pagesJson = await this.decryptPages(pagesJson);
+    }
+    if (pagesJson) {
       try {
-        const payload = JSON.parse(pagesField) as MangaHubPagesPayload;
+        const payload = JSON.parse(pagesJson) as MangaHubPagesPayload;
         const prefix = payload.p ?? "";
         for (const img of payload.i ?? []) {
           pages.push(`${IMAGE_CDN}/${prefix}${img}`);
@@ -711,6 +717,78 @@ export class MangaHubExtension implements MangaHubImplementation {
       mangaId: chapter.sourceManga.mangaId,
       pages,
     };
+  }
+
+  /**
+   * Upstream `decryptPages` (#19592). Keys come from `{baseUrl}/api/chapter-crypto`
+   * — either a `keys` map by key id, or a single `key` (optionally tagged with
+   * `keyId`). The cipher is AES-256-GCM with a 128-bit tag; WebCrypto expects
+   * the tag appended to the ciphertext, exactly as the Kotlin code concatenates.
+   */
+  private async decryptPages(encoded: string): Promise<string> {
+    const parts = encoded.split(":");
+    if (parts.length < 6) throw new Error("Malformed encrypted page list");
+    const [, , keyId, iv, authTag, ciphertext] = parts;
+
+    const [response, data] = await Application.scheduleRequest({
+      url: `${this.baseUrl}/api/chapter-crypto`,
+      method: "GET",
+      headers: {
+        accept: "application/json",
+        "x-mhub-access": this.accessKey,
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "cross-site",
+      },
+    });
+    if (response.status < 200 || response.status >= 300) {
+      throw new Error(`Could not fetch the page-list key (HTTP ${response.status})`);
+    }
+    const params = JSON.parse(Application.arrayBufferToUTF8String(data)) as {
+      keyId?: string | null;
+      key?: string | null;
+      keys?: Record<string, string> | null;
+    };
+    const keyData =
+      params.keys?.[keyId] ??
+      (params.key && (!params.keyId || params.keyId === keyId) ? params.key : undefined);
+    if (!keyData) throw new Error(`Page-list key not found for key id ${keyId}`);
+
+    const b64url = (s: string): Uint8Array => {
+      const norm = s.replace(/-/g, "+").replace(/_/g, "/");
+      const padded = norm + "===".slice((norm.length + 3) % 4);
+      const d = Application.base64Decode(padded);
+      if (typeof d === "string") {
+        const out = new Uint8Array(d.length);
+        for (let i = 0; i < d.length; i++) out[i] = d.charCodeAt(i);
+        return out;
+      }
+      return new Uint8Array(d);
+    };
+    const buf = (b: Uint8Array): ArrayBuffer => {
+      const o = new ArrayBuffer(b.byteLength);
+      new Uint8Array(o).set(b);
+      return o;
+    };
+
+    const cipher = b64url(ciphertext);
+    const tag = b64url(authTag);
+    const joined = new Uint8Array(cipher.length + tag.length);
+    joined.set(cipher, 0);
+    joined.set(tag, cipher.length);
+
+    type Subtle = {
+      importKey(f: string, k: ArrayBuffer, a: unknown, e: boolean, u: string[]): Promise<unknown>;
+      decrypt(a: unknown, k: unknown, d: ArrayBuffer): Promise<ArrayBuffer>;
+    };
+    const subtle = (globalThis as unknown as { crypto: { subtle: Subtle } }).crypto.subtle;
+    const key = await subtle.importKey("raw", buf(b64url(keyData)), { name: "AES-GCM" }, false, ["decrypt"]);
+    const plain = await subtle.decrypt(
+      { name: "AES-GCM", iv: buf(b64url(iv)), tagLength: 128 },
+      key,
+      buf(joined),
+    );
+    return Application.arrayBufferToUTF8String(plain);
   }
 
   getMangaShareUrl(mangaId: string): string {

@@ -4,7 +4,7 @@ export default {
   name: "Omoi",
   description:
     "Omoi - JSON API manga source (www.omoi.com). Converted from keiyoushi.",
-  version: "1.4.2.2",
+  version: "1.4.2.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

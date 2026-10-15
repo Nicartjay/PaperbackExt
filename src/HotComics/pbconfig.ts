@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "HotComics",
   description: "HotComics - HotComics source (hotcomics.me). Converted from keiyoushi.",
-  version: "1.4.3.1",
+  version: "1.4.3.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

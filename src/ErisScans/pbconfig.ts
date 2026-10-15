@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Eris Scans",
   description: "Eris Scans - Keyoapp source (erisscans.com). Converted from keiyoushi.",
-  version: "1.4.21.1",
+  version: "1.4.22.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

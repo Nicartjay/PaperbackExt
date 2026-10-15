@@ -4,7 +4,7 @@ export default {
   name: "BrainRotComics",
   description:
     "BrainRotComics - Madara source (brainrotcomics.com). Converted from keiyoushi.",
-  version: "1.4.57.1",
+  version: "1.4.58.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

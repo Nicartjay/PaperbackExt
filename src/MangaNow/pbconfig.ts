@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "MangaNow",
   description: "MangaNow - MangaReader source (manganow.to). Converted from keiyoushi.",
-  version: "1.4.4.2",
+  version: "1.4.5.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

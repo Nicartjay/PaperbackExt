@@ -4,7 +4,7 @@ export default {
   name: "XYZ Comics",
   description:
     "XYZ Comics - HTML source (xyzcomics.com). Converted from keiyoushi.",
-  version: "1.4.7.1",
+  version: "1.4.7.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.ADULT,

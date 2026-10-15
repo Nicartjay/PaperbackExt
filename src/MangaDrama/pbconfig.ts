@@ -3,8 +3,8 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Manga Drama",
   description:
-    "Manga Drama - Madara source (mangadrama.com). Converted from keiyoushi.",
-  version: "1.4.52.1",
+    "Manga Drama - InitManga source (mangadrama.com). Converted from keiyoushi.",
+  version: "1.4.52.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,
@@ -16,7 +16,6 @@ export default {
     SourceIntents.SETTINGS_FORM_PROVIDING,
   ],
   badges: [
-    { label: "Madara", textColor: "#FFFFFF", backgroundColor: "#2E7D32" },
   ],
   developers: [
     { name: "nicartjay" },

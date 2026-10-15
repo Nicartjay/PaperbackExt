@@ -7,7 +7,7 @@ import {
 export default {
   name: "AsiaToon",
   description: "AsiaToon - custom source (asiatoon.net). Converted from keiyoushi.",
-  version: "1.4.2.1",
+  version: "1.4.3.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

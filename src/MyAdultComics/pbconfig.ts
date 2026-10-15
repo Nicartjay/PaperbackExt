@@ -4,7 +4,7 @@ export default {
   name: "MyAdultComics",
   description:
     "MyAdultComics - HTML scraper source (myadultcomics.com). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.1.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

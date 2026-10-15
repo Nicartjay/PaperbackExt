@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read Kingdom Manga Online",
   description: "Read Kingdom Manga Online - MangaCatalog source (ww5.readkingdom.com). Converted from keiyoushi.",
-  version: "1.4.9.1",
+  version: "1.4.9.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

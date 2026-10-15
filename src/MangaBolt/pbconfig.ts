@@ -4,7 +4,7 @@ export default {
   name: "MangaBolt",
   description:
     "MangaBolt - custom source (mangabolt.com). Converted from keiyoushi.",
-  version: "1.4.1.2",
+  version: "1.4.1.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

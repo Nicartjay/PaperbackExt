@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "MangaHere.onl",
   description: "MangaHere.onl - MangaHub source (mangahere.onl). Converted from keiyoushi.",
-  version: "1.4.36.1",
+  version: "1.4.38.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

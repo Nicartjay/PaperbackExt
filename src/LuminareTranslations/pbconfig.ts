@@ -4,7 +4,7 @@ export default {
   name: "Luminare Translations",
   description:
     "Luminare Translations - JSON API source (luminaretranslations.com). Converted from keiyoushi.",
-  version: "1.4.3.1",
+  version: "1.4.3.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

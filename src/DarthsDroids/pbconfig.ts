@@ -4,7 +4,7 @@ export default {
   name: "Darths & Droids",
   description:
     "Darths & Droids - webcomic source (www.darthsanddroids.net). Converted from keiyoushi.",
-  version: "1.4.2.1",
+  version: "1.4.2.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

@@ -602,20 +602,23 @@ export class KeyoappExtension implements KeyoappImplementation {
 
     const now = new Date();
     const lower = dateText.toLowerCase();
-    if (lower.includes("ago")) {
-      const amount = parseInt(lower.match(/\d+/)?.[0] || "0");
-      if (lower.includes("sec")) return new Date(now.getTime() - amount * 1000);
-      if (lower.includes("min")) return new Date(now.getTime() - amount * 60000);
-      if (lower.includes("hour"))
-        return new Date(now.getTime() - amount * 3600000);
-      if (lower.includes("day"))
-        return new Date(now.getTime() - amount * 86400000);
-      if (lower.includes("week"))
-        return new Date(now.getTime() - amount * 604800000);
-      if (lower.includes("month"))
-        return new Date(now.getTime() - amount * 2592000000);
-      if (lower.includes("year"))
-        return new Date(now.getTime() - amount * 31536000000);
+    // Upstream #19533: parse "<n|a|one> <unit> ago" explicitly, including the
+    // compact forms some forks render ("3d ago", "5h ago", "2 mins ago").
+    // The previous substring checks failed on those and on "a day ago".
+    const m = lower.match(/(a|an|one|\d+)\s*([a-z]+)\s+ago/);
+    if (m) {
+      const amount = m[1] === "a" || m[1] === "an" || m[1] === "one" ? 1 : parseInt(m[1], 10);
+      const unitMs: Record<string, number> = {
+        s: 1000, sec: 1000, secs: 1000, second: 1000, seconds: 1000,
+        m: 60000, min: 60000, mins: 60000, minute: 60000, minutes: 60000,
+        h: 3600000, hr: 3600000, hrs: 3600000, hour: 3600000, hours: 3600000,
+        d: 86400000, day: 86400000, days: 86400000,
+        w: 604800000, wk: 604800000, week: 604800000, weeks: 604800000,
+        mo: 2592000000, month: 2592000000, months: 2592000000,
+        y: 31536000000, yr: 31536000000, year: 31536000000, years: 31536000000,
+      };
+      const ms = unitMs[m[2]];
+      if (ms !== undefined && !isNaN(amount)) return new Date(now.getTime() - amount * ms);
     }
     return now;
   }

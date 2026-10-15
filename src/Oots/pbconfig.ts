@@ -4,7 +4,7 @@ export default {
   name: "oots",
   description:
     "The Order Of The Stick (OOTS) - webcomic source (giantitp.com). Converted from keiyoushi.",
-  version: "1.4.3.1",
+  version: "1.4.3.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

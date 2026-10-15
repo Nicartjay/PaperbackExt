@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Kayn Scans",
   description: "Kayn Scans - Iken source (kaynscan.org). Converted from keiyoushi.",
-  version: "1.4.33.1",
+  version: "1.4.35.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,
@@ -15,7 +15,7 @@ export default {
     SourceIntents.SETTINGS_FORM_PROVIDING,
   ],
   badges: [
-    { label: "Iken", textColor: "#FFFFFF", backgroundColor: "#AD1457" },
+    { label: "VineTheme", textColor: "#FFFFFF", backgroundColor: "#6A1B9A" },
   ],
   developers: [
     { name: "nicartjay" },

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Diva Scans",
   description: "Diva Scans - Iken source (divatoon.com). Converted from keiyoushi.",
-  version: "1.4.27.1",
+  version: "1.4.29.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,
@@ -15,7 +15,7 @@ export default {
     SourceIntents.SETTINGS_FORM_PROVIDING,
   ],
   badges: [
-    { label: "Iken", textColor: "#FFFFFF", backgroundColor: "#AD1457" },
+    { label: "VineTheme", textColor: "#FFFFFF", backgroundColor: "#6A1B9A" },
     { label: "Mature", textColor: "#FFFFFF", backgroundColor: "#C62828" },
   ],
   developers: [

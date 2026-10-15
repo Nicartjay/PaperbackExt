@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Luna Toons",
   description: "Luna Toons - Keyoapp source (lunatoons.org). Converted from keiyoushi.",
-  version: "1.4.21.1",
+  version: "1.4.23.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

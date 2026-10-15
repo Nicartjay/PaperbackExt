@@ -4,7 +4,7 @@ export default {
   name: "Loading Artist",
   description:
     "Loading Artist - webcomic source (loadingartist.com). Converted from keiyoushi.",
-  version: "1.4.3.1",
+  version: "1.4.3.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Guya",
   description: "Guya - Guya source (guya.cubari.moe). Converted from keiyoushi.",
-  version: "1.4.25.1",
+  version: "1.4.25.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

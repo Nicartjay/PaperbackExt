@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Madara Scans",
   description: "Madara Scans - MangaThemesia source (madarascans.com). Converted from keiyoushi.",
-  version: "1.4.35.2",
+  version: "1.4.35.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

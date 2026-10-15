@@ -4,7 +4,7 @@ export default {
   name: "ManhwaZone",
   description:
     "ManhwaZone - HTML scraper source (manhwazone.com). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.1.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

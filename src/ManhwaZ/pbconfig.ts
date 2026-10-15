@@ -2,8 +2,8 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 
 export default {
   name: "ManhwaZ",
-  description: "ManhwaZ - ManhwaZ source (manhwaz.com). Converted from keiyoushi.",
-  version: "1.4.42.1",
+  description: "ManhwaZ - custom source (manhwaz.cc). Converted from keiyoushi.",
+  version: "1.4.43.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,
@@ -15,7 +15,6 @@ export default {
     SourceIntents.SETTINGS_FORM_PROVIDING,
   ],
   badges: [
-    { label: "ManhwaZ", textColor: "#FFFFFF", backgroundColor: "#6D4C41" },
     { label: "Mature", textColor: "#FFFFFF", backgroundColor: "#C62828" },
   ],
   developers: [

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "ManhuaFast.net (unoriginal)",
   description: "ManhuaFast.net (unoriginal) - Madara source (manhuafast.net). Converted from keiyoushi.",
-  version: "1.4.52.1",
+  version: "1.4.52.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

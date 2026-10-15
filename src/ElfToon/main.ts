@@ -1,31 +1,13 @@
-import { ContentRating, Form } from "@paperback/types";
-import { MangaThemesiaExtension } from "../utils/mangathemesia/template";
-import { ElfToonSettingsForm, getHidePaidChapters } from "./settings";
+import { ContentRating } from "@paperback/types";
+import { VineThemeExtension } from "../utils/vinetheme/template";
 
-/**
- * Elf Toon marks coin-locked chapters with a `.gem-price-icon` badge. Upstream
- * #18890 made hiding them a user preference instead of an unconditional filter,
- * so the selector is chosen at runtime.
- */
-class ElfToonExtension extends MangaThemesiaExtension {
-  override get chapterSelector(): string {
-    const base = super.chapterSelector;
-    if (!getHidePaidChapters()) return base;
-    return base
-      .split(",")
-      .map((sel) => `${sel.trim()}:not(:has(.gem-price-icon))`)
-      .join(", ");
-  }
-
-  override async getSettingsForm(): Promise<Form> {
-    return new ElfToonSettingsForm();
-  }
-}
-
-export const ElfToon = new ElfToonExtension({
+// Upstream moved Elf Toon onto the shared VineTheme: the site was rebuilt on the
+// Next.js stack (no MangaThemesia markup remains) and moved to elftoon.net. The
+// paid-chapter toggle from the previous MangaThemesia port is superseded by
+// VineTheme's own "Hide locked chapters" setting.
+export const ElfToon = new VineThemeExtension({
   name: "Elf Toon",
-  baseUrl: "https://elftoon.com",
-  mangaUrlDirectory: "/manga",
+  baseUrl: "https://elftoon.net",
   contentRating: ContentRating.EVERYONE,
   langCode: "🇬🇧",
 });

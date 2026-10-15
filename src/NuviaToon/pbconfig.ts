@@ -4,7 +4,7 @@ export default {
   name: "Nuvia Toon",
   description:
     "Nuvia Toon - JSON API source (nuviatoon.com). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.2.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

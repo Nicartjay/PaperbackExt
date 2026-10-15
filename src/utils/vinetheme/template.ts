@@ -79,6 +79,13 @@ interface ApiManga {
   title: string;
   coverImage?: string | null;
   slug?: string;
+  /**
+   * Upstream #19541/#19601: the slug actually used in `/series/comic/<x>` URLs.
+   * It can differ from `slug` (verified live on divascans.org, kaynscans.com and
+   * valirscans.org), and requesting the plain `slug` then returns a page with no
+   * series payload. May be null.
+   */
+  urlSlug?: string | null;
   status?: string;
   type?: string;
   origin?: string;
@@ -502,7 +509,7 @@ export class VineThemeExtension implements VineThemeImplementation {
   // ----------------------------------------------------------------
 
   private toMangaId(m: ApiManga): string {
-    return this.toSafeId(m.slug || m.id);
+    return this.toSafeId(m.urlSlug || m.slug || m.id);
   }
 
   private slugFromId(mangaId: string): string {

@@ -4,7 +4,7 @@ export default {
   name: "GirlsTop",
   description:
     "GirlsTop - HTML scraper source (en.girlstop.info). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.1.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Drake Scans",
   description: "Drake Scans - MangaThemesia source (drakecomic.org). Converted from keiyoushi.",
-  version: "1.4.50.1",
+  version: "1.4.52.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,
@@ -15,7 +15,7 @@ export default {
     SourceIntents.SETTINGS_FORM_PROVIDING,
   ],
   badges: [
-    { label: "MangaThemesia", textColor: "#FFFFFF", backgroundColor: "#1565C0" },
+    { label: "VineTheme", textColor: "#FFFFFF", backgroundColor: "#6A1B9A" },
   ],
   developers: [
     { name: "nicartjay" },

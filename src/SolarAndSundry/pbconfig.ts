@@ -4,7 +4,7 @@ export default {
   name: "Solar and Sundry",
   description:
     "Solar and Sundry - single webcomic JSON-API source (sas.ewanb.me). Converted from keiyoushi.",
-  version: "1.4.2.1",
+  version: "1.4.2.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

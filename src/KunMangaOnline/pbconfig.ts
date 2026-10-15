@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Kun Manga Online",
   description: "Kun Manga Online - Madara source (www.kunmanga.online). Converted from keiyoushi.",
-  version: "1.4.53.1",
+  version: "1.4.57.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

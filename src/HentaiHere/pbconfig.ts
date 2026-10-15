@@ -4,7 +4,7 @@ export default {
   name: "HentaiHere",
   description:
     "HentaiHere - HTML scraper source (hentaihere.com). Converted from keiyoushi.",
-  version: "1.4.7.2",
+  version: "1.4.7.3",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

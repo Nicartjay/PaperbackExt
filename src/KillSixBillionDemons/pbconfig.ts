@@ -4,7 +4,7 @@ export default {
   name: "Kill Six Billion Demons",
   description:
     "Kill Six Billion Demons - webcomic source (killsixbilliondemons.com). Converted from keiyoushi.",
-  version: "1.4.6.1",
+  version: "1.4.6.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

@@ -3,7 +3,7 @@ export default {
   name: "Patch Friday",
   description:
     "Patch Friday - webcomic source (patchfriday.com). Converted from keiyoushi.",
-  version: "1.4.2.1",
+  version: "1.4.2.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

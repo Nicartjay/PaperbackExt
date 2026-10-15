@@ -33,4 +33,6 @@ export const MangaDistrict = new MangaDistrictExtension({
   contentRating: ContentRating.MATURE,
   langCode: "🇬🇧",
   pageListSelector: "div.page-break img:not(#image-99999)",
+  // Upstream #19202: the theme's nav-previous link is always present here.
+  nextPageSelector: ".wp-pagenavi a.last",
 });

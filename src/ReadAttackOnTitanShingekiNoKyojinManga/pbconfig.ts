@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Read Attack on Titan Shingeki no Kyojin Manga",
   description: "Read Attack on Titan Shingeki no Kyojin Manga - MangaCatalog source (ww11.readsnk.com). Converted from keiyoushi.",
-  version: "1.4.14.1",
+  version: "1.4.14.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

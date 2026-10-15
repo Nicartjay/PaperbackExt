@@ -297,7 +297,7 @@ export class Manhwa18Extension implements Manhwa18Implementation {
 
     const chapters: Chapter[] = [];
     // Upstream #18130: the site moved from `ul.list-chapters a` to a tile grid.
-    $("div.au-chgrid a.au-chtile").each((_, element) => {
+    $("div.au-chgrid a.au-chtile, ul.list-chapters > a").each((_, element) => {
       const el = $(element);
       const href = el.attr("href") || "";
       if (!href) return;

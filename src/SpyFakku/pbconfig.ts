@@ -4,7 +4,7 @@ export default {
   name: "SpyFakku",
   description:
     "SpyFakku - JSON API gallery source (hentalk.pw). Converted from keiyoushi.",
-  version: "1.4.16.1",
+  version: "1.4.16.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

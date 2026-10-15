@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Bakkin Self-hosted",
   description: "Bakkin Self-hosted - Bakkin source (127.0.0.1). Converted from keiyoushi.",
-  version: "1.4.7.1",
+  version: "1.4.7.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

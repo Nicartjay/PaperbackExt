@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Arc-Relight",
   description: "Arc-Relight - MangAdventure source (arc-relight.com). Converted from keiyoushi.",
-  version: "1.4.16.1",
+  version: "1.4.16.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

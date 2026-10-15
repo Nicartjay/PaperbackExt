@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "Grim Scans",
   description: "Grim Scans - Keyoapp source (grimscans.com). Converted from keiyoushi.",
-  version: "1.4.21.1",
+  version: "1.4.22.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

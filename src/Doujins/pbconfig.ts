@@ -4,7 +4,7 @@ export default {
   name: "Doujins",
   description:
     "Doujins - doujin/hentai gallery source (doujins.com). Converted from keiyoushi.",
-  version: "1.4.6.1",
+  version: "1.4.6.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

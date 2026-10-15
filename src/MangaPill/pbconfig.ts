@@ -4,7 +4,7 @@ export default {
   name: "MangaPill",
   description:
     "MangaPill - custom source (mangapill.com). Converted from keiyoushi.",
-  version: "1.4.9.1",
+  version: "1.4.9.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

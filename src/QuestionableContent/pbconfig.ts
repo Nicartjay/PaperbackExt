@@ -4,7 +4,7 @@ export default {
   name: "Questionable Content",
   description:
     "Questionable Content - webcomic source (questionablecontent.net). Converted from keiyoushi.",
-  version: "1.4.10.1",
+  version: "1.4.10.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,

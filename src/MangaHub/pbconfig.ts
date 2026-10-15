@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "MangaHub",
   description: "MangaHub - MangaHub source (mangahub.io). Converted from keiyoushi.",
-  version: "1.4.46.1",
+  version: "1.4.48.1",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

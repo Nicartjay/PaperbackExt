@@ -108,6 +108,12 @@ interface MangaDetail {
     artists?: string
 }
 
+interface MangaDetailData {
+    manga?: MangaDetail
+    /** Upstream #19251: a sibling of `manga`, not a field on it. */
+    total_volumes?: number
+}
+
 interface ApiChapter {
     id: number
     chapter_number?: number
@@ -281,8 +287,9 @@ export class MangaDotNetExtension implements MangaDotNetImplementation {
         const root = this.parseRoute(
             await this.fetchString({ url, method: 'GET' }),
             'pages/MangaDetailPage',
-        ) as { data?: { mangaData?: { manga?: MangaDetail } } }
-        const manga = root.data?.mangaData?.manga
+        ) as { data?: { mangaData?: MangaDetailData } }
+        const mangaData = root.data?.mangaData
+        const manga = mangaData?.manga
         if (!manga) throw new Error('Manga not found')
 
         const genres: string[] = []
@@ -326,6 +333,11 @@ export class MangaDotNetExtension implements MangaDotNetImplementation {
                 : []
 
         const status = this.parseStatus(manga)
+        let synopsis = this.stripDescription(manga.description)
+        // Upstream #19251.
+        if (mangaData?.total_volumes) {
+            synopsis += `${synopsis ? '\n\n' : ''}**Volumes:** ${mangaData.total_volumes}`
+        }
 
         return {
             mangaId,
@@ -335,7 +347,7 @@ export class MangaDotNetExtension implements MangaDotNetImplementation {
                 thumbnailUrl: this.thumbUrl(manga.photo),
                 author: this.parseList(manga.authors),
                 artist: this.parseList(manga.artists),
-                synopsis: this.stripDescription(manga.description),
+                synopsis,
                 contentRating: ContentRating.MATURE,
                 status,
                 tagGroups,

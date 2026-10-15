@@ -4,7 +4,7 @@ export default {
   name: "Manhwa18",
   description:
     "Manhwa18 - custom source (manhwa18.com). Converted from keiyoushi.",
-  version: "1.4.14.1",
+  version: "1.4.14.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

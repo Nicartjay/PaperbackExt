@@ -4,7 +4,7 @@ export default {
   name: "ComicLand",
   description:
     "ComicLand - JSON API source (comicland.org). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.1.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

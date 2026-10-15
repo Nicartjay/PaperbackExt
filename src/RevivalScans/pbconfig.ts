@@ -4,7 +4,7 @@ export default {
   name: "Revival Scans",
   description:
     "Revival Scans - Next.js (RSC) JSON source (revivalscans.com). Converted from keiyoushi.",
-  version: "1.4.1.1",
+  version: "1.4.1.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

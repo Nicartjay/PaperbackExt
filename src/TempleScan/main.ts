@@ -26,16 +26,19 @@ import {
   SourceManga,
   TagSection,
 } from "@paperback/types";
+import * as cheerio from "cheerio";
 import { TempleScanSearchForm, TempleScanSearchMeta } from "./forms";
 
 const BASE_URL = "https://templetoons.com";
 const PAGE_SIZE = 20;
+const SLUG_RE = /^[a-z0-9]+(?:-[a-z0-9]+)*-?$/;
 
 interface TempleScanMetadata {
   page?: number;
 }
 
 interface BrowseSeries {
+  badge?: string | null;
   series_slug: string;
   title: string;
   alternative_names?: string | null;
@@ -373,15 +376,33 @@ function extractNextJs(
 
 class TempleScanInterceptor extends PaperbackInterceptor {
   override async interceptRequest(request: Request): Promise<Request> {
-    request.headers = {
+    // Upstream #19430/#19824: Cloudflare rejects partial header sets and the
+    // `rsc: 1` endpoint, and the Origin header breaks image loads. Send a full
+    // top-level-navigation fingerprint for pages and an image fingerprint for
+    // the media CDN.
+    const isImage = /\.(jpe?g|png|webp|gif|avif)(\?|$)/i.test(request.url);
+    const headers: Record<string, string> = {
       ...request.headers,
       referer: `${BASE_URL}/`,
-      origin: BASE_URL,
       "user-agent": await Application.getDefaultUserAgent(),
-      accept:
-        "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
-      "accept-language": "en-US,en;q=0.5",
+      "accept-language": "en-US,en;q=0.9",
     };
+    delete headers["origin"];
+    delete headers["rsc"];
+    if (isImage) {
+      headers["accept"] = "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8";
+      headers["sec-fetch-site"] = "same-site";
+      headers["sec-fetch-mode"] = "no-cors";
+      headers["sec-fetch-dest"] = "image";
+    } else {
+      headers["accept"] =
+        "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8";
+      headers["sec-fetch-site"] = "none";
+      headers["sec-fetch-mode"] = "navigate";
+      headers["sec-fetch-dest"] = "document";
+      headers["upgrade-insecure-requests"] = "1";
+    }
+    request.headers = headers;
     return request;
   }
 
@@ -573,20 +594,70 @@ export class TempleScanExtension implements TempleScanImplementation {
   }
 
   private async loadDirectory(): Promise<void> {
-    const body = await this.fetchRsc(`${BASE_URL}/comics`);
-    // The browse list is the first array whose elements carry a series_slug.
+    const body = this.flightOf(await this.fetchString({ url: `${BASE_URL}/comics`, method: "GET" }));
+    // Upstream #19430..#19892: the site renames `title` and `series_slug` to
+    // short keys that rotate on every rebuild. The unrenamed siblings
+    // (`total_views`, `thumbnail`, `update_chapter`, ...) still identify the
+    // catalog array, and within each entry the two remaining string fields are
+    // told apart by shape: the slug is lowercase-kebab, the title is not.
+    // Verified live: 296 of 297 entries split cleanly; the other is skipped.
     const found = extractNextJs(
       body,
       (e) =>
         Array.isArray(e) &&
         e.length > 0 &&
         isObj(e[0]) &&
-        "series_slug" in e[0] &&
-        "title" in e[0],
+        "total_views" in e[0] &&
+        "thumbnail" in e[0],
     );
-    this.seriesCache = Array.isArray(found)
-      ? (found.filter((s) => isObj(s)) as unknown as BrowseSeries[])
-      : [];
+    const list = Array.isArray(found) ? found.filter(isObj) : [];
+    this.seriesCache = list
+      .map((e) => this.normaliseSeries(e))
+      .filter((s): s is BrowseSeries => s !== undefined);
+  }
+
+  private normaliseSeries(e: { [key: string]: JsonValue }): BrowseSeries | undefined {
+    const KNOWN = new Set([
+      "thumbnail", "badge", "status", "created_at", "alternative_names",
+      "update_chapter", "total_views", "title", "series_slug",
+    ]);
+    let slug = typeof e.series_slug === "string" ? e.series_slug : undefined;
+    let title = typeof e.title === "string" ? e.title : undefined;
+    if (!slug || !title) {
+      const extra = Object.keys(e).filter((k) => !KNOWN.has(k) && typeof e[k] === "string");
+      const slugs = extra.filter((k) => SLUG_RE.test(e[k] as string));
+      const titles = extra.filter((k) => !SLUG_RE.test(e[k] as string));
+      if (!slug && slugs.length === 1) slug = e[slugs[0]] as string;
+      if (!title && titles.length === 1) title = (e[titles[0]] as string).trim();
+    }
+    if (!slug || !title) return undefined;
+    const str = (v: JsonValue | undefined) => (typeof v === "string" ? v : null);
+    return {
+      series_slug: slug,
+      title,
+      alternative_names: str(e.alternative_names),
+      thumbnail: str(e.thumbnail),
+      status: str(e.status),
+      update_chapter: str(e.update_chapter),
+      created_at: str(e.created_at),
+      total_views: typeof e.total_views === "number" ? e.total_views : 0,
+      badge: str(e.badge),
+    } as BrowseSeries;
+  }
+
+  /** Concatenate the `self.__next_f.push([1, "..."])` flight rows of an HTML page. */
+  private flightOf(html: string): string {
+    let body = "";
+    const re = /self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)/g;
+    let m: RegExpExecArray | null;
+    while ((m = re.exec(html)) !== null) {
+      try {
+        body += JSON.parse(`"${m[1]}"`) as string;
+      } catch {
+        // skip malformed row
+      }
+    }
+    return body;
   }
 
   // ----------------------------------------------------------------
@@ -595,83 +666,58 @@ export class TempleScanExtension implements TempleScanImplementation {
 
   async getMangaDetails(mangaId: string): Promise<SourceManga> {
     const url = this.mangaUrl(mangaId);
-    const body = await this.fetchRsc(url);
-    // The details object carries a series_slug plus at least one detail-only
-    // field (description / tag_series / adult), which distinguishes it from a
-    // browse-list entry.
-    const found = extractNextJs(
-      body,
-      (e) =>
-        isObj(e) &&
-        "series_slug" in e &&
-        "title" in e &&
-        ("description" in e || "tag_series" in e || "adult" in e),
-    );
-    const details: { [key: string]: JsonValue } = isObj(found) ? found : {};
+    const html = await this.fetchString({ url, method: "GET" });
+    const $ = cheerio.load(html);
+    const slug = this.safeDecode(mangaId).replace(/\/+$/, "").split("/").pop() ?? "";
 
-    const title =
-      typeof details.title === "string" && details.title.length > 0
-        ? details.title
-        : this.safeDecode(mangaId);
-    const alternativeNames =
-      typeof details.alternative_names === "string"
-        ? details.alternative_names
-        : "";
-    const thumbnail =
-      typeof details.thumbnail === "string" ? details.thumbnail : "";
-    const author =
-      typeof details.author === "string" ? details.author : undefined;
-    const studio =
-      typeof details.studio === "string" ? details.studio : undefined;
-    const status =
-      typeof details.status === "string" ? details.status : "";
-    const rawDescription =
-      typeof details.description === "string" ? details.description : "";
-
-    // Sites sometimes append "#tag" hashtags at the end of the description,
-    // preceded by a label word ("Tags:", "Keywords:", ...). Strip from the
-    // first '#' and drop that trailing label word.
-    const cleanDescription = rawDescription.includes("#")
-      ? rawDescription.replace(/#.*$/s, "").replace(/[\w\s]+:?\s*$/, "").trim()
-      : rawDescription;
-
-    const synopsisParts: string[] = [];
-    const strippedDescription = this.stripHtml(cleanDescription);
-    if (strippedDescription) synopsisParts.push(strippedDescription);
-    if (alternativeNames.trim()) {
-      synopsisParts.push(`Alternative Name: ${alternativeNames}`);
+    // Upstream #19892: details come from the schema.org ComicSeries JSON-LD
+    // block and the rendered synopsis; status/badge only live in the catalog.
+    let ld: { [key: string]: JsonValue } = {};
+    $('script[type="application/ld+json"]').each((_, el) => {
+      try {
+        const v = JSON.parse($(el).text()) as JsonValue;
+        if (isObj(v) && v["@type"] === "ComicSeries") ld = v;
+      } catch {
+        // ignore
+      }
+    });
+    if (!this.seriesCache) {
+      try {
+        await this.loadDirectory();
+      } catch {
+        // the catalog is optional for details
+      }
     }
+    const entry = this.seriesCache?.find((s) => s.series_slug === slug);
 
+    const str = (v: JsonValue | undefined) => (typeof v === "string" ? v.trim() : "");
+    const title = str(ld.name) || entry?.title || slug;
+    const alternativeNames = str(ld.alternateName) || entry?.alternative_names?.trim() || "";
+    const thumbnail = str(ld.image) || entry?.thumbnail || "";
+    const author = isObj(ld.author) ? str(ld.author.name) || undefined : undefined;
+    const genres = Array.isArray(ld.genre)
+      ? ld.genre.filter((g): g is string => typeof g === "string")
+      : [];
+
+    const synopsisEl = $("#series-synopsis-text").first();
+    synopsisEl.find("br").replaceWith("\n");
+    const paragraphs = synopsisEl.find("p").map((_, el) => $(el).text().trim()).get().filter(Boolean);
+    const synopsis = paragraphs.length > 0 ? paragraphs.join("\n\n") : synopsisEl.text().trim() || str(ld.description);
+    const synopsisParts = [synopsis];
+    if (alternativeNames) synopsisParts.push(`Alternative Name: ${alternativeNames}`);
+
+    const adult = genres.some((g) => g.toLowerCase() === "+18");
     const tags: string[] = [];
-    if (typeof details.badge === "string" && details.badge) {
-      tags.push(details.badge);
-    }
-    if (typeof details.release_year === "string" && details.release_year) {
-      tags.push(details.release_year);
-    }
-    if (details.adult === true) tags.push("Adult");
-    // tag_series: [{ tag: { name } }]
-    if (Array.isArray(details.tag_series)) {
-      for (const wrapper of details.tag_series) {
-        if (isObj(wrapper) && isObj(wrapper.tag)) {
-          const name = wrapper.tag.name;
-          if (typeof name === "string" && name) tags.push(name);
-        }
-      }
-    }
-    // #hashtags embedded in the description also count as genres.
-    if (rawDescription.includes("#")) {
-      for (const m of rawDescription.matchAll(/#(\w+)/gi)) {
-        tags.push(m[1]);
-      }
-    }
+    if (entry?.badge) tags.push(entry.badge);
+    if (adult) tags.push("Adult");
+    tags.push(...genres.filter((g) => g.toLowerCase() !== "+18"));
 
     const tagGroups: TagSection[] = [];
     if (tags.length > 0) {
       tagGroups.push({
         id: "genres",
         title: "Genres",
-        tags: tags.map((g) => ({
+        tags: [...new Set(tags)].map((g) => ({
           id: g.toLowerCase().replace(/\s+/g, "-"),
           title: g,
         })),
@@ -685,10 +731,9 @@ export class TempleScanExtension implements TempleScanImplementation {
         secondaryTitles: alternativeNames ? [alternativeNames] : [],
         thumbnailUrl: this.absoluteUrl(thumbnail),
         author,
-        artist: studio,
-        synopsis: synopsisParts.join("\n\n"),
+        synopsis: synopsisParts.filter(Boolean).join("\n\n"),
         contentRating: ContentRating.MATURE,
-        status: this.parseStatus(status),
+        status: this.parseStatus(entry?.status ?? ""),
         tagGroups,
         shareUrl: url,
       },
@@ -701,70 +746,62 @@ export class TempleScanExtension implements TempleScanImplementation {
 
   async getChapters(sourceManga: SourceManga): Promise<Chapter[]> {
     const url = this.mangaUrl(sourceManga.mangaId);
-    const body = await this.fetchRsc(url);
-    // The chapter list is the object carrying a "Season" array.
-    const found = extractNextJs(
-      body,
-      (e) => isObj(e) && Array.isArray(e.Season),
-    );
-    if (!isObj(found) || !Array.isArray(found.Season)) return [];
+    const body = this.flightOf(await this.fetchString({ url, method: "GET" }));
+    const isChapterRow = (v: JsonValue): boolean =>
+      isObj(v) &&
+      "created_at" in v &&
+      Object.values(v).some((s) => typeof s === "string" && /^chapter-/.test(s));
+    // The chapter list is the longest array of chapter rows; key names are
+    // obfuscated, so each field is identified by shape (verified live).
+    let best: JsonValue[] = [];
+    const { payloads, modelCache, chunkCache } = extractRscPayloads(body);
+    const seen = new Set<JsonValue>();
+    const walk = (v: JsonValue, depth: number) => {
+      if (v === null || typeof v !== "object" || seen.has(v) || depth > 40) return;
+      seen.add(v);
+      if (Array.isArray(v) && v.length > best.length && v.length > 0 && isChapterRow(v[0])) best = v;
+      for (const child of Object.values(v)) walk(child, depth + 1);
+    };
+    for (const c of payloads) walk(resolveRefs(c, chunkCache, modelCache), 0);
 
-    const mangaSlug = this.safeDecode(sourceManga.mangaId)
-      .replace(/\/+$/, "")
-      .split("/")
-      .pop();
-
+    const mangaSlug = this.safeDecode(sourceManga.mangaId).replace(/\/+$/, "").split("/").pop();
+    const KNOWN = new Set(["index", "chapter_title", "chapter_thumbnail", "created_at"]);
     const chapters: Chapter[] = [];
-    for (const season of found.Season) {
-      if (!isObj(season) || !Array.isArray(season.Chapter)) continue;
-      for (const chapter of season.Chapter) {
-        if (!isObj(chapter)) continue;
-        if (chapter.price !== 0) continue;
-        const chapterName =
-          typeof chapter.chapter_name === "string" ? chapter.chapter_name : "";
-        const chapterTitle =
-          typeof chapter.chapter_title === "string"
-            ? chapter.chapter_title
-            : "";
-        const chapterSlug =
-          typeof chapter.chapter_slug === "string" ? chapter.chapter_slug : "";
-        if (!chapterSlug) continue;
-        const name =
-          chapterName +
-          (chapterTitle.trim() ? `: ${chapterTitle}` : "");
-        chapters.push({
-          chapterId: this.parsePath(`/comic/${mangaSlug}/${chapterSlug}`),
-          sourceManga,
-          title: name,
-          volume: 0,
-          chapNum: this.parseChapterNumber(chapterName),
-          publishDate: this.parseDate(
-            typeof chapter.created_at === "string" ? chapter.created_at : null,
-          ),
-          langCode: "🇬🇧",
-        });
-      }
+    for (const row of best) {
+      if (!isObj(row)) continue;
+      const extra = Object.keys(row).filter((k) => !KNOWN.has(k));
+      const chapterSlug = extra.map((k) => row[k]).find((v) => typeof v === "string" && /^chapter-/.test(v)) as string | undefined;
+      if (!chapterSlug) continue;
+      const label = (extra.map((k) => row[k]).find(
+        (v) => typeof v === "string" && v !== chapterSlug && !/^https?:/.test(v),
+      ) as string | undefined) ?? chapterSlug.replace(/-/g, " ");
+      // A non-zero numeric field is the coin price of an early-access chapter.
+      const locked = extra.some((k) => typeof row[k] === "number" && (row[k] as number) > 0) || row.premium === true;
+      if (locked) continue;
+      const chapterTitle = typeof row.chapter_title === "string" ? row.chapter_title.trim() : "";
+      chapters.push({
+        chapterId: this.parsePath(`/comic/${mangaSlug}/${chapterSlug}`),
+        sourceManga,
+        title: label + (chapterTitle ? `: ${chapterTitle}` : ""),
+        volume: 0,
+        chapNum: this.parseChapterNumber(label),
+        publishDate: this.parseDate(typeof row.created_at === "string" ? row.created_at : null),
+        langCode: "🇬🇧",
+      });
     }
-
     return chapters;
   }
 
   async getChapterDetails(chapter: Chapter): Promise<ChapterDetails> {
     const url = this.chapterUrl(chapter.chapterId);
-    const body = await this.fetchRsc(url);
-    // The pages payload is the object carrying a "pages" string array.
+    const body = this.flightOf(await this.fetchString({ url, method: "GET" }));
     const found = extractNextJs(
       body,
-      (e) =>
-        isObj(e) &&
-        Array.isArray(e.pages) &&
-        (e.pages.length === 0 || typeof e.pages[0] === "string"),
+      (e) => Array.isArray(e) && e.length > 0 && typeof e[0] === "string" && e[0].includes("/uploads/"),
     );
-    const images: string[] =
-      isObj(found) && Array.isArray(found.pages)
-        ? found.pages.filter((p): p is string => typeof p === "string")
-        : [];
-
+    const images = Array.isArray(found)
+      ? found.filter((p): p is string => typeof p === "string")
+      : [];
     return {
       id: chapter.chapterId,
       mangaId: chapter.sourceManga.mangaId,
@@ -896,17 +933,6 @@ export class TempleScanExtension implements TempleScanImplementation {
       throw new Error("Content not found");
     }
     return Application.arrayBufferToUTF8String(data);
-  }
-
-  // Fetch a Next.js route as a raw React Flight (RSC) stream. The `rsc: 1`
-  // header tells the App Router to return the `text/x-component` payload
-  // instead of rendered HTML.
-  async fetchRsc(url: string): Promise<string> {
-    return this.fetchString({
-      url,
-      method: "GET",
-      headers: { rsc: "1" },
-    });
   }
 }
 

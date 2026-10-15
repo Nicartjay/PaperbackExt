@@ -4,7 +4,7 @@ export default {
   name: "MyHentaiGallery",
   description:
     "MyHentaiGallery - HTML scraper source (myhentaigallery.com). Converted from keiyoushi.",
-  version: "1.4.10.1",
+  version: "1.4.10.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.MATURE,

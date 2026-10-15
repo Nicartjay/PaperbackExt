@@ -3,7 +3,7 @@ import { ContentRating, ExtensionInfo, SourceIntents } from "@paperback/types";
 export default {
   name: "FlameScans.lol",
   description: "FlameScans.lol - Madara source (flamescans.lol). Converted from keiyoushi.",
-  version: "1.4.53.1",
+  version: "1.4.53.2",
   icon: "icon.png",
   language: "en",
   contentRating: ContentRating.EVERYONE,
